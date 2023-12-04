@@ -16,6 +16,7 @@
     
 }
 .course-list{
+    text-decoration: none;
     display: grid;
     margin-top: 60px;
     grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
@@ -23,6 +24,10 @@
     padding: 80px;
     font-family: 'Jost', sans-serif;
     
+}
+
+.course-list a{
+    text-decoration: none;
 }
 .course-firstrow-one-content {
     text-align: center;
@@ -63,17 +68,53 @@
     font-family: 'Jost', sans-serif;
     font-family: 'Roboto Mono', monospace;
 }
+.course-page-foot-navbar{
+    display:grid;
+}
 .course-page-foot-message{
     text-align: center;
     padding:80px;
-
 }
-
-
-
-
-
-
-
+.course-home-icon{
+    float: left;
+}
+.course-home-word{
+    float: left;
+    margin-left: 8px;
+}
+.course-courses-icon{
+    float: left;
+}
+.course-courses-word{
+    float: left;
+    margin-left: 8px;
+}
+.course-livestream-icon{
+    float: left;
+}
+.course-livestream-word{
+    float: left;
+    margin-left: 10px;
+}
+.course-pay-icon{
+    float: left;
+}
+.course-pay-word{
+    float: left;
+    margin-left: 8px;
+}
+.course-navbar-pay{
+    padding-left: 50px;
+}
+.course-login-icon{
+    float: left;
+}
+.course-login-word{
+    float: left;
+    margin-left: 8px;
+}
+.course-page-foot-navbar a{
+    text-decoration: none;
+}
 
 
