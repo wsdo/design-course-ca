@@ -3,10 +3,48 @@
     text-decoration: none;
     font-family: 'Jost', sans-serif;
     font-family: 'Roboto Mono', monospace;
-   
+    background-color: transparent !important;
 }
+.course-button{
+    background-color: white;
+}
+
+.nav-item{
+    margin-left: 60px;
+}
+.course-nav-main{
+    text-align: center;
+    padding-top: 16px;
+}
+.course-navbar-title{
+    display: inline-block;
+    margin: 0 0.5rem;
+  
+    animation: bounce; /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 2s; /* don't forget to set a duration! */
+    color: white;
+    margin-right: 120px;
+
+    font-size: 35px;
+
+    font-family: 'Permanent Marker', cursive;
+
+
+}
+
+/* .course-navbar-title:hover{
+    display: inline-block;
+    margin: 0 0.5rem;
+  
+    animation: bounce; 
+    animation-duration: 2s; 
+} */
+
 .course-navbar p,i {
     color:white;
+}
+.course-navbar col {
+    min-width: 157px;
 }
 .course-list p,i{
     color:white;
@@ -14,8 +52,6 @@
 .course-page-foot-navbar p,i{
     color:white;
 }
-
-
 
 .course-intro {
     text-align: center;
@@ -36,9 +72,24 @@
     font-family: 'Jost', sans-serif;
     color:white;
 }
-
+.course-nav{
+    margin-left: 20px;
+}
 .course-list a{
     text-decoration: none;
+    box-shadow:none;
+    padding:20px;
+    overflow: hidden;
+    transition: transform 0.3s;
+    border-radius:40px;
+}
+
+.course-list a:hover{
+    transform: scale(1.1);
+}
+
+.course-list img{
+    width:100%;
 }
 .course-firstrow-one-content {
     text-align: center;
@@ -130,7 +181,13 @@
 }
 #course-main{
     background: linear-gradient(189.16deg, rgb(57, 15, 199) 13.57%, rgb(40, 35, 77) 98.38%);
+    display: flow-root;
 }
+/* .course-navbar{
+    background-color: transparent !important;
+    
+} */
+
 .course-firstrow-one{
     display:block;
     background: linear-gradient(209.21deg, rgb(32, 25, 76) 13.57%, rgb(46, 42, 59) 98.38%);
