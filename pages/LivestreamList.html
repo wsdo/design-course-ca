@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en"> <!-- The HTML language as English -->
+
+<head>
+    <meta charset="UTF-8"> <!-- Specify the character encoding as UTF-8 -->
+    <meta name="viewpoint" content="width=device-wigth, initial-scale=1.0, shrink-to-fit=no" />
+    <!-- Set the viewport configuration for responsive design -->
+
+    <title>Livestream List</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../style/style.css"> <!-- Link to an external stylesheet -->
+
+
+    <!-- Google Fonts -->
+    <style>
+
+    </style>
+
+
+
+</head>
+
+
+<body class="livestreamBackground">
+
+
+
+    <div class="container livestreamDetails-center">
+        <!-- container for the whole page -->
+
+        <!-- TEXT above the livestream list -->
+        <div class="livestreamList-upper-text">
+            <h1 class="livestream-list-heading">
+                Livestreams and online workshops
+            </h1>
+            <p class="livestream-list-smallHeading">
+                Interact, ask questions and follow along with a live audience of
+                hundreds
+            </p>
+
+        </div>
+        <div class="livestream-list-wrap"></div>
+
+
+        <!-- modal for the live deatails -->
+        <div class="livestreamList-modal" id="myLivestreamListModal">
+            <div class="livestreamList-modal-content">
+                <p>Do you want to see the livestream details?</p>
+                <button id="yesButton">Yes</button>
+                <button id="noButton">No</button>
+            </div>
+        </div>
+
+
+
+
+        <div class="livestream-list-total">
+            <!-- four livestream course lists -->
+            <div class="livestream_middle_frame_1">
+                <div class="livestream_frame_image_1">
+                    <div class="livestream_frame_block_1" id="livestream_frame_block_1">
+                        <img src="../images/livestream_frame_image_1.png" alt="Image">
+                        <br><br>
+                        <h2>UI Design Livestreams</h2>
+                    </div>
+                </div>
+                <div class="livestream_frame_content_1">
+                    <div class="livestream_small-frame_1">
+                        <ol class="livestream_frame_list-style">
+                            <li>My Design Process</li>
+                            <li>Colors, Grid, Adaptive Layout</li>
+                            <li>UI Patterns, Visual Hierarchy and Iterations</li>
+                            <li>Prototyping, Animation and Developer Handoff</li>
+                            <li>UI Design for developers and Design System</li>
+                            <li>iOS 14 Design</li>
+                            <li>UI Design new techniques</li>
+                            <li>Review UIs and Design Techniques in Figma</li>
+                            <li>Prototyping UI, Shapes and Animations in SwiftUI</li>
+                            <li>Code Onboarding UI and Animation</li>
+                            <li>How we built our iOS app</li>
+                            <li>Building your first iOS app</li>
+                            <li>SF Symbols 3, Canvas<br> Animation</li>
+                            <li>Bottom Sheet UI with Gestures</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+
+            <br><br>
+            <br><br>
+
+            <div class="livestream_middle_frame_2">
+                <div class="livestream_frame_image_2">
+                    <div class="livestream_frame_block_2" id="livestream_frame_block_2">
+                        <img src="../images/livestream_frame_image_2.png" alt="Image">
+                        <br><br>
+                        <h2>React <br>Livestreams</h2>
+                    </div>
+                </div>
+                <div class="livestream_frame_content_2">
+                    <div class="livestream_small-frame_2">
+                        <ol class="livestream_frame_list-style">
+                            <li>Prototyping from Figma</li>
+                            <li>Peek Scrolling Concept using GeometryReader</li>
+                            <li>Design and code for iOS, iPadOS, Big Sur</li>
+                            <li>Lazy Grid and Matched Geometry Effect</li>
+                            <li>Design and code the App <br>Store Today</li>
+                            <li>Design, code, analyze the ClubHouse app bottom card UI</li>
+                            <li>Gradients and Glassmorphism in SwiftUI</li>
+                            <li>WWDC 2021 Student Challenge - How to create a SwiftUI Project for Swift Playgrounds</li>
+                            <li>Prototyping UI, Shapes and Animations in SwiftUI</li>
+                            <li>Code Onboarding UI and Animation</li>
+                            <li>How we built our iOS app</li>
+                            <li>Building your first iOS app</li>
+                            <li>SF Symbols 3, Canvas <br>Animation</li>
+                            <li>Bottom Sheet UI with Gestures</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+
+            <br><br>
+            <br><br>
+
+            <div class="livestream_middle_frame_3">
+                <div class="livestream_frame_image_3">
+                    <div class="livestream_frame_block_3" id="livestream_frame_block_3">
+                        <img src="../images/livestream_frame_image_3.png" alt="Image">
+                        <br><br>
+                        <h2>SwiftUI <br>Livestreams</h2>
+                    </div>
+                </div>
+                <div class="livestream_frame_content_3">
+                    <div class="livestream_small-frame_3">
+                        <ol class="livestream_frame_list-style">
+                            <li>How we built our website <br>with React Hooks</li>
+                            <li>Text Animation with React and CSS</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+
+            <br><br>
+            <br><br>
+
+            <div class="livestream_middle_frame_4">
+                <div class="livestream_frame_image_4">
+                    <div class="livestream_frame_block_4" id="livestream_frame_block_4">
+                        <img src="../images/livestream_frame_image_4.png" alt="Image">
+                        <br><br>
+                        <h2>Design Founder <br>Livestreams</h2>
+                    </div>
+                </div>
+                <div class="livestream_frame_content_4">
+                    <div class="livestream_small-frame_4">
+                        <ol class="livestream_frame_list-style">
+                            <li>My journey as a design founder</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+
+            <br><br>
+            <br><br>
+
+
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+
+    <script src="../JavaScript/javascript.js"></script>
+    <!-- Link to the external JavaScript file -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+
+
+</html>
+
+
+
+
+
+<!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="script.js"></script> -->
