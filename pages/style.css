@@ -139,53 +139,27 @@
     background-color: #45a049;
 }
 
-/* ================================================================================================ */
-/* ====================================== media for page =========================================== */
-
-/* Media query for smaller screens */
-@media (max-width: 768px) {
-
-    .livestream_middle_frame_1,
-    .livestream_middle_frame_2,
-    .livestream_middle_frame_3,
-    .livestream_middle_frame_4 {
-        flex-direction: column;
-        /* Change to column layout for smaller screens */
-        height: auto;
-        /* Allow height to adjust based on content */
-    }
-
-    .livestream_small-frame_1,
-    .livestream_small-frame_2,
-    .livestream_small-frame_3,
-    .livestream_small-frame_4 {
-        width: 100%;
-        /* Takes full width on smaller screens */
-        margin-top: 1em;
-        /* Adjust margin for spacing */
-        height: auto;
-        /* Allow height to adjust based on content */
-    }
-}
-
 
 /* ================================================================================================ */
-/* ======================================Style for frame 1========================================= */
+/* ======================================Style for all frame======================================= */
 
 .livestream_middle_frame_1,
 .livestream_middle_frame_2,
 .livestream_middle_frame_3,
 .livestream_middle_frame_4 {
     display: flex;
+    /* justify-content: center; */
     border: 0.1em solid rgba(173, 173, 187, 0.405);
     /* white color with 50% opacity */
     border-radius: 2.5%;
     /* width: 950px; */
-    width: 85%;
-    height: 25em;
+    width: 70vw;
+    /* height: 25em; */
+    max-width: 1250px;
+    /* Set a maximum width if needed */
     margin: auto;
-    padding: 2%;
-    backdrop-filter: blur(2.5em);
+    padding: 1.5vw;
+    backdrop-filter: blur(2.5vw);
     /* creates the fog-like effect */
 }
 
@@ -195,7 +169,8 @@
 .livestream_frame_image_4 {
     flex: 1;
     height: 100%;
-    margin-right: 1.25em;
+    margin-right: 1.25vw;
+    position: relative;
     background-size: cover;
     background-position: center;
     transition: transform 0.2s;
@@ -228,12 +203,18 @@
     padding-left: 1em;
     margin-top: 2em;
     margin-bottom: 2em;
-    height: 17.5em;
+    height: 22em;
+    /* padding: 1em;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    margin-right: 2em;
+    height: 22em;*/
     /*fix the height for scroll down*/
     width: 100%;
     overflow-y: auto;
     /*make if scrollable*/
 }
+
 
 .livestream_small-frame_3,
 .livestream_small-frame_4 {
@@ -244,7 +225,8 @@
     padding-left: 1em;
     margin-top: 2em;
     margin-bottom: 2em;
-    height: 17.5em;
+    /* height: 17.5em; */
+    height: 22em;
     /*fix the height for scroll down*/
     width: 100%;
 }
@@ -260,36 +242,58 @@
 /* grid was used */
 .livestream_frame_list-style {
     display: grid;
-    grid-template-columns: repeat(2, minmax(0.2em, 15em));
+    /* grid-template-columns: repeat(2, minmax(0.2em, 15em)); */
+    grid-template-columns: repeat(auto-fill, minmax(15vw, 1fr));
+    /* Adjusted for responsiveness */
     grid-template-rows: repeat(7, minmax(2.5em, auto));
     /* grid-template-columns: ; */
     /* Adjust the min and max values as needed */
-    gap: 1.875em;
+    column-gap: 1.875em;
+    row-gap: 1.875em;
+    padding-left: 1em;
 }
+
+@media (min-width: 2560px) {
+    .livestream_frame_list-style {
+        grid-template-columns: repeat(auto-fill, minmax(8.625vw, 1fr));
+        column-gap: 1.875em;
+        row-gap: 1.875em;
+        /* You can add a gap between columns */
+        padding-left: 1em;
+        /* Adjust the left padding as needed */
+    }
+}
+
+
 
 /*   list-style-type: none ;*/
 
+
+/* ================================================================================================ */
+/* ======================================Style for frame 1========================================= */
 .livestream_frame_block_1 {
     background-color: rgba(0, 0, 128, 0.337);
     backdrop-filter: blur(2.5em);
-    /* red-pink color */
-    padding-bottom: 1.25em;
-    margin: 0.3125em;
-    margin-left: 1em;
+    padding: 1.25em 1.25em;
+    /* Top and bottom padding are adjusted for better spacing */
+    margin: 0.3125em 0.3125em 0.3125em 0.3125em;
+    /* Margin adjusted for better spacing */
     border-radius: 2.5em;
-    padding-top: 3.125em;
     cursor: pointer;
     /* Add this line to set cursor to pointer on hover */
-    height: 100%;
+    height: auto;
+    /* Let the height adjust based on content */
     width: auto;
+    /* Let the width adjust based on content */
 }
 
 .livestream_frame_block_1 img {
     width: 100%;
-    height: 50%;
+    height: auto;
     display: block;
     /* Make the image a block-level element */
-    padding-left: 1.5625em;
+    /* padding-left: 1.5625em; */
+    margin: 0 auto;
     /* Center the image horizontally */
 }
 
@@ -299,28 +303,76 @@
     color: rgb(224, 224, 224);
 }
 
+
+/* ================================================================================================ */
+/* ====================================== media for page =========================================== */
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+
+    .livestream_middle_frame_1,
+    .livestream_middle_frame_2,
+    .livestream_middle_frame_3,
+    .livestream_middle_frame_4 {
+        flex-direction: column;
+        /* Change to column layout for smaller screens */
+        height: auto;
+        /* Allow height to adjust based on content */
+        width: 90vw;
+        /* 90% of the viewport width for smaller screens */
+        padding: 3vw;
+    }
+
+    .livestream_small-frame_1,
+    .livestream_small-frame_2,
+    .livestream_small-frame_3,
+    .livestream_small-frame_4 {
+        width: 100%;
+        /* Takes full width on smaller screens */
+        margin-top: 1em;
+        /* Adjust margin for spacing */
+        height: auto;
+        /* Allow height to adjust based on content */
+    }
+
+    .livestream_frame_image_1,
+    .livestream_frame_image_2,
+    .livestream_frame_image_3,
+    .livestream_frame_image_4 {
+        margin-right: 0;
+        /* Remove margin on smaller screens */
+    }
+
+    .livestream_frame_list-style {
+        grid-template-columns: repeat(auto-fill, minmax(20vw, 1fr));
+    }
+}
+
 /* ================================================================================================ */
 /* ======================================Style for frame 2========================================= */
 
 .livestream_frame_block_2 {
     background-color: rgba(137, 118, 231, 0.398);
     backdrop-filter: blur(2.5em);
-    padding-bottom: 1.25em;
-    margin: 0.3125em;
-    margin-left: 1.25em;
+    padding: 1.25em 1.25em;
+    /* Top and bottom padding are adjusted for better spacing */
+    margin: 0.3125em 0.3125em 0.3125em 0.3125em;
+    /* Margin adjusted for better spacing */
     border-radius: 2.5em;
-    padding-top: 3.125em;
     cursor: pointer;
     /* Add this line to set cursor to pointer on hover */
-    height: 100%;
+    height: auto;
+    /* Let the height adjust based on content */
     width: auto;
+    /* Let the width adjust based on content */
 }
 
 .livestream_frame_block_2 img {
     width: 100%;
-    height: 50%;
+    /* height: 50%; */
     display: block;
-    padding-left: 1.5625em;
+    /* padding-left: 1.5625em; */
+    height: auto;
+    margin: 0 auto;
 }
 
 .livestream_frame_block_2 h2 {
@@ -336,24 +388,26 @@
 .livestream_frame_block_3 {
     background-color: rgba(16, 80, 169, 0.371);
     backdrop-filter: blur(2.5em);
-    /* red-pink color */
-    padding-bottom: 1.25em;
-    margin: 0.3125em;
-    margin-left: 1.25em;
+    padding: 1.25em 1.25em;
+    /* Top and bottom padding are adjusted for better spacing */
+    margin: 0.3125em 0.3125em 0.3125em 0.3125em;
+    /* Margin adjusted for better spacing */
     border-radius: 2.5em;
-    padding-top: 3.125em;
     cursor: pointer;
     /* Add this line to set cursor to pointer on hover */
-    margin-left: 25px;
-    height: 100%;
+    height: auto;
+    /* Let the height adjust based on content */
     width: auto;
+    /* Let the width adjust based on content */
 }
 
 .livestream_frame_block_3 img {
     width: 100%;
-    height: 50%;
+    /* height: 50%; */
     display: block;
-    padding-left: 1.5625em;
+    /* padding-left: 1.5625em; */
+    height: auto;
+    margin: 0 auto;
 }
 
 .livestream_frame_block_3 h2 {
@@ -368,23 +422,26 @@
 .livestream_frame_block_4 {
     background-color: rgba(28, 28, 86, 0.335);
     backdrop-filter: blur(2.5em);
-    /* red-pink color */
-    padding-bottom: 1.25em;
-    margin: 0.3125em;
-    margin-left: 1.25em;
+    padding: 1.25em 1.25em;
+    /* Top and bottom padding are adjusted for better spacing */
+    margin: 0.3125em 0.3125em 0.3125em 0.3125em;
+    /* Margin adjusted for better spacing */
     border-radius: 2.5em;
-    padding-top: 3.125em;
     cursor: pointer;
     /* Add this line to set cursor to pointer on hover */
-    height: 100%;
+    height: auto;
+    /* Let the height adjust based on content */
     width: auto;
+    /* Let the width adjust based on content */
 }
 
 .livestream_frame_block_4 img {
     width: 100%;
-    height: 50%;
+    /* height: 50%; */
     display: block;
-    padding-left: 1.5625em;
+    /* padding-left: 1.5625em; */
+    height: auto;
+    margin: 0 auto;
 }
 
 .livestream_frame_block_4 h2 {
@@ -402,7 +459,7 @@
     justify-content: flex-end;
     margin-right: 0.125em;
     /* Adjust the margin to position the button 5em from the right screen side */
-    cursor: pointer;
+
 }
 
 /* Adjust the color of the button */
@@ -415,6 +472,7 @@
     /* Remove the button border if not needed */
     padding: 10px;
     /* Adjust padding as needed */
+    cursor: pointer;
 }
 
 
@@ -430,15 +488,17 @@
     color: #ffffff;
     font-family: 'DM Serif Display', serif;
     font-family: 'Josefin Sans', sans-serif;
+    text-align: center;
+    margin-bottom: 1em;
 }
 
 #livestream-minigame-container {
-    max-width: 50em;
+    max-width: 35em;
     margin: auto;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(10em, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(6em, 1fr));
     /* Use auto-fit and minmax for responsive columns */
-    gap: 2em;
+    gap: 1.5em;
 }
 
 .livestream-minigame-card {
@@ -461,7 +521,8 @@
 }
 
 .livestream-minigame-card.flipped {
-    background-color: rgb(108, 108, 109);
+    border: 0.05em solid rgb(108, 108, 109);
+    background-color: rgba(85, 62, 114, 0.026);
 }
 
 
