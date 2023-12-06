@@ -1,3 +1,6 @@
+// ===========================================================================================
+// ===========================================================================================
+// =========================== Modal & trun to another page ==================================
 //.js for model before turning to another page
 var modal = document.getElementById("myLivestreamListModal");
 var livestreamFrameBlock1 = document.getElementById("livestream_frame_block_1");
@@ -45,3 +48,93 @@ window.addEventListener("click", function (event) {
         modal.style.display = "none";
     }
 });
+
+
+// ===========================================================================================
+// ===========================================================================================
+// ======================== scroll down for minigame =========================================
+
+function scrollToMinigame() {
+    var minigameSection = document.getElementById('livestream-minigame');
+
+    if (minigameSection) {
+        minigameSection.scrollIntoView({ behavior: 'smooth' });
+    }
+}
+
+// =================================== Minigame ==============================================
+
+const symbols = ['🌟', '🍎', '🚀', '🎈', '🌈', '🍕', '🎉', '🐱'];
+
+let shuffledSymbols = [...symbols, ...symbols].sort(() => Math.random() - 0.5);
+let selectedCards = [];
+let matchedPairs = 0;
+
+function createCard(symbol, index) {
+    const card = document.createElement('div');
+    card.classList.add('livestream-minigame-card');
+    card.textContent = symbol;
+    card.setAttribute('data-index', index);
+    card.addEventListener('click', flipCard);
+    return card;
+}
+
+function flipCard() {
+    if (selectedCards.length === 2) {
+        return;
+    }
+
+    const clickedCard = this;
+    clickedCard.classList.add('flipped');
+    selectedCards.push(clickedCard);
+
+    if (selectedCards.length === 2) {
+        setTimeout(checkMatch, 500);
+    }
+}
+
+function checkMatch() {
+    const [firstCard, secondCard] = selectedCards;
+    const index1 = firstCard.getAttribute('data-index');
+    const index2 = secondCard.getAttribute('data-index');
+
+    if (index1 === index2) {
+        selectedCards.forEach(card => card.classList.remove('flipped'));
+    } else if (firstCard.textContent === secondCard.textContent) {
+        selectedCards.forEach(card => card.classList.add('matched'));
+        matchedPairs++;
+
+        if (matchedPairs === symbols.length) {
+            alert('Congratulations! You matched all pairs!');
+            resetGame();
+        }
+    } else {
+        selectedCards.forEach(card => card.classList.remove('flipped'));
+    }
+
+    selectedCards = [];
+}
+
+function resetGame() {
+    const gameContainer = document.getElementById('livestream-minigame-container');
+    gameContainer.innerHTML = '';
+    shuffledSymbols = [...symbols, ...symbols].sort(() => Math.random() - 0.5);
+    selectedCards = [];
+    matchedPairs = 0;
+    createGameBoard();
+}
+
+function createGameBoard() {
+    const gameContainer = document.getElementById('livestream-minigame-container');
+
+    shuffledSymbols.forEach((symbol, index) => {
+        const card = createCard(symbol, index);
+        gameContainer.appendChild(card);
+    });
+}
+
+// Initialize the game
+createGameBoard();
+
+
+
