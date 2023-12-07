@@ -10,31 +10,48 @@ var livestreamFrameBlock4 = document.getElementById("livestream_frame_block_4");
 var yesButton = document.getElementById("yesButton");
 var noButton = document.getElementById("noButton");
 
+var clickedFrameBlock = "";
+
 // When Livestream Frame Block 1 is clicked, show the modal
 livestreamFrameBlock1.addEventListener("click", function () {
     modal.style.display = "block";
+    clickedFrameBlock = "livestream_frame_block_1";
 });
 
 // When Livestream Frame Block 2 is clicked, show the modal
 livestreamFrameBlock2.addEventListener("click", function () {
     modal.style.display = "block";
+    clickedFrameBlock = "livestream_frame_block_2";
 });
 
 // When Livestream Frame Block 3 is clicked, show the modal
 livestreamFrameBlock3.addEventListener("click", function () {
     modal.style.display = "block";
+    clickedFrameBlock = "livestream_frame_block_3";
 });
 
 // When Livestream Frame Block 4 is clicked, show the modal
 livestreamFrameBlock4.addEventListener("click", function () {
     modal.style.display = "block";
+    clickedFrameBlock = "livestream_frame_block_4";
 });
 
-
-
-// When Yes button is clicked, navigate to page2
+// When Yes button is clicked, navigate to specific section based on clicked frame block
 yesButton.addEventListener("click", function () {
-    window.location.href = "../pages/LivestreamDetails.html";
+    // Determine the target section on page 2
+    var targetSection = "";
+    if (clickedFrameBlock === "livestream_frame_block_1") {
+        targetSection = "livestreamDetails-live-1";
+    } else if (clickedFrameBlock === "livestream_frame_block_2") {
+        targetSection = "livestreamDetails-live-2";
+    } else if (clickedFrameBlock === "livestream_frame_block_3") {
+        targetSection = "livestreamDetails-live-3";
+    } else if (clickedFrameBlock === "livestream_frame_block_4") {
+        targetSection = "livestreamDetails-live-4";
+    }
+
+    // Navigate to LivestreamDetails.html with fragment identifier
+    window.location.href = `../pages/LivestreamDetails.html#${targetSection}`;
 });
 
 // When No button is clicked, close the modal
@@ -62,6 +79,7 @@ function scrollToMinigame() {
     }
 }
 
+// ===========================================================================================
 // =================================== Minigame ==============================================
 
 const symbols = ['🌟', '🍎', '🚀', '🎈', '🌈', '🍕', '🎉', '🐱'];
@@ -135,6 +153,4 @@ function createGameBoard() {
 
 // Initialize the game
 createGameBoard();
-
-
 
