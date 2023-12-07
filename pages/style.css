@@ -1,4 +1,5 @@
 /* ================================================================================================ */
+/* =================================Livestream List__Page========================================== */
 /* ======================================Background================================================ */
 .livestreamListBackground {
     background-image: url("../images/livestream-background.png");
@@ -13,9 +14,9 @@
     /* Ensure that the background covers at least the viewport height */
 }
 
-.livestreamDetailsBackground {
-    background-color: rgb(20, 29, 62);
-}
+/* .livestreamDetailsBackground {
+    background-color: rgb(25, 54, 96);
+} */
 
 .livestream-small-break {
     height: 3em;
@@ -24,6 +25,7 @@
 .livestream-large-break {
     height: 8em;
 }
+
 
 /* ================================================================================================ */
 /* ======================================Upper page text=========================================== */
@@ -527,6 +529,204 @@
 
 
 
-/* ================================================================================================ */
-/* ================================================================================================ */
-/* ================================================================================================ */
+/* ======================================================================================================== */
+/* ======================================================================================================== */
+/* ===================================Livestream Details__Page============================================= */
+/* font */
+.livestreamDetails-about {
+    font-family: 'DM Serif Display', serif;
+    font-family: 'Josefin Sans', sans-serif;
+    /* font-style: normal; */
+    font-weight: bold;
+    font-size: 3em;
+    /* Use em for adaptive font size */
+    /* margin: 0; */
+    margin-top: 5em;
+    margin-bottom: 2em;
+    color: #ffffff;
+}
+
+.livestream-descrip-course-title h3 {
+    font-family: 'DM Serif Display', serif;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.livestream-descrip-intro {
+    color: #ffffff;
+}
+
+/* ======================================================================================================== */
+/* ===================================livestreamDetails-lecturer intro===================================== */
+.livestreamDetails-lecturer-intro {
+    display: flex;
+    /* flex-direction: row-reverse; */
+    /* max-width: 30em; */
+    background-color: rgba(51, 86, 202, 0.764);
+    border-radius: 2.5em;
+    margin-bottom: 5em;
+}
+
+.livestreamDetails-lecturer-intro h5 {
+    margin: 1em;
+    text-align: center;
+    color: khaki;
+}
+
+.livestreamDetails-lecturer {
+    margin: 1em;
+    color: rgb(240, 234, 181);
+    max-width: 60em;
+}
+
+
+
+/* ======================================================================================================== */
+/* ===================================livestreamDetails-live-frame========================================= */
+.livestreamDetails-live-1,
+.livestreamDetails-live-2,
+.livestreamDetails-live-3,
+.livestreamDetails-live-4 {
+    display: flex;
+    align-items: center;
+}
+
+.livestreamDetails-live-description {
+    flex: 2;
+    margin: 2em;
+}
+
+.livestream-descrip-upper-text {
+    font-size: 20px;
+    margin: 2em 1em 2em 1em;
+}
+
+/* ======================================================================================================== */
+/* ===================================livestreamDetails-frame_1 =========================================== */
+
+.livestreamDetails-img-frame-1 {
+    background-color: rgba(0, 0, 128, 0.337);
+    backdrop-filter: blur(2.5em);
+    /* padding: 1.25em 1.25em; */
+    padding: 1.25em;
+    /* Top and bottom padding are adjusted for better spacing */
+    margin: 0.3125em 0.3125em 0.3125em 0.3125em;
+    /* Margin adjusted for better spacing */
+    border-radius: 2.5em;
+    flex: 1;
+    width: 15em;
+    height: 15em;
+    margin-right: 1em;
+    /* Adjust the margin as needed for spacing */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.livestreamDetails-img-frame-1 img {
+    max-width: 100%;
+    max-height: 100%;
+    /* Ensure the image doesn't exceed the container */
+    /* display: block; */
+    /* padding-left: 1.5625em; */
+    /* margin: 0 auto; */
+}
+
+/* ======================================================================================================== */
+/* ===================================livestreamDetails-frame_2 =========================================== */
+.livestreamDetails-img-frame-2 {
+    background-color: rgba(137, 118, 231, 0.398);
+    backdrop-filter: blur(2.5em);
+    /* padding: 1.25em 1.25em; */
+    padding: 1.25em;
+    /* Top and bottom padding are adjusted for better spacing */
+    margin: 0.3125em 0.3125em 0.3125em 0.3125em;
+    /* Margin adjusted for better spacing */
+    border-radius: 2.5em;
+    flex: 1;
+    width: 15em;
+    height: 15em;
+    margin-right: 1em;
+    /* Adjust the margin as needed for spacing */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.livestreamDetails-img-frame-2 img {
+    max-width: 100%;
+    max-height: 100%;
+    /* Ensure the image doesn't exceed the container */
+    /* display: block; */
+    /* padding-left: 1.5625em; */
+    /* margin: 0 auto; */
+}
+
+/* ======================================================================================================== */
+/* ===================================livestreamDetails-frame_3 =========================================== */
+.livestreamDetails-img-frame-3 {
+    background-color: rgba(16, 80, 169, 0.371);
+    backdrop-filter: blur(2.5em);
+    /* padding: 1.25em 1.25em; */
+    padding: 1.25em;
+    /* Top and bottom padding are adjusted for better spacing */
+    margin: 0.3125em 0.3125em 0.3125em 0.3125em;
+    /* Margin adjusted for better spacing */
+    border-radius: 2.5em;
+    flex: 1;
+    width: 15em;
+    height: 15em;
+    margin-right: 1em;
+    /* Adjust the margin as needed for spacing */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.livestreamDetails-img-frame-3 img {
+    max-width: 100%;
+    max-height: 100%;
+    /* Ensure the image doesn't exceed the container */
+    /* display: block; */
+    /* padding-left: 1.5625em; */
+    /* margin: 0 auto; */
+}
+
+/* ======================================================================================================== */
+/* ===================================livestreamDetails-frame_4 =========================================== */
+.livestreamDetails-img-frame-4 {
+    background-color: rgba(28, 28, 86, 0.335);
+    backdrop-filter: blur(2.5em);
+    /* padding: 1.25em 1.25em; */
+    padding: 1.25em;
+    /* Top and bottom padding are adjusted for better spacing */
+    margin: 0.3125em 0.3125em 0.3125em 0.3125em;
+    /* Margin adjusted for better spacing */
+    border-radius: 2.5em;
+    flex: 1;
+    width: 15em;
+    height: 15em;
+    margin-right: 1em;
+    /* Adjust the margin as needed for spacing */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.livestreamDetails-img-frame-4 img {
+    max-width: 100%;
+    max-height: 100%;
+    /* Ensure the image doesn't exceed the container */
+    /* display: block; */
+    /* padding-left: 1.5625em; */
+    /* margin: 0 auto; */
+}
+
+/* ======================================================================================================== */
+/* ======================================================================================================== */
+/* ======================================================================================================== */
