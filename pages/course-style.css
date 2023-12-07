@@ -251,6 +251,7 @@
     /* color:white; */
     display:grid;
     gap:20px;
+    padding-right: 100px;
     
 }
 .detail-foot{
@@ -284,4 +285,36 @@
 .course-detail-intro button{
     background-color: transparent;
     border: none;
+}
+.course-detail-frame{
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(261px, 1fr));
+    gap:20px;
+    background: rgba(255, 255, 255, 0.6);
+    border-radius: 20px;
+    padding:30px;
+    max-width: 1872px;
+
+
+}
+.course-detail-list{
+    width:100%;
+    padding:20px;
+}
+.course-detail-list .num{
+    background: rgba(68, 66, 178, 0.1);
+    border-radius: 50px;
+}
+.course-detail-list .category .head{
+    font-size:bold;
+    font-weight: 600;
+    color: rgb(0, 0, 0);
+}
+.course-detail-list .category p{
+    color: rgba(0, 0, 0, 0.7);
+}
+
+.course-detail-main{
+    margin-top: 100px;
+    padding:50px;
 }
