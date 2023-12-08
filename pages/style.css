@@ -14,10 +14,8 @@
     /* Ensure that the background covers at least the viewport height */
 }
 
-/* .livestreamDetailsBackground {
-    background-color: rgb(25, 54, 96);
-} */
 
+/* create the small break and larger break to instead of <br> */
 .livestream-small-break {
     height: 3em;
 }
@@ -25,7 +23,6 @@
 .livestream-large-break {
     height: 8em;
 }
-
 
 /* ================================================================================================ */
 /* ======================================Upper page text=========================================== */
@@ -36,42 +33,49 @@
     height: 100%;
 }
 
+.container-livestreamList-center {
+    margin: auto;
+    padding: 1.5vw;
+    width: 70vw;
+    /* set the width as 70vw to put all stuff center */
+    max-width: 1250px;
+    /* set the max width as 1250px */
+}
+
 .livestreamList-upper-text {
     position: relative;
     text-align: center;
     max-width: 40%;
-    /* Use a percentage for adaptive width */
-    /* padding: 10% 2% 0; */
-    padding-top: 10%;
+    /* set a max width to align the stuff */
+    padding-top: 2%;
     padding-bottom: 2%;
     margin: 0 auto;
     display: grid;
     gap: 2%;
     margin-bottom: 5vh;
-    /* Use viewport height for margin */
 }
 
-/* Media query for smaller screens */
+/* @media section for smaller screens */
 @media (max-width: 76em) {
     .livestreamList-upper-text {
         max-width: 80%;
-        /* Adjust the maximum width for smaller screens */
     }
 }
 
+/* the big heading in the livestreamList page */
 .livestream-list-heading {
     font-family: 'DM Serif Display', serif;
     font-family: 'Josefin Sans', sans-serif;
     font-style: normal;
     font-weight: bold;
     font-size: 3em;
-    /* Use em for adaptive font size */
     margin: 0;
     margin-top: 12vh;
     margin-bottom: 3vh;
     color: #ffffff;
 }
 
+/* the small heading under the big heading */
 .livestream-list-smallHeading {
     font-family: 'DM Serif Display', serif;
     font-family: 'Josefin Sans', sans-serif;
@@ -80,14 +84,13 @@
     font-size: 1.2em;
     line-height: 130%;
     margin: 0;
-    margin-bottom: 2.5em;
+    margin-bottom: 2em;
     padding-bottom: 1em;
     color: rgba(255, 255, 255, 0.876);
 }
 
 /* ================================================================================================ */
 /* =========================================== Modal ============================================== */
-
 /* Styles for Modal */
 .livestreamList-modal {
     display: none;
@@ -100,6 +103,7 @@
     z-index: 1;
 }
 
+/* the style for the modal-frame */
 .livestreamList-modal-content {
     position: absolute;
     top: 50%;
@@ -107,64 +111,56 @@
     transform: translate(-50%, -50%);
     background-color: rgb(229, 240, 255);
     padding: 2em;
-    /* Use em for padding */
     text-align: center;
     border-radius: 1em;
-    /* Use em for border-radius */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     z-index: 1;
+    /* let the modal on the top layer of the page */
 }
 
+/* set the text style in the modal */
 .livestreamList-modal-content p {
     font-size: 1.125em;
-    /* Use em for font-size */
     margin-bottom: 1.25em;
-    /* Use em for margin */
 }
 
+/* set the button style in the modal*/
 .livestreamList-modal-content button {
     background-color: #4CAF50;
     color: #fff;
     padding: 0.625em 1.25em;
-    /* Use em for padding */
     font-size: 1em;
-    /* Use em for font-size */
     border: none;
     border-radius: 0.3125em;
-    /* Use em for border-radius */
     cursor: pointer;
     margin: 0 0.625em;
-    /* Use em for margin */
 }
 
+/* add the hover effect */
 .livestreamList-modal-content button:hover {
     background-color: #45a049;
 }
 
-
 /* ================================================================================================ */
 /* ======================================Style for all frame======================================= */
-
+/* set the style of the biggest frame in the livestreamList page */
 .livestream_middle_frame_1,
 .livestream_middle_frame_2,
 .livestream_middle_frame_3,
 .livestream_middle_frame_4 {
     display: flex;
-    /* justify-content: center; */
     border: 0.1em solid rgba(173, 173, 187, 0.405);
     /* white color with 50% opacity */
     border-radius: 2.5%;
-    /* width: 950px; */
     width: 70vw;
-    /* height: 25em; */
     max-width: 1250px;
-    /* Set a maximum width if needed */
     margin: auto;
     padding: 1.5vw;
     backdrop-filter: blur(2.5vw);
     /* creates the fog-like effect */
 }
 
+/* set the frame style */
 .livestream_frame_image_1,
 .livestream_frame_image_2,
 .livestream_frame_image_3,
@@ -178,6 +174,7 @@
     transition: transform 0.2s;
 }
 
+/* set the hover effect when mouse put on */
 .livestream_frame_image_1:hover,
 .livestream_frame_image_2:hover,
 .livestream_frame_image_3:hover,
@@ -186,6 +183,7 @@
     /* Zoom the element up by 20% when hovering over it */
 }
 
+/* set the frame style for contain the list */
 .livestream_frame_content_1,
 .livestream_frame_content_2,
 .livestream_frame_content_3,
@@ -195,7 +193,7 @@
     height: 100%;
 }
 
-
+/* set frame 1 & 2 scrollable */
 .livestream_small-frame_1,
 .livestream_small-frame_2 {
     border: 0.1em solid rgba(172, 172, 209, 0.362);
@@ -206,11 +204,6 @@
     margin-top: 2em;
     margin-bottom: 2em;
     height: 22em;
-    /* padding: 1em;
-    margin-top: 2em;
-    margin-bottom: 2em;
-    margin-right: 2em;
-    height: 22em;*/
     /*fix the height for scroll down*/
     width: 100%;
     overflow-y: auto;
@@ -227,12 +220,12 @@
     padding-left: 1em;
     margin-top: 2em;
     margin-bottom: 2em;
-    /* height: 17.5em; */
     height: 22em;
     /*fix the height for scroll down*/
     width: 100%;
 }
 
+/* don't display the scrollbar */
 .livestream_small-frame_1::-webkit-scrollbar,
 .livestream_small-frame_2::-webkit-scrollbar,
 .livestream_small-frame_3::-webkit-scrollbar,
@@ -241,35 +234,29 @@
     /* makes the scrollbar invisible */
 }
 
-/* grid was used */
+/* grid was used in the list */
 .livestream_frame_list-style {
     display: grid;
-    /* grid-template-columns: repeat(2, minmax(0.2em, 15em)); */
     grid-template-columns: repeat(auto-fill, minmax(15vw, 1fr));
-    /* Adjusted for responsiveness */
+    /* auto-fill the columns depent on the screen size */
     grid-template-rows: repeat(7, minmax(2.5em, auto));
-    /* grid-template-columns: ; */
-    /* Adjust the min and max values as needed */
+    /* set the rows as 7 */
     column-gap: 1.875em;
     row-gap: 1.875em;
     padding-left: 1em;
 }
 
+/* set the number of columns for bigger screen */
 @media (min-width: 2560px) {
     .livestream_frame_list-style {
         grid-template-columns: repeat(auto-fill, minmax(8.625vw, 1fr));
         column-gap: 1.875em;
         row-gap: 1.875em;
-        /* You can add a gap between columns */
+        /* add a gap between columns */
         padding-left: 1em;
-        /* Adjust the left padding as needed */
+        /* set the padding has 1em on the left*/
     }
 }
-
-
-
-/*   list-style-type: none ;*/
-
 
 /* ================================================================================================ */
 /* ======================================Style for frame 1========================================= */
@@ -277,24 +264,21 @@
     background-color: rgba(0, 0, 128, 0.337);
     backdrop-filter: blur(2.5em);
     padding: 1.25em 1.25em;
-    /* Top and bottom padding are adjusted for better spacing */
+    /* set the top and bottom padding */
     margin: 0.3125em 0.3125em 0.3125em 0.3125em;
-    /* Margin adjusted for better spacing */
+    /* set the margin as 0.3125em */
     border-radius: 2.5em;
     cursor: pointer;
-    /* Add this line to set cursor to pointer on hover */
+    /* set cursor to pointer on hover */
     height: auto;
-    /* Let the height adjust based on content */
+    /* the height will based on the content */
     width: auto;
-    /* Let the width adjust based on content */
 }
 
 .livestream_frame_block_1 img {
     width: 100%;
     height: auto;
     display: block;
-    /* Make the image a block-level element */
-    /* padding-left: 1.5625em; */
     margin: 0 auto;
     /* Center the image horizontally */
 }
@@ -308,7 +292,7 @@
 
 /* ================================================================================================ */
 /* ====================================== media for page =========================================== */
-/* Media query for smaller screens */
+/* Media sectiony for smaller screens */
 @media (max-width: 768px) {
 
     .livestream_middle_frame_1,
@@ -351,28 +335,25 @@
 
 /* ================================================================================================ */
 /* ======================================Style for frame 2========================================= */
-
+/* set the style for frame 2 */
 .livestream_frame_block_2 {
     background-color: rgba(137, 118, 231, 0.398);
     backdrop-filter: blur(2.5em);
     padding: 1.25em 1.25em;
-    /* Top and bottom padding are adjusted for better spacing */
+    /* set the top and bottom padding */
     margin: 0.3125em 0.3125em 0.3125em 0.3125em;
-    /* Margin adjusted for better spacing */
+    /* set the margin as 0.3125em */
     border-radius: 2.5em;
     cursor: pointer;
-    /* Add this line to set cursor to pointer on hover */
+    /* set cursor to pointer on hover */
     height: auto;
-    /* Let the height adjust based on content */
+    /* the height will based on the content */
     width: auto;
-    /* Let the width adjust based on content */
 }
 
 .livestream_frame_block_2 img {
     width: 100%;
-    /* height: 50%; */
     display: block;
-    /* padding-left: 1.5625em; */
     height: auto;
     margin: 0 auto;
 }
@@ -386,28 +367,25 @@
 
 /* ================================================================================================ */
 /* ======================================Style for frame 3========================================= */
-
+/* set the style for frame 3 */
 .livestream_frame_block_3 {
     background-color: rgba(16, 80, 169, 0.371);
     backdrop-filter: blur(2.5em);
     padding: 1.25em 1.25em;
-    /* Top and bottom padding are adjusted for better spacing */
+    /* set the top and bottom padding */
     margin: 0.3125em 0.3125em 0.3125em 0.3125em;
-    /* Margin adjusted for better spacing */
+    /* set the margin as 0.3125em */
     border-radius: 2.5em;
     cursor: pointer;
-    /* Add this line to set cursor to pointer on hover */
+    /* set cursor to pointer on hover */
     height: auto;
-    /* Let the height adjust based on content */
+    /* the height will based on the content */
     width: auto;
-    /* Let the width adjust based on content */
 }
 
 .livestream_frame_block_3 img {
     width: 100%;
-    /* height: 50%; */
     display: block;
-    /* padding-left: 1.5625em; */
     height: auto;
     margin: 0 auto;
 }
@@ -420,28 +398,25 @@
 
 /* =============================================================================================== */
 /* ======================================Style for frame 4========================================= */
-
+/* set the style for frame 4 */
 .livestream_frame_block_4 {
     background-color: rgba(28, 28, 86, 0.335);
     backdrop-filter: blur(2.5em);
     padding: 1.25em 1.25em;
-    /* Top and bottom padding are adjusted for better spacing */
+    /* set the top and bottom padding */
     margin: 0.3125em 0.3125em 0.3125em 0.3125em;
-    /* Margin adjusted for better spacing */
+    /* set the margin as 0.3125em */
     border-radius: 2.5em;
     cursor: pointer;
-    /* Add this line to set cursor to pointer on hover */
+    /* set cursor to pointer on hover */
     height: auto;
-    /* Let the height adjust based on content */
+    /* the height will based on the content */
     width: auto;
-    /* Let the width adjust based on content */
 }
 
 .livestream_frame_block_4 img {
     width: 100%;
-    /* height: 50%; */
     display: block;
-    /* padding-left: 1.5625em; */
     height: auto;
     margin: 0 auto;
 }
@@ -454,38 +429,34 @@
 
 /* =============================================================================================== */
 /* ===============================scroll button for minigame ===================================== */
-
-
+/* set the style for the scroll button  */
 .livestream-scroll-button-for-minigame {
     display: flex;
     justify-content: flex-end;
-    margin-right: 0.125em;
-    /* Adjust the margin to position the button 5em from the right screen side */
-
 }
 
 /* Adjust the color of the button */
 .livestream-scroll-button-for-minigame button {
     background-color: rgba(34, 67, 197, 0.671);
-    /* Set the background color to your desired color */
+    /* Set the background color*/
     color: #ffffff;
-    /* Set the text color to contrast with the background color */
+    /* Set the text color*/
     border: none;
-    /* Remove the button border if not needed */
+    /* Remove the button border */
     padding: 10px;
-    /* Adjust padding as needed */
     cursor: pointer;
 }
 
-
 /* =============================================================================================== */
 /* ====================================== Minigame =============================================== */
+/* set the style for the body of the minigame */
 .livestream-minigame body {
     text-align: center;
     background-color: #f8f9fa;
     margin: 0;
 }
 
+/* set the style for the text of the minigame */
 .livestream-minigame h1 {
     color: #ffffff;
     font-family: 'DM Serif Display', serif;
@@ -494,15 +465,17 @@
     margin-bottom: 1em;
 }
 
+/* set the column and rows for the minigame */
 #livestream-minigame-container {
     max-width: 35em;
     margin: auto;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(6em, 1fr));
-    /* Use auto-fit and minmax for responsive columns */
+    /* auto-fit for different size of screen */
     gap: 1.5em;
 }
 
+/* set the style for the card of minigame */
 .livestream-minigame-card {
     height: 3.5em;
     width: auto;
@@ -518,47 +491,86 @@
     transition: background-color 0.3s;
 }
 
+/* set a horver effect for the card */
 .livestream-minigame-card:hover {
     background-color: #555;
 }
 
+/* when the card is flipped, the style will change */
 .livestream-minigame-card.flipped {
     border: 0.05em solid rgb(108, 108, 109);
     background-color: rgba(85, 62, 114, 0.026);
 }
 
-
-
 /* ======================================================================================================== */
 /* ======================================================================================================== */
 /* ===================================Livestream Details__Page============================================= */
-/* font */
+/* style of the heading for livestream Detail Page */
 .livestreamDetails-about {
     font-family: 'DM Serif Display', serif;
     font-family: 'Josefin Sans', sans-serif;
-    /* font-style: normal; */
     font-weight: bold;
     font-size: 3em;
-    /* Use em for adaptive font size */
-    /* margin: 0; */
-    margin-top: 5em;
+    margin-top: 2em;
     margin-bottom: 2em;
     color: #ffffff;
 }
 
+/* set the text style for each live title  */
 .livestream-descrip-course-title h3 {
     font-family: 'DM Serif Display', serif;
     font-family: 'Josefin Sans', sans-serif;
     font-weight: bold;
     color: #ffffff;
+    margin-bottom: 1em;
+    text-shadow: 6px 4px 8px rgba(62, 125, 252, 0.882);
+    text-align: center;
 }
 
+/* set the color */
 .livestream-descrip-intro {
     color: #ffffff;
 }
 
+/* set the style for the live duration */
+.livestream-descrip-course-duration {
+    text-align: center;
+    align-self: center;
+    font-size: 16px;
+    max-width: 20em;
+}
+
+/* set the text style for the live duration */
+.livestream-descrip-course-duration p {
+    color: #444343;
+    padding: 0.25em;
+    background-color: rgba(193, 241, 225, 0.479);
+    background-position: center;
+    border-radius: 2.5em;
+    font-weight: bold;
+}
+
+/* set the style for the watch*/
+.livestreamDetails-watch {
+    text-align: right;
+    margin: 0.5em;
+    /* align-items: flex-end; */
+}
+
+/* set the style for the watching btn*/
+.livestreamDetails-watch-btn {
+    /* background-color: rgba(167, 182, 242, 0.8); */
+    color: rgb(50, 86, 153);
+    font-weight: bold;
+    border: 1px double navy;
+    /* padding: 10px; */
+    /* Adjust padding as needed */
+    cursor: pointer;
+}
+
 /* ======================================================================================================== */
 /* ===================================livestreamDetails-lecturer intro===================================== */
+/* set the style for the lecturer section */
 .livestreamDetails-lecturer-intro {
     display: flex;
     /* flex-direction: row-reverse; */
@@ -568,22 +580,34 @@
     margin-bottom: 5em;
 }
 
+/* set the style for the text in lecturer section */
 .livestreamDetails-lecturer-intro h5 {
     margin: 1em;
     text-align: center;
     color: khaki;
+    max-width: none;
+    /* Override any existing max-width property */
+    width: 15em;
 }
 
 .livestreamDetails-lecturer {
     margin: 1em;
     color: rgb(240, 234, 181);
-    max-width: 60em;
 }
-
-
 
 /* ======================================================================================================== */
 /* ===================================livestreamDetails-live-frame========================================= */
+
+/* set the style for the livestreamDetails container */
+.container-livestreamDetails-center {
+    margin: auto;
+    padding: 1.5vw;
+    width: 70vw;
+    /* height: 25em; */
+    max-width: 1250px;
+}
+
+/* set the style for the live frame */
 .livestreamDetails-live-1,
 .livestreamDetails-live-2,
 .livestreamDetails-live-3,
@@ -592,31 +616,74 @@
     align-items: center;
 }
 
+/* set the style for the description */
 .livestreamDetails-live-description {
     flex: 2;
     margin: 2em;
 }
 
+/* set the style for the upper text*/
 .livestream-descrip-upper-text {
     font-size: 20px;
     margin: 2em 1em 2em 1em;
 }
 
+/* set the style for the table */
+.livestreamDetails-table {
+    border-radius: 2.5em;
+    /* rounded corners */
+    padding: 10px;
+    margin: 10px 0;
+    border-collapse: collapse;
+    color: rgb(252, 237, 252);
+    /* border: 1px solid #f5f8fa6e; */
+    background-color: #aa6ffd2d;
+    /* Background color for even rows */
+    border-radius: 2em;
+    border-collapse: collapse;
+    width: 100%;
+    outline: 1px solid #383b3d6e;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* set the style for the center text */
+.livestreamDetails-table-center {
+    border-top: 1px dashed #9b9b9b9a;
+    border-bottom: 1px dashed #9b9b9b9a;
+}
+
+/* set the style for each td and th */
+.livestreamDetails-table td,
+.livestreamDetails-table th {
+    padding: 8px;
+    text-align: left;
+    margin-top: 1em;
+}
+
+/* set the style for td */
+.livestreamDetails-table td {
+    text-align: center;
+}
+
+/* set the style for tr */
+.livestreamDetails-table tr {
+    margin-bottom: 10px;
+}
+
 /* ======================================================================================================== */
 /* ===================================livestreamDetails-frame_1 =========================================== */
-
+/* set the style for img frame */
 .livestreamDetails-img-frame-1 {
     background-color: rgba(0, 0, 128, 0.337);
     backdrop-filter: blur(2.5em);
     /* padding: 1.25em 1.25em; */
-    padding: 1.25em;
+    padding: 1.25em 1.25em;
     /* Top and bottom padding are adjusted for better spacing */
     margin: 0.3125em 0.3125em 0.3125em 0.3125em;
     /* Margin adjusted for better spacing */
     border-radius: 2.5em;
     flex: 1;
-    width: 15em;
-    height: 15em;
+    max-width: 25em;
     margin-right: 1em;
     /* Adjust the margin as needed for spacing */
     display: flex;
@@ -625,29 +692,28 @@
     align-items: center;
 }
 
+/* set the style for img */
 .livestreamDetails-img-frame-1 img {
     max-width: 100%;
     max-height: 100%;
     /* Ensure the image doesn't exceed the container */
-    /* display: block; */
-    /* padding-left: 1.5625em; */
-    /* margin: 0 auto; */
+    margin-top: 5em;
+    margin-bottom: 5em;
 }
 
 /* ======================================================================================================== */
 /* ===================================livestreamDetails-frame_2 =========================================== */
+/* set the style for img frame */
 .livestreamDetails-img-frame-2 {
     background-color: rgba(137, 118, 231, 0.398);
     backdrop-filter: blur(2.5em);
-    /* padding: 1.25em 1.25em; */
     padding: 1.25em;
     /* Top and bottom padding are adjusted for better spacing */
     margin: 0.3125em 0.3125em 0.3125em 0.3125em;
     /* Margin adjusted for better spacing */
     border-radius: 2.5em;
     flex: 1;
-    width: 15em;
-    height: 15em;
+    max-width: 25em;
     margin-right: 1em;
     /* Adjust the margin as needed for spacing */
     display: flex;
@@ -656,29 +722,28 @@
     align-items: center;
 }
 
+/* set the style for img */
 .livestreamDetails-img-frame-2 img {
     max-width: 100%;
     max-height: 100%;
     /* Ensure the image doesn't exceed the container */
-    /* display: block; */
-    /* padding-left: 1.5625em; */
-    /* margin: 0 auto; */
+    margin-top: 5em;
+    margin-bottom: 5em;
 }
 
 /* ======================================================================================================== */
 /* ===================================livestreamDetails-frame_3 =========================================== */
+/* set the style for img frame */
 .livestreamDetails-img-frame-3 {
     background-color: rgba(16, 80, 169, 0.371);
     backdrop-filter: blur(2.5em);
-    /* padding: 1.25em 1.25em; */
     padding: 1.25em;
     /* Top and bottom padding are adjusted for better spacing */
     margin: 0.3125em 0.3125em 0.3125em 0.3125em;
     /* Margin adjusted for better spacing */
     border-radius: 2.5em;
     flex: 1;
-    width: 15em;
-    height: 15em;
+    max-width: 25em;
     margin-right: 1em;
     /* Adjust the margin as needed for spacing */
     display: flex;
@@ -687,29 +752,28 @@
     align-items: center;
 }
 
+/* set the style for img */
 .livestreamDetails-img-frame-3 img {
     max-width: 100%;
     max-height: 100%;
     /* Ensure the image doesn't exceed the container */
-    /* display: block; */
-    /* padding-left: 1.5625em; */
-    /* margin: 0 auto; */
+    margin-top: 5em;
+    margin-bottom: 5em;
 }
 
 /* ======================================================================================================== */
 /* ===================================livestreamDetails-frame_4 =========================================== */
+/* set the style for img frame */
 .livestreamDetails-img-frame-4 {
     background-color: rgba(28, 28, 86, 0.335);
     backdrop-filter: blur(2.5em);
-    /* padding: 1.25em 1.25em; */
     padding: 1.25em;
     /* Top and bottom padding are adjusted for better spacing */
     margin: 0.3125em 0.3125em 0.3125em 0.3125em;
     /* Margin adjusted for better spacing */
     border-radius: 2.5em;
     flex: 1;
-    width: 15em;
-    height: 15em;
+    max-width: 25em;
     margin-right: 1em;
     /* Adjust the margin as needed for spacing */
     display: flex;
@@ -718,15 +782,254 @@
     align-items: center;
 }
 
+/* set the style for img */
 .livestreamDetails-img-frame-4 img {
     max-width: 100%;
     max-height: 100%;
     /* Ensure the image doesn't exceed the container */
-    /* display: block; */
-    /* padding-left: 1.5625em; */
-    /* margin: 0 auto; */
+    margin-top: 5em;
+    margin-bottom: 5em;
 }
 
 /* ======================================================================================================== */
+/* ==================================================================================================== */
 /* ======================================================================================================== */
-/* ======================================================================================================== */
+/* --------------------------------Navbar------------------------------------- */
+/* .container-big-livestreamDetails-center {
+    background-color: rgb(20, 30, 64);
+} */
+
+.course-navbar {
+    padding: 30px;
+    text-decoration: none;
+    font-family: 'Jost', sans-serif;
+    font-family: 'Roboto Mono', monospace;
+    background-color: transparent !important;
+}
+
+
+/* .container-fluid {
+    background-color: rgb(20, 30, 64);
+}
+
+.nav navbar.navbar-expand-lg.bg-body-tertiary.course-navbar {
+    background-color: rgb(20, 30, 64);
+    padding: 0px 0px;
+}
+
+.navbar.navbar-expand-lg.bg-body-tertiary.course-navbar {
+    padding: 0px 0px;
+} */
+
+/* .bg-body-tertiary {
+    --bs-bg-opacity: 1;
+    background-color: rgb(20, 30, 64);
+    padding: 0px;
+} */
+
+
+.course-button {
+    background-color: white;
+}
+
+.nav-item {
+    margin-left: 60px;
+}
+
+.course-nav-main {
+    text-align: f center;
+    padding-top: 16px;
+}
+
+.course-navbar-title {
+    display: inline-block;
+    margin: 0 0.5rem;
+
+    animation: bounce;
+    animation-duration: 2s;
+    color: white;
+    margin-right: 120px;
+
+    font-size: 35px;
+
+    font-family: 'Permanent Marker', cursive;
+}
+
+.course-navbar p,
+i {
+    color: white;
+}
+
+.course-navbar col {
+    min-width: 157px;
+}
+
+.course-page-foot-navbar p,
+i {
+    color: white;
+}
+
+/* the css style for course introduction */
+
+.course-list p,
+i {
+    color: white;
+}
+
+.course-intro {
+    text-align: center;
+    display: grid;
+    margin-top: 10px;
+    padding: 80px;
+    font-family: 'Cabin', sans-serif;
+    font-size: 22px;
+    color: white;
+}
+
+/* the css style for course list */
+
+.course-list {
+    text-decoration: none;
+    display: grid;
+    margin-top: 60px;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 120px;
+    padding: 80px;
+    font-family: 'Jost', sans-serif;
+    color: white;
+}
+
+.course-nav {
+    margin-left: 20px;
+}
+
+.course-list a {
+    text-decoration: none;
+    box-shadow: none;
+    padding: 20px;
+    overflow: hidden;
+    transition: transform 0.3s;
+    border-radius: 40px;
+}
+
+.course-list a:hover {
+    transform: scale(1.1);
+}
+
+.course-list img {
+    width: 100%;
+}
+
+.course-firstrow-one-content {
+    text-align: center;
+
+}
+
+.course-firstrow-two-content {
+    text-align: center;
+}
+
+.course-firstrow-three-content {
+    text-align: center;
+}
+
+.course-secondrow-one-content {
+    text-align: center;
+}
+
+.course-secondrow-two-content {
+    text-align: center;
+}
+
+.course-secondrow-three-content {
+    text-align: center;
+}
+
+.course-thirdrow-one-content {
+    text-align: center;
+}
+
+.course-thirdrow-two-content {
+    text-align: center;
+}
+
+.course-thirdrow-three-content {
+    text-align: center;
+}
+
+/* the css style for footing navbar */
+
+.course-page-foot {
+    text-align: center;
+    position: relative;
+    display: grid;
+    grid-template-columns: auto auto;
+    column-gap: 100px;
+    margin: 100px;
+    padding: 80px;
+    font-family: 'Jost', sans-serif;
+    font-family: 'Roboto Mono', monospace;
+    color: white;
+}
+
+.course-page-foot-navbar {
+    display: grid;
+}
+
+.course-page-foot-message {
+    text-align: center;
+    padding: 80px;
+}
+
+.course-home-icon {
+    float: left;
+}
+
+.course-home-word {
+    float: left;
+    margin-left: 8px;
+}
+
+.course-courses-icon {
+    float: left;
+}
+
+.course-courses-word {
+    float: left;
+    margin-left: 8px;
+}
+
+.course-livestream-icon {
+    float: left;
+}
+
+.course-livestream-word {
+    float: left;
+    margin-left: 10px;
+}
+
+.course-pay-icon {
+    float: left;
+}
+
+.course-pay-word {
+    float: left;
+    margin-left: 8px;
+}
+
+.course-navbar-pay {
+    padding-left: 50px;
+}
+
+.course-login-icon {
+    float: left;
+}
+
+.course-login-word {
+    float: left;
+    margin-left: 8px;
+}
+
+.course-page-foot-navbar a {
+    text-decoration: none;
+}
