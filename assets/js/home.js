@@ -1,8 +1,8 @@
-function titleHover(){
-    $(document).ready(function() {
-        $("h1").hover(function() {
+function titleHover() {
+    $(document).ready(function () {
+        $("h1").hover(function () {
             $(this).css("color", "green");
-        }, function() {
+        }, function () {
             $(this).css("color", "aliceblue");
         });
     });
@@ -15,13 +15,13 @@ function priceSelection() {
     let price2 = 25;
 
     // Click event for the Monthly button
-    $('#monthlyBtn').click(function() {
+    $('#monthlyBtn').click(function () {
         updatePrice1(20);
         updatePrice2(25);
     });
 
     // Click event for the Annual button
-    $('#annualBtn').click(function() {
+    $('#annualBtn').click(function () {
         updatePrice1(18);
         updatePrice2(23);
     });
@@ -63,7 +63,7 @@ function priceSelection() {
 
 
 // generate three containers that can use for price display.
-function generateContainer(){
+function generateContainer() {
     $(document).ready(function () {
         var container = $('.row.align-items-start.course-list');
         var htmlContent = '';
@@ -106,9 +106,9 @@ function generateContainer(){
 
 //*********************************************************home*****************
 // show different courses when different button clicked
-function showCourses(){
-        // Function to change the displayed image
-        function displayImage(imageSource1, imageSource2,imageSource3, imageSource4,imageSource5, imageSource6) {
+function showCourses() {
+    // Function to change the displayed image
+    function displayImage(imageSource1, imageSource2, imageSource3, imageSource4, imageSource5, imageSource6) {
         var imageContainer = document.getElementById('image-container-1');
         imageContainer.innerHTML = '<img src="' + imageSource1 + '" alt="Displayed Image 1">' +
             '<img src="' + imageSource2 + '" alt="Displayed Image 2">' +
@@ -118,16 +118,16 @@ function showCourses(){
             '<img src="' + imageSource6 + '" alt="Displayed Image 6">';
     }
 
-        // Button click event listeners
-        document.getElementById('button1').addEventListener('click', function() {
+    // Button click event listeners
+    document.getElementById('button1').addEventListener('click', function () {
         displayImage('/images/icons/pay.png'); // Replace with the actual path to your image
     });
 
-        document.getElementById('button2').addEventListener('click', function() {
+    document.getElementById('button2').addEventListener('click', function () {
         displayImage('path/to/image2.jpg'); // Replace with the actual path to your image
     });
 
-        document.getElementById('button3').addEventListener('click', function() {
+    document.getElementById('button3').addEventListener('click', function () {
         displayImage('path/to/image3.jpg'); // Replace with the actual path to your image
     });
 }
