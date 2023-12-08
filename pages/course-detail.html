@@ -1,0 +1,766 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Course Details</title>
+    <!-- the link for bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <!-- the link for jquery -->
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.js"
+      integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="course-style.css" />
+    <!-- the link for icons  -->
+    <script
+      src="https://kit.fontawesome.com/291644c2c8.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- the link for the webpage logo-->
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <!-- the link for switch google webpages  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cabin&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div id="course-main">
+        <!-- the block code for webpage head navbar -->
+      <nav class="navbar navbar-expand-lg bg-body-tertiary course-navbar">
+        <div class="container-fluid">
+          <a class="navbar-brand course-navbar-title animate__swing" href="#"
+            >FrontendFocus</a>
+          <button
+            class="navbar-toggler course-button"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav course-nav-main">
+              <a href="" class="course-item">
+                <div class="course-home-icon">
+                  <i class="fa-solid fa-house"></i>
+                </div>
+                <div class="course-home-word">
+                  <p class="home">Home</p>
+                </div>
+              </a>
+              <a href="" class="nav-item">
+                <div class="course-courses-icon">
+                  <i class="fa-solid fa-book"></i>
+                </div>
+                <div class="course-courses-word">
+                  <p class="courses">Courses</p>
+                </div>
+              </a>
+              <a href="" class="nav-item">
+                <div class="course-livestream-icon">
+                  <i class="fa-solid fa-video"></i>
+                </div>
+                <div class="course-livestream-word">
+                  <p class="livestream">Livestream</p>
+                </div>
+              </a>
+              <a href="" class="nav-item">
+                <div class="course-pay-icon">
+                  <i class="fa-brands fa-paypal"></i>
+                </div>
+                <div class="course-pay-word">
+                  <p class="pay">Pay</p>
+                </div>
+              </a>
+              <a href="" class="nav-item">
+                <div class="course-login-icon">
+                  <i class="fa-solid fa-circle-user"></i>
+                </div>
+                <div class="course-login-word">
+                  <p class="login">Login</p>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div class="container text-center course-firstrow-one-detail">
+      </div>
+      <div class="container text-center course-detail-main">
+        <div class="row course-detail-frame course-item-list">
+        </div>
+      </div>
+
+    
+      <div class="course-page-foot">
+        <div class="course-page-foot-navbar">
+          <a href="">
+            <div class="course-home-icon">
+              <i class="fa-solid fa-house"></i>
+            </div>
+            <span class="course-home-word">
+              <p class="home">Home</p>
+            </span>
+          </a>
+          <a href="">
+            <div class="course-courses-icon">
+              <i class="fa-solid fa-book"></i>
+            </div>
+            <span class="course-courses-word">
+              <p class="courses">Courses</p>
+            </span>
+          </a>
+          <a href="">
+            <div class="course-livestream-icon">
+              <i class="fa-solid fa-video"></i>
+            </div>
+            <span class="course-livestream-word">
+              <p class="livestream">Livestream</p>
+            </span>
+          </a>
+          <a href="">
+            <div class="course-pay-icon">
+              <i class="fa-brands fa-paypal"></i>
+            </div>
+            <span class="course-pay-word">
+              <p class="pay">Pay</p>
+            </span>
+          </a>
+          <a href="">
+            <div class="course-login-icon">
+              <i class="fa-solid fa-circle-user"></i>
+            </div>
+            <span class="course-login-word">
+              <p class="login">Login</p>
+            </span>
+          </a>
+        </div>
+        <div class="course-page-foot-message">
+          <p>
+            Site made with React, Gatsby, Netlify and Contentful. Learn how.
+          </p>
+          <p>Design+Code © 2023</p>
+          <p>Terms of Service - Privacy Policy</p>
+          <p>Need help? Contact Us</p>
+        </div>
+      </div>
+    </div>
+  </body>
+
+  <!-----------------------------------------the jquery for course list and course detail------------------------------------------------- -->
+  <script>
+    
+    $(document).ready(function () {
+      // the function for creating objects for course intro and course detail
+      var courseItemList = $(
+        ".container.text-center.course-firstrow-one-detail"
+      );
+      var outlineList = $(".course-detail-frame.course-item-list");
+      var htmlContent = "";
+      var courseData = [
+        {
+          id: 1,
+          ImageURL:
+            "https://images.ctfassets.net/ooa29xqb8tix/1WpX36ebAuFVP2wAAxnj2Z/41d4436866f0b5ad5e0543287f3a054d/mengto_professional_isometric_illustration_for_a_landing_page_w__1.png?w=400&q=50",
+          Icon: "https://images.ctfassets.net/ooa29xqb8tix/6ml4Ii6ZJ3CSnDM5boThH6/3b2551cdf07316c9c82f09b83b2f64b8/figma-logo.png?w=400&q=50",
+          time: "14 videos - 3 hours",
+          title: "HTML and CSS Fundamentals",
+          detail:
+            "HTML and CSS Fundamentals is an advanced course designed to provide a comprehensive and hands-on introduction to two foundational technologies in web development—HTML (Hypertext Markup Language) and CSS (Cascading Style Sheets). This course is tailored for beginners and aspiring web developers who want to build a strong foundation in creating and styling websites",
+          outline: [
+            {
+              id: 1,
+              title: "Introduction",
+              desc: "Understanding the role of HTML and CSSOverview of the web development landscape \n Overview of the web development landscape",
+            },
+            {
+              id: 2,
+              title: "HTML Fundamentals",
+              desc: "Structure of an HTML document \n HTML elements and attributes \n Creating hyperlinks and navigation",
+            },
+            {
+              id: 3,
+              title: "CSS Fundamentals",
+              desc: "Introduction to Cascading Style Sheets (CSS) \n Selectors, properties, and value \n Box model and layout techniques",
+            },
+            {
+              id: 4,
+              title: "Responsive Web Designn",
+              desc: "Making websites adaptable to various devices \n Media queries and flexible layouts \n Mobile-first design principles",
+            },
+            {
+              id: 5,
+              title: "Project-Based Learning",
+              desc: "Apply knowledge through hands-on projects \n Build a basic website from scratch \n Style and enhance web pages with CSS",
+            },
+            {
+              id: 6,
+              title: "Collaborative Development Tools",
+              desc: "Introduction to version control (Git) \n Collaboration using online repositories (GitHub)",
+            },
+            {
+              id: 7,
+              title: "Best Practices and Optimization",
+              desc: "Writing clean and semantic code \n Optimizing web content for performance \n Debugging and troubleshooting techniques",
+            },
+            {
+              id: 8,
+              title: "Project-Based Learning",
+              desc: "Apply knowledge through hands-on projects \n Build a personal portfolio webpage",
+            },
+          ],
+        },
+        {
+          id: 2,
+          ImageURL:
+            "https://images.ctfassets.net/ooa29xqb8tix/5jIBVIWEq7QQq1Tm03ViNR/b34fad96046114968b74016a678ac841/ios17-2.png?w=400&q=50",
+          Icon: "https://images.ctfassets.net/ooa29xqb8tix/60NtiONwcgmR7RlCnuARpG/a81c2477d9e4c92e1b75fdca244082c6/swift-logo.png?w=400&q=50",
+          time: "21 videos - 6 hours",
+          title: "Responsive Web Design with CSS Grid and Flexbox",
+          detail: `"Responsive Web Design with CSS Grid and Flexbox" is an advanced
+              course tailored for web developers and designers seeking mastery in
+              creating modern, responsive, and visually stunning web layouts. The
+              course focuses on harnessing the power of two key CSS
+              technologies—CSS Grid and Flexbox—to build flexible and adaptive
+              designs that seamlessly respond to various devices and screen sizes`,
+          outline: [
+            {
+              id: 1,
+              title: "Introduction",
+              desc: "Overview of the importance of responsive web design \n Brief history and evolution of responsive design",
+            },
+            {
+              id: 2,
+              title: "Foundations of HTML and CSS",
+              desc: "Review of HTML and CSS basics \n Understanding the box model",
+            },
+            {
+              id: 3,
+              title: "CSS Flexbox Fundamentals",
+              desc: "Deep dive into the Flexbox layout model \n Flexbox properties and their applications",
+            },
+            {
+              id: 4,
+              title: "CSS Grid Layout",
+              desc: "Comprehensive exploration of the CSS Grid layout system \n Grid properties and their uses",
+            },
+            {
+              id: 5,
+              title: "Responsive Typography and Images",
+              desc: "Techniques for making text and images responsive \n Handling font sizes and image scaling",
+            },
+            {
+              id: 6,
+              title: "Media Queries and Breakpoints",
+              desc: "Understanding media queries for responsive design \n Setting up breakpoints for different screen sizes",
+            },
+            {
+              id: 7,
+              title: "Building Responsive Web Components",
+              desc: "Applying Flexbox and Grid to build modular and responsive components \n Case studies on common web elements (navigation bars, cards, etc.)",
+            },
+            {
+              id: 8,
+              title: "Advanced Techniques and Best Practices",
+              desc: "Advanced responsive design strategies \n Performance considerations for responsive websites",
+            },
+          ],
+        },
+        {
+          id: 3,
+          ImageURL:
+            "https://images.ctfassets.net/ooa29xqb8tix/2WtViyFr9wN48YpPGpGcHP/febdec4546b3056cbaf8fb11548beb02/midjourney-apps.png?w=400&q=50",
+          Icon: "https://images.ctfassets.net/ooa29xqb8tix/60NtiONwcgmR7RlCnuARpG/a81c2477d9e4c92e1b75fdca244082c6/swift-logo.png?w=400&q=50",
+          time: "16 videos - 4 hours",
+          title: "Front-End Development Bootcamp",
+          detail: `"Front-End Development Bootcamp" is an immersive course crafted
+              for individuals aspiring to embark on a rewarding journey in web
+              development. This comprehensive bootcamp is designed to equip
+              participants with the essential skills and knowledge needed to
+              become proficient front-end developers. Covering a wide range of
+              technologies and best practices, the course ensures that students
+              are well-prepared to create stunning and interactive user
+              interfaces for the web`,
+          outline: [
+            {
+              id: 1,
+              title: "Introduction",
+              desc: "Overview of front-end development and its role in web development \n Introduction to HTML, CSS, and JavaScript as the core technologies",
+            },
+            {
+              id: 2,
+              title: "HTML Fundamentals",
+              desc: "Understanding the structure of HTML documents \n Working with HTML tags, attributes, and semantic elements",
+            },
+            {
+              id: 3,
+              title: "CSS Essentials",
+              desc: "Basics of styling with CSS \n Selectors, properties, and values",
+            },
+            {
+              id: 4,
+              title: "Responsive Web Design",
+              desc: "Principles of responsive design \n Media queries for adapting to different screen sizes",
+            },
+            {
+              id: 5,
+              title: "JavaScript Basics",
+              desc: "Introduction to JavaScript programming \n Variables, data types, and operators",
+            },
+            {
+              id: 6,
+              title: "DOM Manipulation",
+              desc: "Understanding the Document Object Model (DOM) \n Selecting and manipulating HTML elements with JavaScript",
+            },
+            {
+              id: 7,
+              title: "Introduction to Front-End Frameworks",
+              desc: "Overview of popular front-end frameworks (e.g., React, Angular, Vue) \n Choosing the right framework for a project",
+            },
+            {
+              id: 8,
+              title: "Web Performance and Optimization",
+              desc: "Techniques for optimizing web performance \n Minification and compression of assets",
+            },
+          ],
+        },
+        {
+          id: 4,
+          ImageURL:
+            "https://images.ctfassets.net/ooa29xqb8tix/3oT3chzpuNFQ1mUfUHmx8C/2248c7f0e6c205c952b9f09718e56d1e/mengto_isometric_retrowave_cyberpunk_interior_neon_futuristic_v__1.png?w=400&q=50",
+          Icon: "https://images.ctfassets.net/ooa29xqb8tix/0cjyplK9nhXoHTHN3XfTr/0e1edc5106a4c99ca2de7eeaaa772603/ui-logo.png?w=400&q=50",
+          time: "33 videos - 7 hours",
+          title: "Modern Web Development with React.js",
+          detail: `"Modern Web Development with React.js" is an advanced course
+              designed for web developers aiming to master one of the most
+              influential and widely used JavaScript libraries—React.js. This
+              comprehensive course explores the ins and outs of React.js,
+              empowering participants to build powerful, scalable, and
+              interactive user interfaces for modern web applications`,
+          outline: [
+            {
+              id: 1,
+              title: "Introduction",
+              desc: "Overview of React.js and its role in modern web development \n Understanding the virtual DOM and React's component-based architecture",
+            },
+            {
+              id: 2,
+              title: "JSX and Components",
+              desc: "Introduction to JSX (JavaScript XML) \n Creating and rendering React components",
+            },
+            {
+              id: 3,
+              title: "React Router and Navigation",
+              desc: "Implementing client-side routing with React Router \n Creating navigation menus and links in React applications",
+            },
+            {
+              id: 4,
+              title: "State Management with Redux",
+              desc: "Introduction to Redux for centralized state management \n Actions, reducers, and the Redux store",
+            },
+            {
+              id: 5,
+              title: "Hooks in React",
+              desc: "Exploring React Hooks (useState, useEffect, useContext, etc.) \n Converting class components to functional components using hooks",
+            },
+            {
+              id: 6,
+              title: "REST API Integration",
+              desc: "Making API calls in React applications. \n Handling asynchronous operations with promises and async/await",
+            },
+            {
+              id: 7,
+              title: "React Testing Library",
+              desc: "Writing unit tests for React components \n Testing React applications using React Testing Library",
+            },
+            {
+              id: 8,
+              title: "Building and Deploying React Apps",
+              desc: "Building a production-ready React application \n Configuring and optimizing a React build",
+            },
+          ],
+        },
+        {
+          id: 5,
+          ImageURL:
+          "https://images.ctfassets.net/ooa29xqb8tix/2pQLNnfeP26pOcFzllmcp2/fad5037842d1dd05523b989a21b728a3/mengto_professional_isometric_illustration_for_a_landing_page_w__1.png?w=400&q=50",
+          Icon: "https://images.ctfassets.net/ooa29xqb8tix/7bIHb2z3qClO9GfyPwj6nP/4cb3a08cdc0d34645540b1295f96dc67/Logo_React.png?w=400&q=50",
+          time: "15 videos - 4 hours",
+          title: "Vue.js Essentials: Building Interactive Web Apps",
+          detail: `"Vue.js Essentials: Building Interactive Web Apps" is a dynamic
+              course tailored for web developers seeking proficiency in Vue.js,
+              a progressive JavaScript framework renowned for its simplicity and
+              flexibility. This comprehensive course empowers participants to
+              master Vue.js from the ground up, enabling them to create
+              interactive and responsive web applications with ease`,
+          outline: [
+            {
+              id: 1,
+              title: "Introduction",
+              desc: "Overview of Vue.js and its philosophy \n Understanding the Vue instance and its lifecycle",
+            },
+            {
+              id: 2,
+              title: "Vue Components and Templates",
+              desc: "Creating and using Vue components \n Understanding Vue templates and directives",
+            },
+            {
+              id: 3,
+              title: "Vue Router for Navigation",
+              desc: "Implementing client-side routing with Vue Router \n Creating navigation menus and routes in Vue.js",
+            },
+            {
+              id: 4,
+              title: "State Management with Vuex",
+              desc: "Introduction to Vuex for centralized state management \n Mutations, actions, and the Vuex store",
+            },
+            {
+              id: 5,
+              title: "Vue.js and API Integration",
+              desc: "Making HTTP requests in Vue.js applications \n Handling asynchronous operations with Vue.js",
+            },
+            {
+              id: 6,
+              title: "Forms and User Input",
+              desc: "Handling user input and form submissions in Vue.js \n Form validation and error handling",
+            },
+            {
+              id: 7,
+              title: "Vue Directives and Custom Directives",
+              desc: "Creating custom directives in Vue.js \n Directives for handling user interactions",
+            },
+            {
+              id: 8,
+              title: "Vue.js Best Practices and Optimization",
+              desc: "Best practices for structuring Vue.js applications \n Performance optimization tips and techniques",
+            },
+          ],
+        },
+        {
+          id: 6,
+          ImageURL:
+          "https://images.ctfassets.net/ooa29xqb8tix/6FCmyggaMVYfEER3lylc7w/e4ee849e873d32ba6fb4f2c749ff1426/web-app.png?w=400&q=50",
+          Icon: "https://images.ctfassets.net/ooa29xqb8tix/0cjyplK9nhXoHTHN3XfTr/0e1edc5106a4c99ca2de7eeaaa772603/ui-logo.png?w=400&q=50",
+          time: "12 videos - 3 hours",
+          title: "SASS and SCSS: Mastering CSS Preprocessing",
+          detail: `"SASS and SCSS: Mastering CSS Preprocessing" is a comprehensive
+              course designed to empower web developers and designers with the
+              advanced skills needed to harness the full potential of SASS
+              (Syntactically Awesome Stylesheets) and SCSS (Sassy CSS). This
+              course goes beyond traditional CSS, introducing participants to
+              the world of CSS preprocessing and enabling them to streamline
+              their stylesheets, enhance maintainability, and expedite the
+              development process`,
+          outline: [
+            {
+              id: 1,
+              title: "Introduction",
+              desc: "Overview of SASS and SCSS \n Setting up a project with SASS",
+            },
+            {
+              id: 2,
+              title: "Variables and Data Types in SCSS",
+              desc: "Declaring and using variables in SCSS \n Exploring different data types in SCSS",
+            },
+            {
+              id: 3,
+              title: "Nesting and Selectors",
+              desc: "Nesting selectors for more readable styles \n Avoiding common pitfalls with selector nesting",
+            },
+            {
+              id: 4,
+              title: "Mixins and Functions",
+              desc: "Creating and using mixins for reusable styles \n Defining functions for more dynamic styling",
+            },
+            {
+              id: 5,
+              title: "Partials and Importing",
+              desc: "Breaking styles into smaller, manageable files using partials \n Importing partials into main SCSS files",
+            },
+            {
+              id: 6,
+              title: "Control Directives: @if, @for, @each",
+              desc: "Using @if for conditional styling \n Looping with @for and @each for efficient styling",
+            },
+            {
+              id: 7,
+              title: "Extending and Inheritance",
+              desc: "Extending styles for code reusability \n Inheriting styles using placeholders",
+            },
+            {
+              id: 8,
+              title: "Advanced Topics: Functions, Operators, and Modules",
+              desc: "Leveraging advanced functions and operators in SCSS \n Exploring SCSS modules for better project organization",
+            },
+          ],
+        },
+        {
+          id: 7,
+          ImageURL:
+          "https://images.ctfassets.net/ooa29xqb8tix/75irTnKFPIXtYaBinuiDAl/01f68a3d04fae66751595786e2154a7c/Prototyping_in_Figma_800x600.png?w=400&q=50",
+          Icon: "https://images.ctfassets.net/ooa29xqb8tix/69nAImRvSWm0SZ3pIfBewe/f42397a7b28e94baff39f1a86fc12ace/flutter-logo.png?w=400&q=50",
+          time: "11 videos - 2 hours",
+          title: "Web Accessibility: Designing for All Users",
+          detail: `"Web Accessibility: Designing for All Users" is a transformative
+              course dedicated to empowering web developers, designers, and
+              digital professionals with the knowledge and skills to create
+              inclusive and accessible web experiences. This course delves into
+              the principles of web accessibility, providing participants with
+              practical techniques, guidelines, and best practices to ensure
+              that digital content is usable and enjoyable for people of all
+              abilities`,
+          outline: [
+            {
+              id: 1,
+              title: "Introduction",
+              desc: "Overview of web accessibility standards and guidelines \n Impact of accessible design on diverse user groups",
+            },
+            {
+              id: 2,
+              title: "Accessibility Principles and Guidelines",
+              desc: "WCAG (Web Content Accessibility Guidelines) overview \n Key principles: Perceivable, Operable, Understandable, and Robust (POUR)",
+            },
+            {
+              id: 3,
+              title: "Semantic HTML and ARIA",
+              desc: "Using semantic HTML for enhanced accessibility. \n Enhancing user experience with ARIA",
+            },
+            {
+              id: 4,
+              title: "Navigation and Focus Management",
+              desc: "Creating accessible navigation structures \n Managing keyboard focus for better usability",
+            },
+            {
+              id: 5,
+              title: "Forms and Interactive Components",
+              desc: "Designing accessible forms \n ARIA roles and attributes for form elements",
+            },
+            {
+              id: 6,
+              title: "Color and Contrast Accessibility",
+              desc: "Designing with color contrast in mind \n Ensuring readability for users with visual impairments",
+            },
+            {
+              id: 7,
+              title: "Responsive Design and Mobile Accessibility",
+              desc: "Ensuring accessibility in responsive web design \n Mobile accessibility considerations",
+            },
+            {
+              id: 8,
+              title: "Testing and Auditing for Accessibility",
+              desc: "Conducting accessibility evaluations and audits \n Overview of accessibility testing tools",
+            },
+          ],
+        },
+        {
+          id: 8,
+          ImageURL:
+          "https://images.ctfassets.net/ooa29xqb8tix/2u8a9JnxxavVp2pZyPKq3A/cf2152e1a363373c03fc22b5bff6f233/Learn_Sketch_800x600_cover_new.png?w=400&q=50",
+          Icon: "https://images.ctfassets.net/ooa29xqb8tix/3VTbVPTfMsto1lbrhW9hfS/71507ececb8b875add7ba10b74bb0c99/webflow-logo.png?w=400&q=50",
+          time: "10 videos - 3 hours",
+          title: "Building Responsive Websites with Bootstrap",
+          detail: ` "Building Responsive Websites with Bootstrap" is an impactful
+              course designed to equip web developers and designers with the
+              skills to create modern, responsive, and visually appealing
+              websites using the popular front-end framework, Bootstrap. This
+              comprehensive course explores the key features of Bootstrap,
+              enabling participants to build flexible and mobile-friendly web
+              layouts efficiently`,
+          outline: [
+            {
+              id: 1,
+              title: "Introduction",
+              desc: "Overview of Bootstrap as a front-end framework \n History and development of Bootstrap",
+            },
+            {
+              id: 2,
+              title: "Bootstrap Grid System",
+              desc: "Creating responsive layouts using rows and columns \n Offset and nesting for advanced layout structures",
+            },
+            {
+              id: 3,
+              title: "Bootstrap Components: Navigation and Navbar",
+              desc: "Building responsive navigation bars with Bootstra \n Utilizing the Bootstrap Navbar component",
+            },
+            {
+              id: 4,
+              title: "Bootstrap Components: Forms and Buttons",
+              desc: "Styling forms with Bootstrap classes \n Creating buttons and button groups",
+            },
+            {
+              id: 5,
+              title: "Responsive Typography with Bootstrap",
+              desc: "Implementing responsive headings and text utilities \n Customizing fonts and styles in Bootstrap",
+            },
+            {
+              id: 6,
+              title: "Bootstrap Components: Carousel and Modal",
+              desc: "Implementing modal dialogs for interactive content \n Customizing carousel and modal behavior",
+            },
+            {
+              id: 7,
+              title: "Bootstrap Utilities and Helper Classes",
+              desc: "Exploring Bootstrap utility classes \n Responsive spacing and margin/padding classes",
+            },
+            {
+              id: 8,
+              title: "Advanced Customization and Theming",
+              desc: "Customizing Bootstrap styles using SASS \n Theming Bootstrap for a unique look and feel",
+            },
+          ],
+        },
+        {
+          id: 9,
+          ImageURL:
+          "https://images.ctfassets.net/ooa29xqb8tix/nuCW0L89lpC4zH99frxDG/a45daf2ace7675bd5c37827f5f4548aa/Frame_1590.png?w=400&q=50",
+          Icon: "https://images.ctfassets.net/ooa29xqb8tix/3jE4cFaYl3lo2vnF6hQhw7/71b0e256800b583648fb2f9c5db66452/Logo_Android.png?w=400&q=50",
+          time: "15 videos - 3 hours",
+          title: "UI/UX Design Principles for Front-End Developers",
+          detail: ` "UI/UX Design Principles for Front-End Developers" is an
+              insightful course tailored for front-end developers who aspire to
+              enhance their user interface (UI) and user experience (UX) design
+              skills. This course bridges the gap between development and
+              design, providing participants with a deep understanding of design
+              principles and best practices to create visually appealing,
+              intuitive, and user-centric web applications`,
+          outline: [
+            {
+              id: 1,
+              title: "Introduction",
+              desc: "Importance of design in web development \n Collaboration between designers and developers",
+            },
+            {
+              id: 2,
+              title: "Understanding User-Centered Design",
+              desc: "Principles of user-centered design \n User personas and scenarios",
+            },
+            {
+              id: 3,
+              title: "Visual Hierarchy and Layout",
+              desc: "Creating effective visual hierarchies in web design \n Layout principles for better user engagement",
+            },
+            {
+              id: 4,
+              title: "Color Theory and Accessibility",
+              desc: "Importance of color in UI design \n Creating accessible color schemes",
+            },
+            {
+              id: 5,
+              title: "Typography in UI Design",
+              desc: "Choosing and pairing fonts for web design \n Typography hierarchy and readability",
+            },
+            {
+              id: 6,
+              title: "Designing for Interactivity",
+              desc: "Incorporating interactive elements in UI \n Feedback and responsiveness in design",
+            },
+            {
+              id: 7,
+              title: "Wireframing and Prototyping",
+              desc: "Introduction to wireframing and prototyping tools \n Creating low-fidelity and high-fidelity prototypes",
+            },
+            {
+              id: 8,
+              title: "Collaboration and Handoff with Design Tools",
+              desc: "Collaboration between designers and developers \n Design handoff and implementation",
+            },
+          ],
+        },
+      ];
+      function getParameterByName(name, url) {
+        if (!url) url = window.location.href;
+        name = name.replace(/[\[\]]/g, "\\$&");
+        var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
+          results = regex.exec(url);
+        if (!results) return null;
+        if (!results[2]) return "";
+        return decodeURIComponent(results[2].replace(/\+/g, " "));
+      }
+      var parameterValue = getParameterByName("course_id");
+      console.log(parameterValue);
+      var outlineHtml = "";
+      // the function for looping the course intro
+      courseData.forEach(function (item, index) {
+        if (item.id == parameterValue) {
+          console.log("item.title", item.title);
+          htmlContent =
+            `
+            <div class="row course-detail-row">
+            <div class="col course-detail-col">
+            <div class="course-detail-image">
+                <img
+                class="course-firstrow-one-picture"
+                src="${item.ImageURL}"
+                alt="HTML and CSS Fundamentals"
+                />
+            </div>
+            </div>
+            <div class="col course-detail-intro">
+            <img
+                src="${item.Icon}"
+            />
+            <h1>` +
+                item.title +
+                `</h1>
+            <p>14 videos - 3 hours</p>
+            <p>
+                ${item.detail}
+            </p>
+            <a href="">
+                <button>
+                <i class="fa-solid fa-cart-plus"></i>
+                <p>GET ACCESS</p>
+                </button>
+            </a>
+            <p class="detail-foot">
+                Purchase includes access to 50+ courses, 320+ premium tutorials,
+                300+ hours of videos, source files and certificates.
+            </p>
+            </div>
+        </div>`;
+            // the function for looping the course list
+          item.outline.forEach(function (oItem, index) {
+            outlineHtml += `
+        <div class="course-detail-list">
+                <div class="num">
+                <p>${oItem.id}</p>
+                </div>
+                <div class="category">
+                <p class="head">${oItem.title}</p>
+                <p>${oItem.desc}</p>
+                </div>
+            </div>
+      `;
+          });
+        }
+      });
+      console.log("htmlContent", htmlContent);
+      console.log("courseItemList", courseItemList);
+      console.log("outlineHtml", outlineHtml);
+
+      courseItemList.append(htmlContent);
+      outlineList.append(outlineHtml);
+    });
+  </script>
+</html>

@@ -1,0 +1,122 @@
+
+/* --------------------------------Navbar------------------------------------- */
+/* the css style for head navbar */
+
+.course-navbar {
+    padding: 30px;
+    text-decoration: none;
+    font-family: 'Jost', sans-serif;
+    font-family: 'Roboto Mono', monospace;
+    background-color: transparent !important;
+}
+.course-button{
+    background-color: white;
+}
+
+.nav-item{
+    margin-left: 60px;
+}
+.course-nav-main{
+    text-align:f center;
+    padding-top: 16px;
+}
+.course-navbar-title{
+    display: inline-block;
+    margin: 0 0.5rem;
+  
+    animation: bounce; 
+    animation-duration: 2s; 
+    color: white;
+    margin-right: 120px;
+
+    font-size: 35px;
+
+    font-family: 'Permanent Marker', cursive;
+}
+
+.course-navbar p,i {
+    color:white;
+}
+.course-navbar col {
+    min-width: 157px;
+}
+
+.course-page-foot-navbar p,i{
+    color:white;
+}
+
+/* the css style for footing navbar */
+
+.course-page-foot{
+    text-align: center;
+    position: relative;
+    display:grid;
+    grid-template-columns: auto auto;
+    column-gap: 100px;
+    margin:100px;
+    padding:80px;
+    font-family: 'Jost', sans-serif;
+    font-family: 'Roboto Mono', monospace;
+    color:white;
+}
+.course-page-foot-navbar{
+    display:grid;
+}
+.course-page-foot-message{
+    text-align: center;
+    padding:80px;
+}
+.course-home-icon{
+    float: left;
+}
+.course-home-word{
+    float: left;
+    margin-left: 8px;
+}
+.course-courses-icon{
+    float: left;
+}
+.course-courses-word{
+    float: left;
+    margin-left: 8px;
+}
+.course-livestream-icon{
+    float: left;
+}
+.course-livestream-word{
+    float: left;
+    margin-left: 10px;
+}
+.course-pay-icon{
+    float: left;
+}
+.course-pay-word{
+    float: left;
+    margin-left: 8px;
+}
+.course-navbar-pay{
+    padding-left: 50px;
+}
+.course-login-icon{
+    float: left;
+}
+.course-login-word{
+    float: left;
+    margin-left: 8px;
+}
+.course-page-foot-navbar a{
+    text-decoration: none;
+}
+
+/* <!--------------------------------webpage logo------------------------------- --> */
+/* the css style for website logo */
+.course-navbar-title{
+    display: inline-block;
+    margin: 0 0.5rem;
+    animation: bounce; 
+    animation-duration: 2s; 
+    color: white;
+    margin-right: 120px;
+    font-size: 35px;
+    font-family: 'Permanent Marker', cursive;
+}
