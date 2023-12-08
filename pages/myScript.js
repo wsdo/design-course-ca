@@ -108,9 +108,14 @@ function generateContainer(){
 // show different courses when different button clicked
 function showCourses(){
         // Function to change the displayed image
-        function displayImage(imageSource) {
+        function displayImage(imageSource1, imageSource2,imageSource3, imageSource4,imageSource5, imageSource6) {
         var imageContainer = document.getElementById('image-container-1');
-        imageContainer.innerHTML = '<img src="' + imageSource + '" alt="Displayed Image">';
+        imageContainer.innerHTML = '<img src="' + imageSource1 + '" alt="Displayed Image 1">' +
+            '<img src="' + imageSource2 + '" alt="Displayed Image 2">' +
+            '<img src="' + imageSource3 + '" alt="Displayed Image 3">' +
+            '<img src="' + imageSource4 + '" alt="Displayed Image 4">' +
+            '<img src="' + imageSource5 + '" alt="Displayed Image 5">' +
+            '<img src="' + imageSource6 + '" alt="Displayed Image 6">';
     }
 
         // Button click event listeners

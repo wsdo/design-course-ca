@@ -7,34 +7,35 @@
 </head>
 <body>
 
-<h2>Click a button to display an image</h2>
+<h2>Click a button to display two images</h2>
 
-<button id="button1">Show Image 1</button>
-<button id="button2">Show Image 2</button>
-<button id="button3">Show Image 3</button>
+<button id="button1">Show Images 1</button>
+<button id="button2">Show Images 2</button>
+<button id="button3">Show Images 3</button>
 
 <div id="imageContainer">
-    <!-- The image will be displayed here -->
+    <!-- The images will be displayed here -->
 </div>
 
 <script>
-    // Function to change the displayed image
-    function displayImage(imageSource) {
+    // Function to change the displayed images
+    function displayImages(imageSource1, imageSource2) {
         var imageContainer = document.getElementById('imageContainer');
-        imageContainer.innerHTML = '<img src="' + imageSource + '" alt="Displayed Image">';
+        imageContainer.innerHTML = '<img src="' + imageSource1 + '" alt="Displayed Image 1">' +
+            '<img src="' + imageSource2 + '" alt="Displayed Image 2">';
     }
 
     // Button click event listeners
     document.getElementById('button1').addEventListener('click', function() {
-        displayImage('path/to/image1.jpg'); // Replace with the actual path to your image
+        displayImages('path/to/image1_1.jpg', 'path/to/image1_2.jpg'); // Replace with the actual paths to your images
     });
 
     document.getElementById('button2').addEventListener('click', function() {
-        displayImage('path/to/image2.jpg'); // Replace with the actual path to your image
+        displayImages('path/to/image2_1.jpg', 'path/to/image2_2.jpg'); // Replace with the actual paths to your images
     });
 
     document.getElementById('button3').addEventListener('click', function() {
-        displayImage('path/to/image3.jpg'); // Replace with the actual path to your image
+        displayImages('path/to/image3_1.jpg', 'path/to/image3_2.jpg'); // Replace with the actual paths to your images
     });
 </script>
 
