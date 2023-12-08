@@ -1,0 +1,48 @@
+.setting-input {
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(rgba(99, 106, 150, 0.4) 0%, rgba(182, 186, 214, 0.25) 100%);
+    border: none;
+    border-radius: 30px;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 20px 40px, rgba(255, 255, 255, 0.3) 0px 0px 0px 0.5px inset;
+    box-sizing: border-box;
+    padding: 10px 42px 10px 56px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 130%;
+    color: rgb(255, 255, 255);
+    transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1) 0s;
+}
+
+.setting-form{
+    max-width: 300px;
+    display: grid;
+    max-width: 300px;
+    height: fit-content;
+    gap: 20px;
+}
+
+.setting-main{
+    border-radius: 10px;
+    border: 1px solid #000;
+    /* display: grid; */
+    grid-template-columns: 200px auto;
+    max-width: 960px;
+    min-height: 600px;
+    background: rgba(50, 61, 109, 0.5);
+    box-sizing: border-box;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 50px 100px, rgba(255, 255, 255, 0.3) 0px 0px 0px 0.5px;
+    backdrop-filter: blur(40px);
+    border-radius: 20px;
+    margin: 0px auto;
+    overflow: hidden;
+}
+.setting-form-right{
+    background: rgba(15, 14, 71, 0.3);
+    border-left: 0.5px solid rgba(255, 255, 255, 0.2);
+    box-sizing: border-box;
+    box-shadow: rgba(31, 31, 71, 0.3) 0px 50px 100px;
+    backdrop-filter: blur(40px);
+    padding: 30px 30px 150px;
+}
