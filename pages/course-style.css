@@ -1,3 +1,8 @@
+
+/* --------------------------------the css style for the course webpage--------------------------------------------------------- */
+
+/* the css style for head navbar */
+
 .course-navbar {
     padding: 30px;
     text-decoration: none;
@@ -20,25 +25,15 @@
     display: inline-block;
     margin: 0 0.5rem;
   
-    animation: bounce; /* referring directly to the animation's @keyframe declaration */
-    animation-duration: 2s; /* don't forget to set a duration! */
+    animation: bounce; 
+    animation-duration: 2s; 
     color: white;
     margin-right: 120px;
 
     font-size: 35px;
 
     font-family: 'Permanent Marker', cursive;
-
-
 }
-
-/* .course-navbar-title:hover{
-    display: inline-block;
-    margin: 0 0.5rem;
-  
-    animation: bounce; 
-    animation-duration: 2s; 
-} */
 
 .course-navbar p,i {
     color:white;
@@ -46,13 +41,16 @@
 .course-navbar col {
     min-width: 157px;
 }
-.course-list p,i{
-    color:white;
-}
+
 .course-page-foot-navbar p,i{
     color:white;
 }
 
+/* the css style for course introduction */
+
+.course-list p,i{
+    color:white;
+}
 .course-intro {
     text-align: center;
     display: grid;
@@ -62,6 +60,9 @@
     font-size: 22px;
     color:white;
 }
+
+/* the css style for course list */
+
 .course-list{
     text-decoration: none;
     display: grid;
@@ -119,6 +120,9 @@
 .course-thirdrow-three-content{
     text-align: center;
 }
+
+/* the css style for footing navbar */
+
 .course-page-foot{
     text-align: center;
     position: relative;
@@ -179,14 +183,14 @@
 .course-page-foot-navbar a{
     text-decoration: none;
 }
+
+
+/* the css style for background color */
+
 #course-main{
     background: linear-gradient(189.16deg, rgb(57, 15, 199) 13.57%, rgb(40, 35, 77) 98.38%);
     display: flow-root;
 }
-/* .course-navbar{
-    background-color: transparent !important;
-    
-} */
 
 .course-firstrow-one{
     display:block;
@@ -217,7 +221,10 @@
     background: linear-gradient(209.21deg, rgb(101, 187, 118) 13.57%, rgb(70, 111, 171) 98.38%);
 }
 
-/* ---------------------------------------------------------------------------------------- */
+/* --------------------------------------the css style for the course-detail webpage------------------------------------------------------ */
+
+/* the css style for background color */
+
 .course-firstrow-one-detail .course-detail-image{
     background: linear-gradient(209.21deg, rgb(32, 25, 76) 13.57%, rgb(46, 42, 59) 98.38%);
 }
@@ -245,6 +252,9 @@
 .course-thirdrow-three-detail .course-detail-image{
     background: linear-gradient(209.21deg, rgb(101, 187, 118) 13.57%, rgb(70, 111, 171) 98.38%);
 }
+
+/* the css style for course detail introduction */
+
 .course-detail-intro{
     font-family: 'Cabin', sans-serif;
     font-size: 22px;
@@ -299,9 +309,17 @@
     border-radius: 20px;
     padding:30px;
     max-width: 1872px;
-
-
 }
+.course-detail-main{
+    margin-top: 100px;
+    padding:50px;
+}
+.course-detail-row{
+    margin-top: 100px;
+}
+
+/* the css style for course detail list */
+
 .course-detail-list{
     width:100%;
     padding:20px;
@@ -320,12 +338,4 @@
 }
 .course-detail-list .category p{
     color: rgba(0, 0, 0, 0.7);
-}
-
-.course-detail-main{
-    margin-top: 100px;
-    padding:50px;
-}
-.course-detail-row{
-    margin-top: 100px;
 }

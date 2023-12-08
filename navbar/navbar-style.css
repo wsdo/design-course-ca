@@ -1,0 +1,44 @@
+/* the css style for head navbar */
+
+.course-navbar {
+    padding: 30px;
+    text-decoration: none;
+    font-family: 'Jost', sans-serif;
+    font-family: 'Roboto Mono', monospace;
+    background-color: transparent !important;
+}
+.course-button{
+    background-color: white;
+}
+
+.nav-item{
+    margin-left: 60px;
+}
+.course-nav-main{
+    text-align:f center;
+    padding-top: 16px;
+}
+.course-navbar-title{
+    display: inline-block;
+    margin: 0 0.5rem;
+  
+    animation: bounce; 
+    animation-duration: 2s; 
+    color: white;
+    margin-right: 120px;
+
+    font-size: 35px;
+
+    font-family: 'Permanent Marker', cursive;
+}
+
+.course-navbar p,i {
+    color:white;
+}
+.course-navbar col {
+    min-width: 157px;
+}
+
+.course-page-foot-navbar p,i{
+    color:white;
+}
