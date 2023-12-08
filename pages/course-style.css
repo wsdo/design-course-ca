@@ -217,7 +217,7 @@
     background: linear-gradient(209.21deg, rgb(101, 187, 118) 13.57%, rgb(70, 111, 171) 98.38%);
 }
 
-/* --------------------------------------- */
+/* ---------------------------------------------------------------------------------------- */
 .course-firstrow-one-detail .course-detail-image{
     background: linear-gradient(209.21deg, rgb(32, 25, 76) 13.57%, rgb(46, 42, 59) 98.38%);
 }
@@ -254,6 +254,11 @@
     padding-right: 100px;
     
 }
+.course-detail-intro h1,p{
+    color:white;
+}
+
+
 .detail-foot{
     font-size: 12px;
 }
@@ -305,6 +310,9 @@
     background: rgba(68, 66, 178, 0.1);
     border-radius: 50px;
 }
+.course-detail-list .num p{
+    color: rgb(0, 0, 0);
+}
 .course-detail-list .category .head{
     font-size:bold;
     font-weight: 600;
@@ -317,4 +325,7 @@
 .course-detail-main{
     margin-top: 100px;
     padding:50px;
+}
+.course-detail-row{
+    margin-top: 100px;
 }
