@@ -43,7 +43,7 @@
   </head>
   <body>
     <div id="course-main">
-        <!--  -->
+        <!-- the block code for webpage head navbar -->
       <nav class="navbar navbar-expand-lg bg-body-tertiary course-navbar">
         <div class="container-fluid">
           <a class="navbar-brand course-navbar-title animate__swing" href="#"
@@ -548,6 +548,7 @@
           </div>
         </div>
       </div> -->
+      <!-- the block code for webpage footing navbar -->
       <div class="course-page-foot">
         <div class="course-page-foot-navbar">
           <a href="">
@@ -603,9 +604,11 @@
     </div>
   </body>
 
-  <!-- --------------------------------------------------------------------------------------- -->
+  <!-- --------------------------------------the jquery for course list and course detail------------------------------------------------- -->
   <script>
+    
     $(document).ready(function () {
+      // the function for creating objects for course intro and course detail
       var courseItemList = $(
         ".container.text-center.course-firstrow-one-detail"
       );
@@ -1120,21 +1123,7 @@
             },
           ],
         },
-
-
-
-
-
-
-
-
-
-
-
-
-
       ];
-
       function getParameterByName(name, url) {
         if (!url) url = window.location.href;
         name = name.replace(/[\[\]]/g, "\\$&");
@@ -1144,61 +1133,60 @@
         if (!results[2]) return "";
         return decodeURIComponent(results[2].replace(/\+/g, " "));
       }
-
       var parameterValue = getParameterByName("course_id");
       console.log(parameterValue);
-
       var outlineHtml = "";
+      // the function for looping the course intro
       courseData.forEach(function (item, index) {
         if (item.id == parameterValue) {
           console.log("item.title", item.title);
           htmlContent =
             `
-        <div class="row course-detail-row">
-        <div class="col course-detail-col">
-          <div class="course-detail-image">
+            <div class="row course-detail-row">
+            <div class="col course-detail-col">
+            <div class="course-detail-image">
+                <img
+                class="course-firstrow-one-picture"
+                src="${item.ImageURL}"
+                alt="HTML and CSS Fundamentals"
+                />
+            </div>
+            </div>
+            <div class="col course-detail-intro">
             <img
-              class="course-firstrow-one-picture"
-              src="${item.ImageURL}"
-              alt="HTML and CSS Fundamentals"
+                src="${item.Icon}"
             />
-          </div>
-        </div>
-        <div class="col course-detail-intro">
-          <img
-            src="${item.Icon}"
-          />
-          <h1>` +
-            item.title +
-            `</h1>
-          <p>14 videos - 3 hours</p>
-          <p>
-            ${item.detail}
-          </p>
-          <a href="">
-            <button>
-              <i class="fa-solid fa-cart-plus"></i>
-              <p>GET ACCESS</p>
-            </button>
-          </a>
-          <p class="detail-foot">
-            Purchase includes access to 50+ courses, 320+ premium tutorials,
-            300+ hours of videos, source files and certificates.
-          </p>
-        </div>
-      </div>`;
-
+            <h1>` +
+                item.title +
+                `</h1>
+            <p>14 videos - 3 hours</p>
+            <p>
+                ${item.detail}
+            </p>
+            <a href="">
+                <button>
+                <i class="fa-solid fa-cart-plus"></i>
+                <p>GET ACCESS</p>
+                </button>
+            </a>
+            <p class="detail-foot">
+                Purchase includes access to 50+ courses, 320+ premium tutorials,
+                300+ hours of videos, source files and certificates.
+            </p>
+            </div>
+        </div>`;
+            // the function for looping the course list
           item.outline.forEach(function (oItem, index) {
             outlineHtml += `
-      <div class="course-detail-list">
-            <div class="num">
-              <p>${oItem.id}</p>
+        <div class="course-detail-list">
+                <div class="num">
+                <p>${oItem.id}</p>
+                </div>
+                <div class="category">
+                <p class="head">${oItem.title}</p>
+                <p>${oItem.desc}</p>
+                </div>
             </div>
-            <div class="category">
-              <p class="head">${oItem.title}</p>
-              <p>${oItem.desc}</p>
-            </div>
-          </div>
       `;
           });
         }
