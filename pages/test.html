@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Display</title>
+</head>
+<body>
+
+<h2>Click a button to display an image</h2>
+
+<button id="button1">Show Image 1</button>
+<button id="button2">Show Image 2</button>
+<button id="button3">Show Image 3</button>
+
+<div id="imageContainer">
+    <!-- The image will be displayed here -->
+</div>
+
+<script>
+    // Function to change the displayed image
+    function displayImage(imageSource) {
+        var imageContainer = document.getElementById('imageContainer');
+        imageContainer.innerHTML = '<img src="' + imageSource + '" alt="Displayed Image">';
+    }
+
+    // Button click event listeners
+    document.getElementById('button1').addEventListener('click', function() {
+        displayImage('path/to/image1.jpg'); // Replace with the actual path to your image
+    });
+
+    document.getElementById('button2').addEventListener('click', function() {
+        displayImage('path/to/image2.jpg'); // Replace with the actual path to your image
+    });
+
+    document.getElementById('button3').addEventListener('click', function() {
+        displayImage('path/to/image3.jpg'); // Replace with the actual path to your image
+    });
+</script>
+
+</body>
+</html>
