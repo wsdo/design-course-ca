@@ -225,25 +225,26 @@
     float: left;
     margin-left: 10px;
 }
-.course-pay-icon{
+.course-price-icon{
     float: left;
 }
-.course-pay-word{
-    float: left;
-    margin-left: 8px;
-}
-.course-navbar-pay{
-    padding-left: 50px;
-}
-.course-login-icon{
-    float: left;
-}
-.course-login-word{
+.course-price-word{
     float: left;
     margin-left: 8px;
 }
-.course-page-foot-navbar a{
-    text-decoration: none;
+.course-updates-icon{
+    float: left;
+}
+.course-updates-word{
+    float: left;
+    margin-left: 8px;
+}
+.course-setting-icon{
+    float: left;
+}
+.course-setting-word{
+    float: left;
+    margin-left: 8px;
 }
 
 /*  */
