@@ -14,7 +14,6 @@
     /* Ensure that the background covers at least the viewport height */
 }
 
-
 /* create the small break and larger break to instead of <br> */
 .livestream-small-break {
     height: 3em;
@@ -189,13 +188,28 @@
 .livestream_frame_content_2,
 .livestream_frame_content_3,
 .livestream_frame_content_4 {
-    color: rgb(250, 240, 240);
+    color: rgb(255, 255, 255);
     flex: 2;
     height: 100%;
 }
 
 /* set frame 1 & 2 scrollable */
-.livestream_small-frame_1,
+.livestream_small-frame_1 {
+    border: 0.1em solid rgba(172, 172, 209, 0.362);
+    border-radius: 2.5em;
+    padding-top: 0.625em;
+    padding-right: 0.125em;
+    padding-left: 1em;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    height: 22em;
+    /*fix the height for scroll down*/
+    width: 100%;
+    overflow-y: auto;
+    /*make if scrollable*/
+    background-color: #4443433f;
+}
+
 .livestream_small-frame_2,
 .livestream_small-frame_3,
 .livestream_small-frame_4 {
@@ -213,7 +227,6 @@
     /*make if scrollable*/
 }
 
-
 /* don't display the scrollbar */
 .livestream_small-frame_1::-webkit-scrollbar,
 .livestream_small-frame_2::-webkit-scrollbar,
@@ -221,6 +234,17 @@
 .livestream_small-frame_4::-webkit-scrollbar {
     display: none;
     /* makes the scrollbar invisible */
+}
+
+/* makes the scrollbar invisible */
+.livestream_small-frame_1,
+.livestream_small-frame_2,
+.livestream_small-frame_3,
+.livestream_small-frame_4 {
+    scrollbar-width: thin;
+    /* for Firefox */
+    -ms-overflow-style: none;
+    /* for Internet Explorer 11 */
 }
 
 /* grid was used in the list */
@@ -234,8 +258,6 @@
     row-gap: 1.875em;
     padding-left: 1em;
 }
-
-
 
 .livestream-list-duration {
     width: fit-content;
@@ -253,7 +275,6 @@
     color: #ffffff;
     z-index: 2;
 }
-
 
 /* set the number of columns for bigger screen */
 @media (min-width: 2560px) {
@@ -297,8 +318,6 @@
     padding-bottom: 1.25em;
     color: rgb(224, 224, 224);
 }
-
-
 
 /* ================================================================================================ */
 /* ====================================== media for page =========================================== */
@@ -373,7 +392,6 @@
     padding-bottom: 1.25em;
     color: rgb(224, 224, 224);
 }
-
 
 /* ================================================================================================ */
 /* ======================================Style for frame 3========================================= */
@@ -540,6 +558,15 @@
 /* set the color */
 .livestream-descrip-intro {
     color: #ffffff;
+    /* background-color: #44434346; */
+    border-radius: 5%;
+}
+
+/* set the color and background color*/
+.livestream-descrip-intro_1 {
+    color: #ffffff;
+    background-color: #4443432f;
+    border-radius: 5%;
 }
 
 /* set the style for the live duration */
@@ -638,6 +665,12 @@
     margin: 2em 1em 2em 1em;
 }
 
+/* set the style for the lower text*/
+.livestream-descrip-lower-text {
+    font-size: 16px;
+    margin: 2em 1em 2em 1em;
+}
+
 /* set the style for the table */
 .livestreamDetails-table {
     border-radius: 2.5em;
@@ -686,8 +719,7 @@
 .livestreamDetails-img-frame-1 {
     background-color: rgba(0, 0, 128, 0.337);
     backdrop-filter: blur(2.5em);
-    /* padding: 1.25em 1.25em; */
-    padding: 1.25em 1.25em;
+    padding: 1.25em;
     /* Top and bottom padding are adjusted for better spacing */
     margin: 0.3125em 0.3125em 0.3125em 0.3125em;
     /* Margin adjusted for better spacing */
@@ -804,7 +836,7 @@
 /* ======================================================================================================== */
 /* ==================================================================================================== */
 /* ======================================================================================================== */
-/* --------------------------------Navbar------------------------------------- */
+/* ==================================================Navbar=========================================== */
 
 .course-navbar {
     padding: 30px;
