@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Bootstrap demo</title>
-    <link href="../style/style.css" rel="stylesheet">
+    <link href="../assets/css/setting-style.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 </head>
@@ -22,17 +22,22 @@
             <div class="bg-wave">
 
             </div>
+            <div class="blob-animation">
 
+            </div>
         </div>
         <!-- Content here -->
         <div class="container text-center setting">
-            <div class="row align-items-start">
+            <div class="row align-items-start setting-main">
                 <div class="col-md-2 setting-main-side" style="border: 1px solid #000;">
                     <div class="setting-side">
                         One of three columns
                     </div>
                     <div class="setting-side">
                         Billing
+                        <div class="setting-side-line">
+
+                        </div>
                     </div>
                     <div class="setting-side">
                         Discounts
@@ -46,9 +51,15 @@
 
                 </div>
                 <div class="col-md-10 " style="border: 1px solid #000;">
+                    <div>
+
+                        EDIT PROFILE
+                        Manage your Design+Code profile and account
+                    </div>
                     <form>
                         <div class="row setting-form-right">
                             <div class="setting-form col">
+    
                                 <div class="mb-3">
                                     <label for="disabledTextInput" class="form-label">Disabled input</label>
                                     <input class="setting-input" type="text" id="disabledTextInput" class="form-control"
@@ -123,11 +134,24 @@
                                         <label class="form-check-label" for="exampleCheck1">Check me out</label>
                                     </div>
                                 </div>
+                                <button type="submit" class="btn btn-primary form-button">Reset password</button>
                             </div>
 
                     </form>
+
+            <div>
+                DELETE ACCOUNT
+
+                <div>
+                    Your account will be permanently deleted along with its data. You will lose all of your progresses, favorites, certificates, history and profile information.
                 </div>
+
+                <button type="submit" class="btn btn-primary form-button">Reset password</button>
             </div>
+                </div>
+
+            </div>
+
         </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
