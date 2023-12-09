@@ -718,6 +718,9 @@
         return decodeURIComponent(results[2].replace(/\+/g, " "));
       }
       var parameterValue = getParameterByName("course_id");
+      if(parameterValue == null){
+        parameterValue = 1
+      }
       console.log(parameterValue);
       var outlineHtml = "";
       // the function for looping the course intro
