@@ -45,7 +45,7 @@
 .livestreamList-upper-text {
     position: relative;
     text-align: center;
-    max-width: 40%;
+    max-width: 42%;
     /* set a max width to align the stuff */
     padding-top: 2%;
     padding-bottom: 2%;
@@ -70,7 +70,7 @@
     font-weight: bold;
     font-size: 3em;
     margin: 0;
-    margin-top: 12vh;
+    margin-top: 8vh;
     margin-bottom: 3vh;
     color: #ffffff;
 }
@@ -122,6 +122,7 @@
 .livestreamList-modal-content p {
     font-size: 1.125em;
     margin-bottom: 1.25em;
+    color: #333;
 }
 
 /* set the button style in the modal*/
@@ -188,14 +189,31 @@
 .livestream_frame_content_2,
 .livestream_frame_content_3,
 .livestream_frame_content_4 {
-    color: rgb(250, 240, 240);
+    color: rgb(255, 255, 255);
     flex: 2;
     height: 100%;
 }
 
 /* set frame 1 & 2 scrollable */
-.livestream_small-frame_1,
-.livestream_small-frame_2 {
+.livestream_small-frame_1 {
+    border: 0.1em solid rgba(172, 172, 209, 0.362);
+    border-radius: 2.5em;
+    padding-top: 0.625em;
+    padding-right: 0.125em;
+    padding-left: 1em;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    height: 22em;
+    /*fix the height for scroll down*/
+    width: 100%;
+    overflow-y: auto;
+    /*make if scrollable*/
+    background-color: #4443433f;
+}
+
+.livestream_small-frame_2,
+.livestream_small-frame_3,
+.livestream_small-frame_4 {
     border: 0.1em solid rgba(172, 172, 209, 0.362);
     border-radius: 2.5em;
     padding-top: 0.625em;
@@ -210,20 +228,6 @@
     /*make if scrollable*/
 }
 
-
-.livestream_small-frame_3,
-.livestream_small-frame_4 {
-    border: 0.1em solid rgba(172, 172, 209, 0.362);
-    border-radius: 2.5em;
-    padding-top: 0.625em;
-    padding-right: 0.125em;
-    padding-left: 1em;
-    margin-top: 2em;
-    margin-bottom: 2em;
-    height: 22em;
-    /*fix the height for scroll down*/
-    width: 100%;
-}
 
 /* don't display the scrollbar */
 .livestream_small-frame_1::-webkit-scrollbar,
@@ -246,6 +250,26 @@
     padding-left: 1em;
 }
 
+
+
+.livestream-list-duration {
+    width: fit-content;
+    height: fit-content;
+    /* margin: auto; */
+    z-index: 2;
+    text-align: left;
+    margin: 0px;
+    padding: 0px;
+}
+
+.livestream-list-duration p {
+    background-color: rgba(0, 66, 221, 0.39);
+    border-radius: 10px;
+    color: #ffffff;
+    z-index: 2;
+}
+
+
 /* set the number of columns for bigger screen */
 @media (min-width: 2560px) {
     .livestream_frame_list-style {
@@ -263,9 +287,9 @@
 .livestream_frame_block_1 {
     background-color: rgba(0, 0, 128, 0.337);
     backdrop-filter: blur(2.5em);
-    padding: 1.25em 1.25em;
+    /* padding: 1.25em 1.25em; */
     /* set the top and bottom padding */
-    margin: 0.3125em 0.3125em 0.3125em 0.3125em;
+    /* margin: 0.3125em 0.3125em 0.3125em 0.3125em; */
     /* set the margin as 0.3125em */
     border-radius: 2.5em;
     cursor: pointer;
@@ -288,6 +312,7 @@
     padding-bottom: 1.25em;
     color: rgb(224, 224, 224);
 }
+
 
 
 /* ================================================================================================ */
@@ -339,9 +364,9 @@
 .livestream_frame_block_2 {
     background-color: rgba(137, 118, 231, 0.398);
     backdrop-filter: blur(2.5em);
-    padding: 1.25em 1.25em;
+    /* padding: 1.25em 1.25em; */
     /* set the top and bottom padding */
-    margin: 0.3125em 0.3125em 0.3125em 0.3125em;
+    /* margin: 0.3125em 0.3125em 0.3125em 0.3125em; */
     /* set the margin as 0.3125em */
     border-radius: 2.5em;
     cursor: pointer;
@@ -371,9 +396,9 @@
 .livestream_frame_block_3 {
     background-color: rgba(16, 80, 169, 0.371);
     backdrop-filter: blur(2.5em);
-    padding: 1.25em 1.25em;
+    /* padding: 1.25em 1.25em; */
     /* set the top and bottom padding */
-    margin: 0.3125em 0.3125em 0.3125em 0.3125em;
+    /* margin: 0.3125em 0.3125em 0.3125em 0.3125em; */
     /* set the margin as 0.3125em */
     border-radius: 2.5em;
     cursor: pointer;
@@ -402,9 +427,9 @@
 .livestream_frame_block_4 {
     background-color: rgba(28, 28, 86, 0.335);
     backdrop-filter: blur(2.5em);
-    padding: 1.25em 1.25em;
+    /* padding: 1.25em 1.25em; */
     /* set the top and bottom padding */
-    margin: 0.3125em 0.3125em 0.3125em 0.3125em;
+    /* margin: 0.3125em 0.3125em 0.3125em 0.3125em; */
     /* set the margin as 0.3125em */
     border-radius: 2.5em;
     cursor: pointer;
@@ -432,7 +457,7 @@
 /* set the style for the scroll button  */
 .livestream-scroll-button-for-minigame {
     display: flex;
-    justify-content: flex-end;
+    /* justify-content: flex-end; */
 }
 
 /* Adjust the color of the button */
@@ -524,12 +549,21 @@
     color: #ffffff;
     margin-bottom: 1em;
     text-shadow: 6px 4px 8px rgba(62, 125, 252, 0.882);
-    text-align: center;
+    /* text-align: center; */
 }
 
 /* set the color */
 .livestream-descrip-intro {
     color: #ffffff;
+    /* background-color: #44434346; */
+    border-radius: 5%;
+}
+
+/* set the color and background color*/
+.livestream-descrip-intro_1 {
+    color: #ffffff;
+    background-color: #4443432f;
+    border-radius: 5%;
 }
 
 /* set the style for the live duration */
@@ -537,7 +571,7 @@
     text-align: center;
     align-self: center;
     font-size: 16px;
-    max-width: 20em;
+    /* max-width: 20em; */
 }
 
 /* set the text style for the live duration */
@@ -545,7 +579,6 @@
     color: #444343;
     padding: 0.25em;
     background-color: rgba(193, 241, 225, 0.479);
-    background-position: center;
     border-radius: 2.5em;
     font-weight: bold;
 }
@@ -573,6 +606,8 @@
 /* set the style for the lecturer section */
 .livestreamDetails-lecturer-intro {
     display: flex;
+    align-items: center;
+    justify-content: center;
     /* flex-direction: row-reverse; */
     /* max-width: 30em; */
     background-color: rgba(51, 86, 202, 0.764);
@@ -622,9 +657,16 @@
     margin: 2em;
 }
 
+
 /* set the style for the upper text*/
 .livestream-descrip-upper-text {
     font-size: 20px;
+    margin: 2em 1em 2em 1em;
+}
+
+/* set the style for the lower text*/
+.livestream-descrip-lower-text {
+    font-size: 16px;
     margin: 2em 1em 2em 1em;
 }
 
@@ -635,7 +677,7 @@
     padding: 10px;
     margin: 10px 0;
     border-collapse: collapse;
-    color: rgb(252, 237, 252);
+    color: rgb(255, 255, 255);
     /* border: 1px solid #f5f8fa6e; */
     background-color: #aa6ffd2d;
     /* Background color for even rows */
@@ -676,8 +718,7 @@
 .livestreamDetails-img-frame-1 {
     background-color: rgba(0, 0, 128, 0.337);
     backdrop-filter: blur(2.5em);
-    /* padding: 1.25em 1.25em; */
-    padding: 1.25em 1.25em;
+    padding: 1.25em;
     /* Top and bottom padding are adjusted for better spacing */
     margin: 0.3125em 0.3125em 0.3125em 0.3125em;
     /* Margin adjusted for better spacing */
@@ -690,6 +731,13 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    transition: transform 0.3s ease-out;
+    position: relative;
+}
+
+.livestreamDetails-img-frame-1:hover {
+    transform: scale(1.1);
+    /* Adjust the scale factor as needed for frame enlargement */
 }
 
 /* set the style for img */
@@ -699,6 +747,13 @@
     /* Ensure the image doesn't exceed the container */
     margin-top: 5em;
     margin-bottom: 5em;
+    display: block;
+    transition: transform 0.3s ease-out;
+}
+
+.livestreamDetails-img-frame-1:hover img {
+    transform: scale(0.8);
+    /* Adjust the scale factor as needed for image shrinkage */
 }
 
 /* ======================================================================================================== */
@@ -720,6 +775,13 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    transition: transform 0.3s ease-out;
+    position: relative;
+}
+
+.livestreamDetails-img-frame-2:hover {
+    transform: scale(1.1);
+    /* Adjust the scale factor as needed for frame enlargement */
 }
 
 /* set the style for img */
@@ -729,6 +791,13 @@
     /* Ensure the image doesn't exceed the container */
     margin-top: 5em;
     margin-bottom: 5em;
+    display: block;
+    transition: transform 0.3s ease-out;
+}
+
+.livestreamDetails-img-frame-2:hover img {
+    transform: scale(0.8);
+    /* Adjust the scale factor as needed for image shrinkage */
 }
 
 /* ======================================================================================================== */
@@ -750,6 +819,13 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    transition: transform 0.3s ease-out;
+    position: relative;
+}
+
+.livestreamDetails-img-frame-3:hover {
+    transform: scale(1.1);
+    /* Adjust the scale factor as needed for frame enlargement */
 }
 
 /* set the style for img */
@@ -759,6 +835,13 @@
     /* Ensure the image doesn't exceed the container */
     margin-top: 5em;
     margin-bottom: 5em;
+    display: block;
+    transition: transform 0.3s ease-out;
+}
+
+.livestreamDetails-img-frame-3:hover img {
+    transform: scale(0.8);
+    /* Adjust the scale factor as needed for image shrinkage */
 }
 
 /* ======================================================================================================== */
@@ -780,6 +863,13 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    transition: transform 0.3s ease-out;
+    position: relative;
+}
+
+.livestreamDetails-img-frame-4:hover {
+    transform: scale(1.1);
+    /* Adjust the scale factor as needed for frame enlargement */
 }
 
 /* set the style for img */
@@ -789,16 +879,19 @@
     /* Ensure the image doesn't exceed the container */
     margin-top: 5em;
     margin-bottom: 5em;
+    display: block;
+    transition: transform 0.3s ease-out;
+}
+
+.livestreamDetails-img-frame-4:hover img {
+    transform: scale(0.8);
+    /* Adjust the scale factor as needed for image shrinkage */
 }
 
 /* ======================================================================================================== */
 /* ==================================================================================================== */
 /* ======================================================================================================== */
-/* --------------------------------Navbar------------------------------------- */
-/* .container-big-livestreamDetails-center {
-    background-color: rgb(20, 30, 64);
-} */
-
+/* the css style for head navbar */
 .course-navbar {
     padding: 30px;
     text-decoration: none;
@@ -806,27 +899,6 @@
     font-family: 'Roboto Mono', monospace;
     background-color: transparent !important;
 }
-
-
-/* .container-fluid {
-    background-color: rgb(20, 30, 64);
-}
-
-.nav navbar.navbar-expand-lg.bg-body-tertiary.course-navbar {
-    background-color: rgb(20, 30, 64);
-    padding: 0px 0px;
-}
-
-.navbar.navbar-expand-lg.bg-body-tertiary.course-navbar {
-    padding: 0px 0px;
-} */
-
-/* .bg-body-tertiary {
-    --bs-bg-opacity: 1;
-    background-color: rgb(20, 30, 64);
-    padding: 0px;
-} */
-
 
 .course-button {
     background-color: white;
@@ -837,7 +909,7 @@
 }
 
 .course-nav-main {
-    text-align: f center;
+    text-align: center;
     padding-top: 16px;
 }
 
@@ -853,6 +925,11 @@
     font-size: 35px;
 
     font-family: 'Permanent Marker', cursive;
+}
+
+.course-nav-slogan {
+    color: white;
+    padding-left: 30px;
 }
 
 .course-navbar p,
