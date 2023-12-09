@@ -158,24 +158,21 @@ function generateContainer() {
 //     });
 // }
 
+
 function changeImagesSet1() {
-    var imageContainer = document.getElementById('image-container-1');
-    imageContainer.children[0].src = 'set1_1.jpg';
-    imageContainer.children[1].src = 'set1_2.jpg';
-    imageContainer.children[2].src = 'set1_3.jpg';
+    var images = [
+      "./assets/images/course-item-Modern-Web-Development-with-React.js.png",
+      "assets/images/new-image-2.png",
+      "assets/images/new-image-3.png"
+    ];
+  
+    var imageContainers = document.getElementById("image-container-1").getElementsByClassName("img-fluid");
+  
+    for (var i = 0; i < imageContainers.length; i++) {
+      imageContainers[i].src = images[i];
+    }
 }
 
-function changeImagesSet2() {
-    var imageContainer = document.getElementById('image-container-1');
-    imageContainer.children[0].src = 'set2_1.jpg';
-    imageContainer.children[1].src = 'set2_2.jpg';
-    imageContainer.children[2].src = 'set2_3.jpg';
-}
 
-function changeImagesSet3() {
-    var imageContainer = document.getElementById('image-container-1');
-    imageContainer.children[0].src = 'set3_1.jpg';
-    imageContainer.children[1].src = 'set3_2.jpg';
-    imageContainer.children[2].src = 'set3_3.jpg';
-}
+
 
