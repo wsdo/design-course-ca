@@ -14,6 +14,7 @@
     /* Ensure that the background covers at least the viewport height */
 }
 
+
 /* create the small break and larger break to instead of <br> */
 .livestream-small-break {
     height: 3em;
@@ -44,7 +45,7 @@
 .livestreamList-upper-text {
     position: relative;
     text-align: center;
-    max-width: 40%;
+    max-width: 42%;
     /* set a max width to align the stuff */
     padding-top: 2%;
     padding-bottom: 2%;
@@ -227,6 +228,7 @@
     /*make if scrollable*/
 }
 
+
 /* don't display the scrollbar */
 .livestream_small-frame_1::-webkit-scrollbar,
 .livestream_small-frame_2::-webkit-scrollbar,
@@ -234,17 +236,6 @@
 .livestream_small-frame_4::-webkit-scrollbar {
     display: none;
     /* makes the scrollbar invisible */
-}
-
-/* makes the scrollbar invisible */
-.livestream_small-frame_1,
-.livestream_small-frame_2,
-.livestream_small-frame_3,
-.livestream_small-frame_4 {
-    scrollbar-width: thin;
-    /* for Firefox */
-    -ms-overflow-style: none;
-    /* for Internet Explorer 11 */
 }
 
 /* grid was used in the list */
@@ -258,6 +249,8 @@
     row-gap: 1.875em;
     padding-left: 1em;
 }
+
+
 
 .livestream-list-duration {
     width: fit-content;
@@ -276,6 +269,7 @@
     z-index: 2;
 }
 
+
 /* set the number of columns for bigger screen */
 @media (min-width: 2560px) {
     .livestream_frame_list-style {
@@ -293,9 +287,9 @@
 .livestream_frame_block_1 {
     background-color: rgba(0, 0, 128, 0.337);
     backdrop-filter: blur(2.5em);
-    padding: 1.25em 1.25em;
+    /* padding: 1.25em 1.25em; */
     /* set the top and bottom padding */
-    margin: 0.3125em 0.3125em 0.3125em 0.3125em;
+    /* margin: 0.3125em 0.3125em 0.3125em 0.3125em; */
     /* set the margin as 0.3125em */
     border-radius: 2.5em;
     cursor: pointer;
@@ -318,6 +312,8 @@
     padding-bottom: 1.25em;
     color: rgb(224, 224, 224);
 }
+
+
 
 /* ================================================================================================ */
 /* ====================================== media for page =========================================== */
@@ -368,9 +364,9 @@
 .livestream_frame_block_2 {
     background-color: rgba(137, 118, 231, 0.398);
     backdrop-filter: blur(2.5em);
-    padding: 1.25em 1.25em;
+    /* padding: 1.25em 1.25em; */
     /* set the top and bottom padding */
-    margin: 0.3125em 0.3125em 0.3125em 0.3125em;
+    /* margin: 0.3125em 0.3125em 0.3125em 0.3125em; */
     /* set the margin as 0.3125em */
     border-radius: 2.5em;
     cursor: pointer;
@@ -393,15 +389,16 @@
     color: rgb(224, 224, 224);
 }
 
+
 /* ================================================================================================ */
 /* ======================================Style for frame 3========================================= */
 /* set the style for frame 3 */
 .livestream_frame_block_3 {
     background-color: rgba(16, 80, 169, 0.371);
     backdrop-filter: blur(2.5em);
-    padding: 1.25em 1.25em;
+    /* padding: 1.25em 1.25em; */
     /* set the top and bottom padding */
-    margin: 0.3125em 0.3125em 0.3125em 0.3125em;
+    /* margin: 0.3125em 0.3125em 0.3125em 0.3125em; */
     /* set the margin as 0.3125em */
     border-radius: 2.5em;
     cursor: pointer;
@@ -430,9 +427,9 @@
 .livestream_frame_block_4 {
     background-color: rgba(28, 28, 86, 0.335);
     backdrop-filter: blur(2.5em);
-    padding: 1.25em 1.25em;
+    /* padding: 1.25em 1.25em; */
     /* set the top and bottom padding */
-    margin: 0.3125em 0.3125em 0.3125em 0.3125em;
+    /* margin: 0.3125em 0.3125em 0.3125em 0.3125em; */
     /* set the margin as 0.3125em */
     border-radius: 2.5em;
     cursor: pointer;
@@ -460,7 +457,7 @@
 /* set the style for the scroll button  */
 .livestream-scroll-button-for-minigame {
     display: flex;
-    justify-content: flex-end;
+    /* justify-content: flex-end; */
 }
 
 /* Adjust the color of the button */
@@ -552,7 +549,7 @@
     color: #ffffff;
     margin-bottom: 1em;
     text-shadow: 6px 4px 8px rgba(62, 125, 252, 0.882);
-    text-align: center;
+    /* text-align: center; */
 }
 
 /* set the color */
@@ -574,7 +571,7 @@
     text-align: center;
     align-self: center;
     font-size: 16px;
-    max-width: 20em;
+    /* max-width: 20em; */
 }
 
 /* set the text style for the live duration */
@@ -582,7 +579,6 @@
     color: #444343;
     padding: 0.25em;
     background-color: rgba(193, 241, 225, 0.479);
-    background-position: center;
     border-radius: 2.5em;
     font-weight: bold;
 }
@@ -610,6 +606,8 @@
 /* set the style for the lecturer section */
 .livestreamDetails-lecturer-intro {
     display: flex;
+    align-items: center;
+    justify-content: center;
     /* flex-direction: row-reverse; */
     /* max-width: 30em; */
     background-color: rgba(51, 86, 202, 0.764);
@@ -658,6 +656,7 @@
     flex: 2;
     margin: 2em;
 }
+
 
 /* set the style for the upper text*/
 .livestream-descrip-upper-text {
@@ -732,6 +731,13 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    transition: transform 0.3s ease-out;
+    position: relative;
+}
+
+.livestreamDetails-img-frame-1:hover {
+    transform: scale(1.1);
+    /* Adjust the scale factor as needed for frame enlargement */
 }
 
 /* set the style for img */
@@ -741,6 +747,13 @@
     /* Ensure the image doesn't exceed the container */
     margin-top: 5em;
     margin-bottom: 5em;
+    display: block;
+    transition: transform 0.3s ease-out;
+}
+
+.livestreamDetails-img-frame-1:hover img {
+    transform: scale(0.8);
+    /* Adjust the scale factor as needed for image shrinkage */
 }
 
 /* ======================================================================================================== */
@@ -762,6 +775,13 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    transition: transform 0.3s ease-out;
+    position: relative;
+}
+
+.livestreamDetails-img-frame-2:hover {
+    transform: scale(1.1);
+    /* Adjust the scale factor as needed for frame enlargement */
 }
 
 /* set the style for img */
@@ -771,6 +791,13 @@
     /* Ensure the image doesn't exceed the container */
     margin-top: 5em;
     margin-bottom: 5em;
+    display: block;
+    transition: transform 0.3s ease-out;
+}
+
+.livestreamDetails-img-frame-2:hover img {
+    transform: scale(0.8);
+    /* Adjust the scale factor as needed for image shrinkage */
 }
 
 /* ======================================================================================================== */
@@ -792,6 +819,13 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    transition: transform 0.3s ease-out;
+    position: relative;
+}
+
+.livestreamDetails-img-frame-3:hover {
+    transform: scale(1.1);
+    /* Adjust the scale factor as needed for frame enlargement */
 }
 
 /* set the style for img */
@@ -801,6 +835,13 @@
     /* Ensure the image doesn't exceed the container */
     margin-top: 5em;
     margin-bottom: 5em;
+    display: block;
+    transition: transform 0.3s ease-out;
+}
+
+.livestreamDetails-img-frame-3:hover img {
+    transform: scale(0.8);
+    /* Adjust the scale factor as needed for image shrinkage */
 }
 
 /* ======================================================================================================== */
@@ -822,6 +863,13 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    transition: transform 0.3s ease-out;
+    position: relative;
+}
+
+.livestreamDetails-img-frame-4:hover {
+    transform: scale(1.1);
+    /* Adjust the scale factor as needed for frame enlargement */
 }
 
 /* set the style for img */
@@ -831,12 +879,19 @@
     /* Ensure the image doesn't exceed the container */
     margin-top: 5em;
     margin-bottom: 5em;
+    display: block;
+    transition: transform 0.3s ease-out;
+}
+
+.livestreamDetails-img-frame-4:hover img {
+    transform: scale(0.8);
+    /* Adjust the scale factor as needed for image shrinkage */
 }
 
 /* ======================================================================================================== */
 /* ==================================================================================================== */
 /* ======================================================================================================== */
-/* ==================================================Navbar=========================================== */
+/* --------------------------------Navbar------------------------------------- */
 
 .course-navbar {
     padding: 30px;
