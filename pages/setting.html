@@ -9,6 +9,8 @@
     <link href="../assets/css/setting-style.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.7.1.js"
+        integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -197,7 +199,9 @@
                             progresses, favorites, certificates, history and profile information.
                         </div>
                         <div class="del-btn">
-                            <button type="submit" class="btn btn-primary form-button">
+                            <!-- Button trigger modal -->
+                            <button type="button" class="btn btn-primary form-button" data-bs-toggle="modal"
+                                data-bs-target="#delModal">
                                 Delete account
                             </button>
                         </div>
@@ -262,6 +266,41 @@
             <p>Need help? Contact Us</p>
         </div>
     </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="delModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Del Account</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    Are you sure you want to delete your account？
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary" id="deleteButton">Del</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <button type="button" class="btn btn-primary" id="liveToastBtn">Show live toast</button>
+
+    <div class="toast-container position-fixed top-0 end-0 p-3">
+        <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+            <div class="toast-header">
+                <strong class="me-auto">Deleted Info！</strong>
+                <small>11 mins ago</small>
+                <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+            </div>
+            <div class="toast-body">
+                Deleted successfully
+            </div>
+        </div>
+    </div>
+
     <script>
         document.getElementById('settingsForm').onsubmit = function (event) {
             if (!this.checkValidity()) {
@@ -269,6 +308,26 @@
                 alert('Please fill out the form correctly.');
             }
         };
+
+        $(document).ready(function () {
+            const toastTrigger = document.getElementById('liveToastBtn')
+            const toastLiveExample = document.getElementById('liveToast')
+
+            // 删除按钮的点击事件
+            $('#deleteButton').click(function () {
+                // 这里添加你的删除逻辑代码
+                // ...
+                console.log(111111111111)
+                // 关闭模态框
+                $('#delModal').modal('hide');
+
+                if (toastTrigger) {
+                    const toastBootstrap = bootstrap.Toast.getOrCreateInstance(toastLiveExample)
+                    toastBootstrap.show()
+                }
+            });
+        });
+
     </script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
