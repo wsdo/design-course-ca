@@ -44,16 +44,17 @@
 }
 
 
-
+/* the css style for welcome information */
 .course-updates-welcome p ,h1{
     text-align:center;
+    color:white;
 }
 
 .course-updates-welcome{
     padding:20px;
 }
 
-
+/* the css style for course updates information */
 .course-updates-intro{
     display: grid;
     gap:10px;
@@ -113,8 +114,7 @@
     color: rgba(0, 0, 0, 0.7);
 }
 
-
-
+/* the css style for course updates info display */
 
 .course-updates-row{
     margin:50px;
@@ -124,6 +124,9 @@
     box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 0px 0.5px inset;
     backdrop-filter: blur(40px);
 }
+
+/* the css style for course updates images */
+
 .course-updates-image{
     /* text-align: center;
     display: flex;
@@ -142,8 +145,14 @@
     height: 90%;
 
     border-radius: 20px;
-    
+
+    transition: transform 0.3s;
 }
+.course-updates-image:hover{
+    transform: scale(1.1);
+}
+
+
 .course-updates-image img{
     /* width:70%;
     height: 70%;
@@ -231,3 +240,56 @@
 .course-page-foot-navbar a{
     text-decoration: none;
 }
+
+/*  */
+.bg-warp{
+    z-index: -1;
+    position: fixed;
+    width: 100%;
+    top: 0px;
+    background: linear-gradient(
+      200.44deg,
+      rgb(67, 22, 219) 13.57%,
+      rgb(144, 118, 231) 98.38%
+    );
+    height: 100%;
+
+}
+.bg-wave{
+    position: absolute;
+    border-radius: 50%;
+    background: linear-gradient(
+      rgba(47, 184, 255, 0.42) 31.77%,
+      rgb(158, 236, 217) 100%
+    );
+    opacity: 0.4;
+    z-index: 0;
+    left: 30%;
+    top: 150px;
+    width: 228px;
+    height: 228px;
+    mix-blend-mode: overlay;
+    transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1) 0s;
+}
+.blob-animation{
+    position: absolute;
+    top: -10px;
+    left: 200px;
+    width: 500px;
+    height: 500px;
+    background: linear-gradient(rgba(47, 184, 255, 0.42) 31.77%, rgb(158, 236, 217) 100%);
+    z-index: -1;
+    mix-blend-mode: color-dodge;
+    animation: izRuqW 25s ease 0s infinite alternate none running;
+}
+@keyframes izRuqW {
+    0% {
+      transform: translate(0px, -50px) rotate(-90deg);
+      border-radius: 24% 76% 35% 65% / 27% 36% 64% 73%;
+    }
+    100% {
+      transform: translate(500px, 100px) rotate(-10deg);
+      border-radius: 76% 24% 33% 67% / 68% 55% 45% 32%;
+    }
+  }
+
