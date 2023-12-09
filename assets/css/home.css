@@ -8,7 +8,7 @@
     color: white; /* Set text color to white or a suitable contrast color */
 }
 #price1, #price2, #price3 {
-    color: white;
+    color: darkred;
     font-weight: bold;
 }
 .fall{

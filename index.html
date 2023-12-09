@@ -11,7 +11,7 @@
   <title>Home page</title>
 
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-  <link rel="stylesheet" href="/assets/css/home.css"> <!-- Link to an external stylesheet -->
+  <link rel="stylesheet" href="./assets/css/home.css"> <!-- Link to an external stylesheet -->
 
 
   <!-- Google Fonts -->
@@ -21,7 +21,7 @@
 
   <style>
     body {
-      background-image: url('/assets/images/home_background.png'); /* Replace 'your-image.jpg' with the path to your image */
+      background-image: url('./assets/images/pay_background.png'); /* Replace 'your-image.jpg' with the path to your image */
       background-size: cover; /* Cover the entire viewport */
       background-position: center; /* Center the background image */
       background-repeat: no-repeat; /* Do not repeat the background image */
@@ -86,10 +86,13 @@
     <div class="container">
       <!-- four home course lists -->
       <div class="row">
-          <div class="col-md-4 text-center">
-              <img src="/assets/images/wordsCloud.png" alt="Image" class="img-fluid mt-5 mb-5">
+
+          <div class="col-md-6 text-center">
+              <img src="./assets/images/course-item-Front-End-Development-Bootcamp.png" alt="Image" >
           </div>
-          <div class="col-md-8 d-flex align-items-center justify-content-center">
+
+
+          <div class="col-md-6 d-flex align-items-center justify-content-center">
 
             <div>
               <h2>Design <br/>
@@ -109,6 +112,7 @@
               </h6>
             </div>
           </div>
+
       </div>
     </div>
 
@@ -119,38 +123,42 @@
     <div class="container ">
       <div class="row">
         <!--text-->
-        <div class="col-md-4 text-center">
 
-        <div class="home_small-frame_1">
+        <div class="col-md-4 left">
+
           <h6>300 HOURS OF COURSES</h6>
+          <br>
           <h2>Learn the best tools<br>and platforms</h2>
+          <br>
           <h6>
             We focus on industry leading platforms so that<br>you can be prepared for your next job. Then we<br>teach all we can about them.
           </h6>
         </div>
-      </div>
         <!--img-->
-        <div class="col-md-8 text-center">
-          <br><br>
+        <div class="col-md-4 text-center">
+          <br><br><br><br>
           <button id="browseCourses" class="btn btn-primary">Browse Courses</button>
-          <br>
-          <br>
+          <br><br>
+
           <button id="button1" class="btn btn-primary" onclick="changeImagesSet1()">App</button>
           <button id="button2" class="btn btn-primary" onclick="changeImagesSet2()">Web</button>
           <button id="button3" class="btn btn-primary" onclick="changeImagesSet3()">3D</button>
 
         </div>
+
       </div>
+
       <br><br>
+
       <div class="row">
-        <div class="col">
-          <img src="default1.jpg" alt="Image 1">
+        <div class="col-md-4">
+          <img src="assets/images/course-item-HTML-and-CSS-Fundamentals.png" alt="Image 1" class="img-fluid">
         </div>
-        <div class="col">
-          <img src="default2.jpg" alt="Image 2">
+        <div class="col-md-4">
+          <img src="assets/images/course-item-Building-Responsive-Websites-with-Bootstrap.png" alt="Image 2" class="img-fluid">
         </div>
-        <div class="col">
-          <img src="default3.jpg" alt="Image 3">
+        <div class="col-md-4">
+          <img src="assets/images/course-item-Front-End-Development-Bootcamp.png" alt="Image 3" class="img-fluid">
         </div>
       </div>
     </div>
@@ -320,6 +328,7 @@
     <!--footer-->
     <div id="footer"></div>
 
+
   </body>
 
 
@@ -329,7 +338,7 @@
 
 
   <!-- --------------------------------------------------------------------------------------- -->
-  <script src="/assets/js/home.js"></script>
+  <script src="./assets/js/home.js"></script>
   <script>
     // titleHover()
     browseCourses()
