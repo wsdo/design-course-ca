@@ -12,6 +12,10 @@
   text-align: left;
   height: 30px;
 }
+.setting-main-layout{
+  margin: auto;
+  width: 960px;
+}
 .setting-input {
   /* height: 100%; */
   width: 100%;
