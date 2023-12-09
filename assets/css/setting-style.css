@@ -1,3 +1,17 @@
+.del-btn {
+  width: 150px;
+  margin-top: 50px;
+}
+.del-title {
+  height: 40px;
+  text-align: left;
+  padding: 20px;
+}
+.del-desc {
+  padding: 20px;
+  text-align: left;
+  height: 30px;
+}
 .setting-input {
   /* height: 100%; */
   width: 100%;
@@ -18,7 +32,9 @@
   color: rgb(255, 255, 255);
   transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1) 0s;
 }
-
+.del-main{
+  height: 400px;
+}
 .setting-profile {
   height: 100px;
   padding: 20px;
