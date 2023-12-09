@@ -8,7 +8,7 @@ function titleHover() {
     });
 }
 
-// plan selection between monthly and annual
+// price.plan selection between monthly and annual
 function priceSelection() {
     // Initial price values
     let price1 = 20;
@@ -38,11 +38,37 @@ function priceSelection() {
     }
 }
 
-//
+// ##################################################################
+//  index.browseCourse
+function browseCourses() {
+    $(document).ready(function () {
+        // When the button with id "redirectButton" is clicked
+        $("#browseCourses").click(function () {
+            // Redirect to courses page
+            window.location.href = '../pages/course-detail.html';
+        });
+    });
+}
 
+// index.createAccount
+function CreateAccount() {
+    $(document).ready(function () {
+        // When the button with id "redirectButton" is clicked
+        $("#certs").click(function () {
+            // Redirect to courses page
+            window.location.href = '../pages/setting.html';
+        });
+    });
+}
 
-
-
+// index setNavbarFooter
+function setNavbarAndFooter(){
+    // Load navbar and footer using jQuery AJAX
+    $(function() {
+    $('#navbar').load('../navbar/navbar.html');
+    $('#footer').load('../navbar/footer.html');
+    });
+}
 
 
 
@@ -106,28 +132,50 @@ function generateContainer() {
 
 //*********************************************************home*****************
 // show different courses when different button clicked
-function showCourses() {
-    // Function to change the displayed image
-    function displayImage(imageSource1, imageSource2, imageSource3, imageSource4, imageSource5, imageSource6) {
-        var imageContainer = document.getElementById('image-container-1');
-        imageContainer.innerHTML = '<img src="' + imageSource1 + '" alt="Displayed Image 1">' +
-            '<img src="' + imageSource2 + '" alt="Displayed Image 2">' +
-            '<img src="' + imageSource3 + '" alt="Displayed Image 3">' +
-            '<img src="' + imageSource4 + '" alt="Displayed Image 4">' +
-            '<img src="' + imageSource5 + '" alt="Displayed Image 5">' +
-            '<img src="' + imageSource6 + '" alt="Displayed Image 6">';
-    }
+// function showCourses() {
+//     // Function to change the displayed image
+//     function displayImage(imageSource1, imageSource2, imageSource3, imageSource4, imageSource5, imageSource6) {
+//         var imageContainer = document.getElementById('image-container-1');
+//         imageContainer.innerHTML = '<img src="' + imageSource1 + '" alt="Displayed Image 1">' +
+//             '<img src="' + imageSource2 + '" alt="Displayed Image 2">' +
+//             '<img src="' + imageSource3 + '" alt="Displayed Image 3">' +
+//             '<img src="' + imageSource4 + '" alt="Displayed Image 4">' +
+//             '<img src="' + imageSource5 + '" alt="Displayed Image 5">' +
+//             '<img src="' + imageSource6 + '" alt="Displayed Image 6">';
+//     }
+//
+//     // Button click event listeners
+//     document.getElementById('button1').addEventListener('click', function () {
+//         displayImage('/images/icons/pay.png'); // Replace with the actual path to your image
+//     });
+//
+//     document.getElementById('button2').addEventListener('click', function () {
+//         displayImage('path/to/image2.jpg'); // Replace with the actual path to your image
+//     });
+//
+//     document.getElementById('button3').addEventListener('click', function () {
+//         displayImage('path/to/image3.jpg'); // Replace with the actual path to your image
+//     });
+// }
 
-    // Button click event listeners
-    document.getElementById('button1').addEventListener('click', function () {
-        displayImage('/images/icons/pay.png'); // Replace with the actual path to your image
-    });
-
-    document.getElementById('button2').addEventListener('click', function () {
-        displayImage('path/to/image2.jpg'); // Replace with the actual path to your image
-    });
-
-    document.getElementById('button3').addEventListener('click', function () {
-        displayImage('path/to/image3.jpg'); // Replace with the actual path to your image
-    });
+function changeImagesSet1() {
+    var imageContainer = document.getElementById('image-container-1');
+    imageContainer.children[0].src = 'set1_1.jpg';
+    imageContainer.children[1].src = 'set1_2.jpg';
+    imageContainer.children[2].src = 'set1_3.jpg';
 }
+
+function changeImagesSet2() {
+    var imageContainer = document.getElementById('image-container-1');
+    imageContainer.children[0].src = 'set2_1.jpg';
+    imageContainer.children[1].src = 'set2_2.jpg';
+    imageContainer.children[2].src = 'set2_3.jpg';
+}
+
+function changeImagesSet3() {
+    var imageContainer = document.getElementById('image-container-1');
+    imageContainer.children[0].src = 'set3_1.jpg';
+    imageContainer.children[1].src = 'set3_2.jpg';
+    imageContainer.children[2].src = 'set3_3.jpg';
+}
+
