@@ -45,7 +45,7 @@ function browseCourses() {
         // When the button with id "redirectButton" is clicked
         $("#browseCourses").click(function () {
             // Redirect to courses page
-            window.location.href = '../pages/course-detail.html';
+            window.location.href = './pages/course-detail.html';
         });
     });
 }
@@ -57,7 +57,7 @@ function goToSetting() {
         // When the button with id "getProAccess" is clicked
         $("#getProAccess").click(function () {
             // Redirect to courses page
-            window.location.href = '../pages/setting.html';
+            window.location.href = './pages/setting.html';
         });
     });
 }
@@ -69,7 +69,7 @@ function goToCourse() {
         // When the button with id "redirectButton" is clicked
         $("#moreTutorials").click(function () {
             // Redirect to courses page
-            window.location.href = '../pages/course-detail.html';
+            window.location.href = './pages/course-detail.html';
         });
     });
 }
@@ -97,19 +97,19 @@ function CreateAccount() {
         // When the button with id "redirectButton" is clicked
         $("#certs").click(function () {
             // Redirect to courses page
-            window.location.href = '../pages/setting.html';
+            window.location.href = './pages/setting.html';
         });
     });
 }
 
 // index setNavbarFooter
-function setNavbarAndFooter(){
-    // Load navbar and footer using jQuery AJAX
-    $(function() {
-    $('#navbar').load('../navbar/navbar.html');
-    $('#footer').load('../navbar/footer.html');
-    });
-}
+// function setNavbarAndFooter(){
+//     // Load navbar and footer using jQuery AJAX
+//     $(function() {
+//     $('#navbar').load('../navbar/navbar.html');
+//     $('#footer').load('../navbar/footer.html');
+//     });
+// }
 
 
 
