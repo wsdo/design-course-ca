@@ -541,6 +541,13 @@
     color: #ffffff;
 }
 
+/* @media section for smaller screens */
+@media (max-width: 76em) {
+    .livestreamDetails-about {
+        max-width: 80%;
+    }
+}
+
 /* set the text style for each live title  */
 .livestream-descrip-course-title h3 {
     font-family: 'DM Serif Display', serif;
@@ -613,6 +620,13 @@
     background-color: rgba(51, 86, 202, 0.764);
     border-radius: 2.5em;
     margin-bottom: 5em;
+}
+
+/* @media section for smaller screens */
+@media (max-width: 76em) {
+    .livestreamDetails-lecturer-intro {
+        max-width: 80%;
+    }
 }
 
 /* set the style for the text in lecturer section */
@@ -890,8 +904,66 @@
 
 /* ======================================================================================================== */
 /* ==================================================================================================== */
+/* Media sectiony for smaller screens */
+@media (max-width: 768px) {
+
+    .livestreamDetails-img-frame-1,
+    .livestreamDetails-img-frame-2,
+    .livestreamDetails-img-frame-3,
+    .livestreamDetails-img-frame-4 {
+        margin-right: 0;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .livestreamDetails-live-1,
+    .livestreamDetails-live-2,
+    .livestreamDetails-live-3,
+    .livestreamDetails-live-4 {
+        flex-direction: column;
+        /* Change to column layout for smaller screens */
+        height: auto;
+        /* Allow height to adjust based on content */
+        /* width: 90vw; */
+        /* 90% of the viewport width for smaller screens */
+        padding: 3vw;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .livestreamDetails-live-description,
+    .livestream_small-frame_1,
+    .livestream_small-frame_2,
+    .livestream_small-frame_3,
+    .livestream_small-frame_4,
+    .livestreamDetails-table {
+        width: 100%;
+        /* Takes full width on smaller screens */
+        margin-top: 1em;
+        /* Adjust margin for spacing */
+        height: auto;
+        /* Allow height to adjust based on content */
+    }
+}
+
+@media (max-width: 768px) {
+
+    .livestreamDetails-table {
+        width: 100%;
+        /* Takes full width on smaller screens */
+        margin-top: 1em;
+        /* Adjust margin for spacing */
+        height: auto;
+        /* Allow height to adjust based on content */
+    }
+}
+
+
+
 /* ======================================================================================================== */
-/* --------------------------------Navbar------------------------------------- */
+/* =============================== Navbar =============================== */
 
 .course-navbar {
     padding: 30px;
@@ -910,7 +982,7 @@
 }
 
 .course-nav-main {
-    text-align: f center;
+    text-align: center;
     padding-top: 16px;
 }
 
