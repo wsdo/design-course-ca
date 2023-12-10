@@ -1106,3 +1106,1171 @@ i {
 .course-page-foot-navbar a {
     text-decoration: none;
 }
+
+
+
+/* --------------------------------the css style for the course webpage--------------------------------------------------------- */
+
+/* the css style for head navbar */
+
+.course-navbar {
+    padding: 30px;
+    text-decoration: none;
+    font-family: 'Jost', sans-serif;
+    font-family: 'Roboto Mono', monospace;
+    background-color: transparent !important;
+}
+.course-button{
+    background-color: white;
+}
+
+.nav-item{
+    margin-left: 60px;
+}
+.course-nav-main{
+    text-align:f center;
+    padding-top: 16px;
+}
+.course-navbar-title{
+    display: inline-block;
+    margin: 0 0.5rem;
+  
+    animation: bounce; 
+    animation-duration: 2s; 
+    color: white;
+    margin-right: 120px;
+
+    font-size: 35px;
+
+    font-family: 'Permanent Marker', cursive;
+}
+
+.course-nav-slogan{
+    color: white;
+    padding-left: 30px;
+}
+
+.course-navbar p,i {
+    color:white;
+}
+.course-navbar col {
+    min-width: 157px;
+}
+
+.course-page-foot-navbar p,i{
+    color:white;
+}
+
+/* the css style for course introduction */
+
+.course-list p,i{
+    color:white;
+}
+.course-intro {
+    text-align: center;
+    display: grid;
+    margin-top: 10px;
+    padding:80px;
+    font-family: 'Cabin', sans-serif;
+    font-size: 22px;
+    color:white;
+}
+
+/* the css style for course list */
+
+.course-list{
+    text-decoration: none;
+    display: grid;
+    margin-top: 60px;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 120px;
+    padding: 80px;
+    font-family: 'Jost', sans-serif;
+    color:white;
+}
+.course-nav{
+    margin-left: 20px;
+}
+.course-list a{
+    text-decoration: none;
+    box-shadow:none;
+    padding:20px;
+    overflow: hidden;
+    transition: transform 0.3s;
+    border-radius:40px;
+}
+
+.course-list a:hover{
+    transform: scale(1.1);
+}
+
+.course-list img{
+    width:100%;
+}
+.course-firstrow-one-content {
+    text-align: center;
+    
+}
+.course-firstrow-two-content {
+    text-align: center;
+}
+.course-firstrow-three-content {
+    text-align: center;
+}
+.course-secondrow-one-content {
+    text-align: center;
+}
+.course-secondrow-two-content{
+    text-align: center;
+}
+.course-secondrow-three-content{
+    text-align: center;
+}
+.course-thirdrow-one-content{
+    text-align: center;
+}
+.course-thirdrow-two-content{
+    text-align: center;
+}
+.course-thirdrow-three-content{
+    text-align: center;
+}
+
+/* the css style for footing navbar */
+
+.course-page-foot{
+    text-align: center;
+    position: relative;
+    display:grid;
+    grid-template-columns: auto auto;
+    column-gap: 100px;
+    margin:100px;
+    padding:80px;
+    font-family: 'Jost', sans-serif;
+    font-family: 'Roboto Mono', monospace;
+    color:white;
+}
+.course-page-foot-navbar{
+    display:grid;
+}
+.course-page-foot-message{
+    text-align: center;
+    padding:80px;
+}
+.course-home-icon{
+    float: left;
+}
+.course-home-word{
+    float: left;
+    margin-left: 8px;
+}
+.course-courses-icon{
+    float: left;
+}
+.course-courses-word{
+    float: left;
+    margin-left: 8px;
+}
+.course-livestream-icon{
+    float: left;
+}
+.course-livestream-word{
+    float: left;
+    margin-left: 10px;
+}
+.course-price-icon{
+    float: left;
+}
+.course-price-word{
+    float: left;
+    margin-left: 8px;
+}
+.course-updates-icon{
+    float: left;
+}
+.course-updates-word{
+    float: left;
+    margin-left: 8px;
+}
+.course-setting-icon{
+    float: left;
+}
+.course-setting-word{
+    float: left;
+    margin-left: 8px;
+}
+
+
+/* .course-navbar-pay{
+    padding-left: 50px;
+}
+.course-login-icon{
+    float: left;
+}
+.course-login-word{
+    float: left;
+    margin-left: 8px;
+}
+.course-page-foot-navbar a{
+    text-decoration: none;
+} */
+
+
+/* the css style for background color */
+
+#course-main{
+    background: linear-gradient(189.16deg, rgb(57, 15, 199) 13.57%, rgb(40, 35, 77) 98.38%);
+    display: flow-root;
+}
+
+.course-firstrow-one{
+    display:block;
+    background: linear-gradient(209.21deg, rgb(32, 25, 76) 13.57%, rgb(46, 42, 59) 98.38%);
+}
+.course-firstrow-two{
+    background: linear-gradient(209.21deg, rgb(32, 25, 76) 13.57%, rgb(46, 42, 59) 98.38%);
+}
+.course-firstrow-three{
+    background: linear-gradient(209.21deg, rgb(23, 23, 27) 13.57%, rgb(119, 63, 211) 98.38%);
+}
+.course-secondrow-one{
+    background: linear-gradient(209.21deg, rgb(76, 55, 109) 13.57%, rgb(31, 21, 53) 98.38%);
+}
+.course-secondrow-two{
+    background: linear-gradient(209.21deg, rgb(153, 40, 52) 13.57%, rgb(255, 114, 98) 98.38%);
+}
+.course-secondrow-three{
+    background: linear-gradient(209.21deg, rgb(233, 109, 44) 13.57%, rgb(239, 77, 77) 98.38%);
+}
+.course-thirdrow-one{
+    background: linear-gradient(209.21deg, rgb(255, 114, 98) 13.57%, rgb(153, 40, 52) 98.38%);
+}
+.course-thirdrow-two{
+    background: linear-gradient(209.21deg, rgb(136, 0, 148) 13.57%, rgb(81, 77, 255) 98.38%);
+}
+.course-thirdrow-three{
+    background: linear-gradient(209.21deg, rgb(101, 187, 118) 13.57%, rgb(70, 111, 171) 98.38%);
+}
+
+/* --------------------------------------the css style for the course-detail webpage------------------------------------------------------ */
+
+/* the css style for background color */
+
+.course-firstrow-one-detail .course-detail-image{
+    background: linear-gradient(209.21deg, rgb(32, 25, 76) 13.57%, rgb(46, 42, 59) 98.38%);
+}
+.course-firstrow-two-detail .course-detail-image{
+    background: linear-gradient(209.21deg, rgb(32, 25, 76) 13.57%, rgb(46, 42, 59) 98.38%);
+}
+.course-firstrow-three-detail .course-detail-image{
+    background: linear-gradient(209.21deg, rgb(23, 23, 27) 13.57%, rgb(119, 63, 211) 98.38%);
+}
+.course-secondrow-one-detail .course-detail-image{
+    background: linear-gradient(209.21deg, rgb(76, 55, 109) 13.57%, rgb(31, 21, 53) 98.38%);
+}
+.course-secondrow-two-detail .course-detail-image{
+    background: linear-gradient(209.21deg, rgb(153, 40, 52) 13.57%, rgb(255, 114, 98) 98.38%);
+}
+.course-secondrow-three-detail .course-detail-image{
+    background: linear-gradient(209.21deg, rgb(233, 109, 44) 13.57%, rgb(239, 77, 77) 98.38%);
+}
+.course-thirdrow-one-detail .course-detail-image{
+    background: linear-gradient(209.21deg, rgb(255, 114, 98) 13.57%, rgb(153, 40, 52) 98.38%);
+}
+.course-thirdrow-two-detail .course-detail-image{
+    background: linear-gradient(209.21deg, rgb(136, 0, 148) 13.57%, rgb(81, 77, 255) 98.38%);
+}
+.course-thirdrow-three-detail .course-detail-image{
+    background: linear-gradient(209.21deg, rgb(101, 187, 118) 13.57%, rgb(70, 111, 171) 98.38%);
+}
+
+/* the css style for course detail introduction */
+
+.course-detail-intro{
+    font-family: 'Cabin', sans-serif;
+    font-size: 22px;
+    /* color:white; */
+    display:grid;
+    gap:20px;
+    padding-right: 100px;
+    
+}
+.course-detail-intro h1,p{
+    color:white;
+}
+
+
+.detail-foot{
+    font-size: 12px;
+}
+.course-detail-intro img{
+    width:60px;
+    height:60px;
+}
+.course-detail-image{
+    padding-top: 100px;
+    width:360px;
+    height:480px;
+    transition: transform 0.3s;
+    border-radius:40px;
+}
+.course-detail-image:hover{
+    transform: scale(1.1);
+}
+.course-detail-image img{
+    width:300px;
+    height:250px;
+}
+.course-detail-row{
+    gap:70px;
+}
+.course-detail-col{
+    padding-left: 70px;
+    padding-top: 90px;
+}
+.course-detail-intro button{
+    background-color: transparent;
+    border: none;
+}
+.course-detail-frame{
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(261px, 1fr));
+    gap:20px;
+    background: rgba(255, 255, 255, 0.6);
+    border-radius: 20px;
+    padding:30px;
+    max-width: 1872px;
+}
+.course-detail-main{
+    margin-top: 100px;
+    padding:50px;
+}
+.course-detail-row{
+    margin-top: 100px;
+}
+
+/* the css style for course detail list */
+
+.course-detail-list{
+    width:100%;
+    padding:20px;
+}
+.course-detail-list .num{
+    background: rgba(68, 66, 178, 0.1);
+    border-radius: 50px;
+}
+.course-detail-list .num p{
+    color: rgb(0, 0, 0);
+}
+.course-detail-list .category .head{
+    font-size:bold;
+    font-weight: 600;
+    color: rgb(0, 0, 0);
+}
+.course-detail-list .category p{
+    color: rgba(0, 0, 0, 0.7);
+}
+
+
+
+
+
+
+/* the css style for head navbar */
+
+.course-navbar {
+    padding: 30px;
+    text-decoration: none;
+    font-family: 'Jost', sans-serif;
+    font-family: 'Roboto Mono', monospace;
+    background-color: transparent !important;
+}
+.course-button{
+    background-color: white;
+}
+
+.nav-item{
+    margin-left: 60px;
+}
+.course-nav-main{
+    text-align:f center;
+    padding-top: 16px;
+}
+.course-navbar-title{
+    display: inline-block;
+    margin: 0 0.5rem;
+  
+    animation: bounce; 
+    animation-duration: 2s; 
+    color: white;
+    margin-right: 120px;
+
+    font-size: 35px;
+
+    font-family: 'Permanent Marker', cursive;
+}
+
+.course-nav-slogan{
+    color: white;
+    padding-left: 30px;
+}
+
+.course-navbar p,i {
+    color:white;
+}
+.course-navbar col {
+    min-width: 157px;
+}
+
+.course-page-foot-navbar p,i{
+    color:white;
+}
+
+
+/* the css style for welcome information */
+.course-updates-welcome p ,h1{
+    text-align:center;
+    color:white;
+}
+
+.course-updates-welcome{
+    padding:20px;
+}
+
+/* the css style for course updates information */
+.course-updates-intro{
+    display: grid;
+    gap:10px;
+}
+.course-updates-intro .intro-one{
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 130%;
+    margin: 0px;
+    color: rgba(0, 0, 0, 0.7);
+}
+.course-updates-intro .intro-two{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 18px;
+    margin: 0px;
+    color: rgba(0, 0, 0, 0.7);
+}
+.learn-question{
+    padding-top: 16px;
+    padding-bottom: 16px;
+    font-weight: 600;
+    font-size: 13px;
+    text-transform: uppercase;
+    color: rgba(0, 0, 0, 0.7);
+    margin: 0px;
+    text-align:left;
+}
+
+.course-updates-intro p{
+    text-align:left;
+}
+
+.course-updates-intro h4{
+    text-align:left;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    margin: 0px;
+    color: rgb(0, 0, 0);
+}
+.course-updates-detail .detail-time{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    margin: 0px;
+    color: rgb(0, 0, 0);
+    line-height: 130%;
+}
+.course-updates-detail .detail-more{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 130%;
+    margin: 8px 0px 0px;
+    color: rgba(0, 0, 0, 0.7);
+}
+
+/* the css style for course updates info display */
+
+.course-updates-row{
+    margin:50px;
+    padding:55px;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.6);
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 0px 0.5px inset;
+    backdrop-filter: blur(40px);
+}
+
+/* the css style for course updates images */
+
+.course-updates-image{
+    /* text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center; */
+
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 80%;
+    height: 90%;
+
+    border-radius: 20px;
+
+    transition: transform 0.3s;
+}
+.course-updates-image:hover{
+    transform: scale(1.1);
+}
+
+
+.course-updates-image img{
+    /* width:70%;
+    height: 70%;
+    align-items: center;
+     */
+     width: 50%; /* Make sure the image doesn't exceed the container width */
+     height: 50%;
+     text-align: center;
+     padding-top: 60px;
+
+     width: 70%;
+     height: 70%;
+     padding-top: 12px;
+}
+
+.image-one{
+    background: linear-gradient(200.44deg, rgb(0, 175, 214) 13.57%, rgb(55, 1, 123) 98.38%);
+}
+.image-two{
+    background: linear-gradient(200.44deg, rgb(101, 187, 118) 13.57%, rgb(70, 111, 171) 98.38%);
+}
+.image-three{
+    background: linear-gradient(200.44deg, rgb(242, 136, 133) 13.57%, rgb(233, 79, 102) 98.38%);
+}
+
+/* the css style for footing navbar */
+
+.course-page-foot{
+    text-align: center;
+    position: relative;
+    display:grid;
+    grid-template-columns: auto auto;
+    column-gap: 100px;
+    margin:100px;
+    padding:80px;
+    font-family: 'Jost', sans-serif;
+    font-family: 'Roboto Mono', monospace;
+    color:white;
+}
+.course-page-foot-navbar{
+    display:grid;
+}
+.course-page-foot-message{
+    text-align: center;
+    padding:80px;
+}
+.course-home-icon{
+    float: left;
+}
+.course-home-word{
+    float: left;
+    margin-left: 8px;
+}
+.course-courses-icon{
+    float: left;
+}
+.course-courses-word{
+    float: left;
+    margin-left: 8px;
+}
+.course-livestream-icon{
+    float: left;
+}
+.course-livestream-word{
+    float: left;
+    margin-left: 10px;
+}
+.course-price-icon{
+    float: left;
+}
+.course-price-word{
+    float: left;
+    margin-left: 8px;
+}
+.course-updates-icon{
+    float: left;
+}
+.course-updates-word{
+    float: left;
+    margin-left: 8px;
+}
+.course-setting-icon{
+    float: left;
+}
+.course-setting-word{
+    float: left;
+    margin-left: 8px;
+}
+
+/*  */
+.bg-warp{
+    z-index: -1;
+    position: fixed;
+    width: 100%;
+    top: 0px;
+    background: linear-gradient(
+      200.44deg,
+      rgb(67, 22, 219) 13.57%,
+      rgb(144, 118, 231) 98.38%
+    );
+    height: 100%;
+
+}
+.bg-wave{
+    position: absolute;
+    border-radius: 50%;
+    background: linear-gradient(
+      rgba(47, 184, 255, 0.42) 31.77%,
+      rgb(158, 236, 217) 100%
+    );
+    opacity: 0.4;
+    z-index: 0;
+    left: 30%;
+    top: 150px;
+    width: 228px;
+    height: 228px;
+    mix-blend-mode: overlay;
+    transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1) 0s;
+}
+.blob-animation{
+    position: absolute;
+    top: -10px;
+    left: 200px;
+    width: 500px;
+    height: 500px;
+    background: linear-gradient(rgba(47, 184, 255, 0.42) 31.77%, rgb(158, 236, 217) 100%);
+    z-index: -1;
+    mix-blend-mode: color-dodge;
+    animation: izRuqW 25s ease 0s infinite alternate none running;
+}
+@keyframes izRuqW {
+    0% {
+      transform: translate(0px, -50px) rotate(-90deg);
+      border-radius: 24% 76% 35% 65% / 27% 36% 64% 73%;
+    }
+    100% {
+      transform: translate(500px, 100px) rotate(-10deg);
+      border-radius: 76% 24% 33% 67% / 68% 55% 45% 32%;
+    }
+  }
+
+
+
+
+/* --------------------------------Navbar------------------------------------- */
+/* the css style for head navbar */
+
+.course-navbar {
+    padding: 30px;
+    text-decoration: none;
+    font-family: 'Jost', sans-serif;
+    font-family: 'Roboto Mono', monospace;
+    background-color: transparent !important;
+}
+.course-button{
+    background-color: white;
+}
+
+.nav-item{
+    margin-left: 60px;
+}
+.course-nav-main{
+    text-align:f center;
+    padding-top: 16px;
+}
+.course-navbar-title{
+    display: inline-block;
+    margin: 0 0.5rem;
+  
+    animation: bounce; 
+    animation-duration: 2s; 
+    color: white;
+    margin-right: 120px;
+
+    font-size: 35px;
+
+    font-family: 'Permanent Marker', cursive;
+}
+
+.course-nav-slogan{
+    color: white;
+    padding-left: 30px;
+}
+
+.course-navbar p,i {
+    color:white;
+}
+.course-navbar col {
+    min-width: 157px;
+}
+
+.course-page-foot-navbar p,i{
+    color:white;
+}
+
+/* the css style for footing navbar */
+
+.course-page-foot{
+    text-align: center;
+    position: relative;
+    display:grid;
+    grid-template-columns: auto auto;
+    column-gap: 100px;
+    margin:100px;
+    padding:80px;
+    font-family: 'Jost', sans-serif;
+    font-family: 'Roboto Mono', monospace;
+    color:white;
+}
+.course-page-foot-navbar{
+    display:grid;
+}
+.course-page-foot-message{
+    text-align: center;
+    padding:80px;
+}
+.course-home-icon{
+    float: left;
+}
+.course-home-word{
+    float: left;
+    margin-left: 8px;
+}
+.course-courses-icon{
+    float: left;
+}
+.course-courses-word{
+    float: left;
+    margin-left: 8px;
+}
+.course-livestream-icon{
+    float: left;
+}
+.course-livestream-word{
+    float: left;
+    margin-left: 10px;
+}
+.course-price-icon{
+    float: left;
+}
+.course-price-word{
+    float: left;
+    margin-left: 8px;
+}
+.course-updates-icon{
+    float: left;
+}
+.course-updates-word{
+    float: left;
+    margin-left: 8px;
+}
+.course-setting-icon{
+    float: left;
+}
+.course-setting-word{
+    float: left;
+    margin-left: 8px;
+}
+
+/* <!--------------------------------webpage logo------------------------------- --> */
+/* the css style for website logo */
+.course-navbar-title{
+    display: inline-block;
+    margin: 0 0.5rem;
+    animation: bounce; 
+    animation-duration: 2s; 
+    color: white;
+    margin-right: 120px;
+    font-size: 35px;
+    font-family: 'Permanent Marker', cursive;
+}
+
+
+
+
+
+
+/* =========== setting ========== */
+
+.del-btn {
+    width: 150px;
+    margin-top: 50px;
+  }
+  .del-title {
+    height: 40px;
+    text-align: left;
+    padding: 20px;
+  }
+  .del-desc {
+    padding: 20px;
+    text-align: left;
+    height: 30px;
+  }
+  .setting-main-layout{
+    margin: auto;
+    width: 960px;
+  }
+  .setting-input {
+    width: 100%;
+    background: linear-gradient(
+      rgba(99, 106, 150, 0.4) 0%,
+      rgba(182, 186, 214, 0.25) 100%
+    );
+    border: none;
+    border-radius: 30px;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 20px 40px,
+      rgba(255, 255, 255, 0.3) 0px 0px 0px 0.5px inset;
+    box-sizing: border-box;
+    padding: 10px 42px 10px 56px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 130%;
+    color: rgb(255, 255, 255);
+    transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1) 0s;
+  }
+  .del-main{
+    height: 400px;
+  }
+  .setting-profile {
+    height: 100px;
+    padding: 20px;
+  }
+  .form-text {
+    color: rgb(255, 255, 255);
+  }
+  .bg-warp {
+    z-index: -1;
+    position: fixed;
+    width: 100%;
+    top: 0px;
+    background: linear-gradient(
+      200.44deg,
+      rgb(67, 22, 219) 13.57%,
+      rgb(144, 118, 231) 98.38%
+    );
+    height: 100%;
+  }
+  .bg-wave {
+    position: absolute;
+    border-radius: 50%;
+    background: linear-gradient(
+      rgba(47, 184, 255, 0.42) 31.77%,
+      rgb(158, 236, 217) 100%
+    );
+    opacity: 0.4;
+    z-index: 0;
+    left: 30%;
+    top: 150px;
+    width: 228px;
+    height: 228px;
+    mix-blend-mode: overlay;
+    transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1) 0s;
+  }
+  
+  /* .blob-animation {
+    position: absolute;
+    top: 150px;
+    left: 200px;
+    width: 500px;
+    height: 500px;
+    background: linear-gradient(
+      rgba(47, 184, 255, 0.42) 31.77%,
+      rgb(158, 236, 217) 100%
+    );
+    z-index: 100;
+    mix-blend-mode: color-dodge;
+    animation: 25s ease 0s infinite alternate none running;
+  } */
+  
+  @keyframes izRuqW {
+    0% {
+      transform: translate(0px, -50px) rotate(-90deg);
+      border-radius: 24% 76% 35% 65% / 27% 36% 64% 73%;
+    }
+    100% {
+      transform: translate(500px, 100px) rotate(-10deg);
+      border-radius: 76% 24% 33% 67% / 68% 55% 45% 32%;
+    }
+  }
+  
+  .blob-animation {
+    position: absolute;
+    top: -10px;
+    left: 200px;
+    width: 500px;
+    height: 500px;
+    background: linear-gradient(
+      rgba(47, 184, 255, 0.42) 31.77%,
+      rgb(158, 236, 217) 100%
+    );
+    z-index: -1;
+    mix-blend-mode: color-dodge;
+    animation: izRuqW 25s ease 0s infinite alternate none running;
+  }
+  
+  .setting-main-side {
+    height: 44px;
+    transition: all 0.3s ease-in-out 0s;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  
+  .setting-side-line {
+    width: 100%;
+    height: 1px;
+    background: rgb(255, 255, 255);
+    opacity: 0.2;
+  }
+  .setting-side {
+    height: 44px;
+    transition: all 0.3s ease-in-out 0s;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    text-align: center;
+  }
+  .setting-form {
+    max-width: 300px;
+    display: grid;
+    max-width: 300px;
+    height: fit-content;
+    gap: 20px;
+  }
+  
+  .setting-main {
+    border-radius: 10px;
+    border: 1px solid #000;
+    border-radius: 20px;
+    grid-template-columns: 200px auto;
+    max-width: 960px;
+    min-height: 600px;
+    background: rgba(50, 61, 109, 0.5);
+    box-sizing: border-box;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 50px 100px,
+      rgba(255, 255, 255, 0.3) 0px 0px 0px 0.5px;
+    backdrop-filter: blur(40px);
+    border-radius: 20px;
+    margin: 0px auto;
+    overflow: hidden;
+  
+    font-style: normal;
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 130%;
+    text-transform: uppercase;
+    margin: 0px;
+    color: rgb(255, 255, 255);
+    mix-blend-mode: normal;
+    text-align: left;
+  }
+  .setting-form-right {
+    background: rgba(15, 14, 71, 0.3);
+    border-left: 0.5px solid rgba(255, 255, 255, 0.2);
+    box-sizing: border-box;
+    box-shadow: rgba(31, 31, 71, 0.3) 0px 50px 100px;
+    backdrop-filter: blur(40px);
+    padding: 30px 30px 150px;
+  }
+  .form-button {
+    background: linear-gradient(
+      91.4deg,
+      rgb(47, 184, 255) 0%,
+      rgb(158, 236, 217) 100%
+    );
+    border: none;
+    border-radius: 30px;
+    box-shadow: rgba(147, 231, 221, 0.3) 0px 20px 40px;
+    cursor: pointer;
+    display: grid;
+    text-align: center;
+    padding: 12px 0px;
+    width: 100%;
+    position: relative;
+    -webkit-box-pack: center;
+    justify-content: center;
+  }
+  
+/* index */
+/* **************************************************************************** */
+
+  /*index page*/
+  the css style for course introduction
+  #indexBody {
+      background-image: url('../images/home_background.png'); /* Replace 'your-image.jpg' with the path to your image */
+      background-size: cover; /* Cover the entire viewport */
+      background-position: center; /* Center the background image */
+      background-repeat: no-repeat; /* Do not repeat the background image */
+      color: white; /* Set text color to white or a suitable contrast color */
+  }
+  #price1, #price2, #price3 {
+      color: rgb(237, 237, 244);
+      font-weight: bold;
+      font-size: larger;
+      text-decoration: underline;
+  }
+  .fall{
+      color: rgb(239, 231, 231);
+      font-weight: bold;
+      font-size: larger;
+      text-decoration: underline;
+  }
+ 
+ 
+ /* use to make blinds animation */
+ 
+ 
+ /* Apply styles only to the body with the "index-page" class */
+ 
+ #indexBody body {
+     height: 100vh;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     background-image: radial-gradient(white, black);
+     color: #dddddd;
+ }
+ 
+ #indexBody ul {
+     width: 550px;
+     height: 500px;
+     overflow: hidden;
+     cursor: pointer;
+ }
+ 
+ #indexBody li {
+     float: left;
+     width: 110px;
+     height: 500px;
+     list-style: none;
+     transition: all 1s;
+     position: relative;
+ }
+ 
+ #indexBody li::after {
+     content: 'frontend';
+     position: absolute;
+     bottom: 0;
+     left: 0;
+     width: 100%;
+     height: 30px;
+     line-height: 30px;
+     font-size: 16px;
+     text-align: center;
+     color: rgb(243, 230, 230);
+     background-color: rgba(48, 46, 46, .5);
+ }
+ 
+ #indexBody img {
+     height: 100%;
+     width: 100%;
+     object-fit: cover;
+ }
+ 
+ #indexBodye ul:hover li {
+     width: 25px;
+ }
+ 
+ #indexBody ul li:hover {
+     width: 450px;
+ }
+ 
+ 
+ 
+ 
+ /* end of blinds */
+ 
+ 
+ /*index font color */
+ #indexBody .container  {
+     color: white;
+ }
+ 
+ 
+ /*animation  */
+ 
+ .zoom-in-image {
+     width: 100%;
+     transition: transform 0.3s ease-in-out;
+     border-radius: 20px; 
+     overflow: hidden; 
+ }
+ 
+ .zoom-in-image:hover {
+     transform: scale(1.1);
+ }
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+  /**********************************************************************************/
+  
+  
+ 
+ /**********************************************************************************/
+ 
+ /*price font color */
+ #priceBody .container  {
+     color: white;
+ }
+  
+  /* Add some basic styling to the table for better presentation */
+  /*  */
+  #priceBody table {
+     width: 80%;
+     margin: auto;
+     text-align: center;
+     background: rgba(255, 255, 255, 0.8); /* Adjust the alpha (fourth) value for the frosted effect */
+     border-radius: 10px; /* Adjust border-radius as needed */
+     overflow: hidden;
+     border-collapse: collapse;
+     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+ }
+ 
+ #priceBody th, td {
+     padding: 15px;
+ }
+ 
+ #priceBody thead {
+     background-color: #f8f9fa; /* Set the background color for the header */
+ }
+ 
+ 
+  /* */
+  
+ /* #priceBody .border-white  {
+ background-color: "";
+ } */
+  
+  

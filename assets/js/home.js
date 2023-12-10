@@ -50,6 +50,47 @@ function browseCourses() {
     });
 }
 
+
+//  index.onclic go to setting
+function goToSetting() {
+    $(document).ready(function () {
+        // When the button with id "getProAccess" is clicked
+        $("#getProAccess").click(function () {
+            // Redirect to courses page
+            window.location.href = '../pages/setting.html';
+        });
+    });
+}
+
+
+//  index.onclic go to couses
+function goToCourse() {
+    $(document).ready(function () {
+        // When the button with id "redirectButton" is clicked
+        $("#moreTutorials").click(function () {
+            // Redirect to courses page
+            window.location.href = '../pages/course-detail.html';
+        });
+    });
+}
+
+
+
+//  index.onclic go to appstore
+function goToAppStore() {
+    $(document).ready(function () {
+        // When the button with id "appStore" is clicked
+        $("#appStore").click(function () {
+            // Redirect to courses page
+            window.location.href = 'https://www.apple.com/ie/app-store/';
+        });
+    });
+}
+
+
+
+
+
 // index.createAccount
 function CreateAccount() {
     $(document).ready(function () {
@@ -158,24 +199,26 @@ function generateContainer() {
 //     });
 // }
 
-function changeImagesSet1() {
-    var imageContainer = document.getElementById('image-container-1');
-    imageContainer.children[0].src = 'set1_1.jpg';
-    imageContainer.children[1].src = 'set1_2.jpg';
-    imageContainer.children[2].src = 'set1_3.jpg';
+
+
+function filterCourses(category) {
+    // Get all course elements
+    var courses = document.querySelectorAll('#index-courses-list a');
+
+    // Loop through each course and toggle visibility based on the selected category
+    courses.forEach(function(course) {
+        var courseCategory = course.getAttribute('data-category');
+
+        if (category === 'all' || category === courseCategory) {
+            course.style.display = 'inline-block'; // Show the course
+        } else {
+            course.style.display = 'none'; // Hide the course
+        }
+    });
 }
 
-function changeImagesSet2() {
-    var imageContainer = document.getElementById('image-container-1');
-    imageContainer.children[0].src = 'set2_1.jpg';
-    imageContainer.children[1].src = 'set2_2.jpg';
-    imageContainer.children[2].src = 'set2_3.jpg';
-}
 
-function changeImagesSet3() {
-    var imageContainer = document.getElementById('image-container-1');
-    imageContainer.children[0].src = 'set3_1.jpg';
-    imageContainer.children[1].src = 'set3_2.jpg';
-    imageContainer.children[2].src = 'set3_3.jpg';
-}
+
+
+
 
