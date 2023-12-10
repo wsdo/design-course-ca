@@ -51,7 +51,7 @@ yesButton.addEventListener("click", function () {
     }
 
     // Navigate to LivestreamDetails.html with fragment identifier
-    window.location.href = `../pages/LivestreamDetails.html#${targetSection}`;
+    window.location.href = `../pages/livestream-details.html#${targetSection}`;
 });
 
 // When No button is clicked, close the modal
