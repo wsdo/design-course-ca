@@ -1,5 +1,5 @@
 
-/* --------------------------------the css style for the course webpage--------------------------------------------------------- */
+/* ==================================================the css style for the course webpage=============================================== */
 
 /* the css style for head navbar */
 
@@ -190,22 +190,6 @@
     margin-left: 8px;
 }
 
-
-/* .course-navbar-pay{
-    padding-left: 50px;
-}
-.course-login-icon{
-    float: left;
-}
-.course-login-word{
-    float: left;
-    margin-left: 8px;
-}
-.course-page-foot-navbar a{
-    text-decoration: none;
-} */
-
-
 /* the css style for background color */
 
 #course-main{
@@ -242,7 +226,7 @@
     background: linear-gradient(209.21deg, rgb(101, 187, 118) 13.57%, rgb(70, 111, 171) 98.38%);
 }
 
-/* --------------------------------------the css style for the course-detail webpage------------------------------------------------------ */
+/* ==========================================the css style for the course-detail webpage========================================= */
 
 /* the css style for background color */
 
@@ -288,7 +272,6 @@
 .course-detail-intro h1,p{
     color:white;
 }
-
 
 .detail-foot{
     font-size: 12px;
