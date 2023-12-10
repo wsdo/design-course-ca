@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8"> <!-- Specify the character encoding as UTF-8 -->
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8"> <!-- Specify the character encoding as UTF-8 --> 
   <meta name="viewpoint" content="width=device-wigth, initial-scale=1.0, shrink-to-fit=no">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="This is a description of my web page.">
   <!-- , shrink-to-fit=no -->
 
   <!-- Set the viewport configuration for responsive design -->
@@ -11,7 +12,6 @@
   <title>Home page</title>
 
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-  <link rel="stylesheet" href="./assets/css/home.css"> <!-- Link to an external stylesheet -->
   <link rel="stylesheet" href="./assets/css/style.css"> <!-- Link to an external stylesheet -->
 
 
@@ -88,11 +88,15 @@
   <!-- the link for bootstrap -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-  <link rel="stylesheet" href="navbar/navbar-style.css">
+  <link rel="stylesheet" href="assets/css/style.css">
   <!--the link for bootstrap body -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
   <!-- ********************************************************************* -->
+
+
+
+
 
 </head>
 
@@ -192,18 +196,23 @@
 
 
 
-
+    <br><br><br><br>
     <!--design and code app  -->
     <div class="container">
       <!-- four home course lists -->
       <div class="row">
 
           <div class="col-md-6 text-center">
-              <img src="./assets/images/course-item-Front-End-Development-Bootcamp.png" alt="Image" >
+            <ul>
+              <li><img src="../assets/images/livestream_frame_image_1.png" alt=""><div>web</div></li>
+              <li><img src="../assets/images/livestream_frame_image_2.png" alt=""><div>app</div></li>
+              <li><img src="../assets/images/livestream_frame_image_3.png" alt=""><div>frontend</div></li>
+              <li><img src="../assets/images/livestream_frame_image_4.png" alt=""><div>ui</div></li>
+          </ul>
           </div>
 
 
-          <div class="col-md-6 d-flex align-items-center justify-content-center">
+          <div class="col-md-6  d-flex align-items-center justify-content-center">
 
             <div>
               <h2>Design <br/>
@@ -211,7 +220,7 @@
                 <span></span>
                 apps
               </h2>
-              <br><br>
+              <br>
               <h5>
                 Don’t skip design. Learn design and<br> code, by building real apps with React<br> and Swift. Complete courses about the<br> best tools<br><br>
               </h5>
@@ -247,13 +256,14 @@
         </div>
         <!--img-->
         <div class="col-md-4 text-center">
-          <br><br><br><br>
+          <br><br>
           <button id="browseCourses" class="btn btn-primary">Browse Courses</button>
           <br><br>
 
-          <button id="button1" class="btn btn-primary" onclick="changeImagesSet1()">App</button>
-          <button id="button2" class="btn btn-primary" onclick="changeImagesSet2()">Web</button>
-          <button id="button3" class="btn btn-primary" onclick="changeImagesSet3()">3D</button>
+          <button id="button1" class="btn btn-primary" onclick="filterCourses('App')">App</button>
+          <button id="button2" class="btn btn-primary" onclick="filterCourses('web')">web</button>
+          <button id="button3" class="btn btn-primary" onclick="filterCourses('3D')">3D</button>
+          <button id="button3" class="btn btn-primary" onclick="filterCourses('all')">All</button>
 
         </div>
 
@@ -262,15 +272,108 @@
       <br><br>
 
       <div class="row" id="image-container-1">
-        <div class="col-md-4">
-          <img src="assets/images/course-item-HTML-and-CSS-Fundamentals.png" alt="Image 1" class="img-fluid select">
-        </div>
-        <div class="col-md-4">
-          <img src="assets/images/course-item-Building-Responsive-Websites-with-Bootstrap.png" alt="Image 2" class="img-fluid select">
-        </div>
-        <div class="col-md-4">
+        
+
+      <!-- the block code for course items display -->
+      <div class="course-list" id="index-courses-list">
+        <a class="course-firstrow-one" href="./course-detail.html?course_id=1" target="_blank" data-category="App">
+          <img class="course-firstrow-one-picture" src="https://images.ctfassets.net/ooa29xqb8tix/1WpX36ebAuFVP2wAAxnj2Z/41d4436866f0b5ad5e0543287f3a054d/mengto_professional_isometric_illustration_for_a_landing_page_w__1.png?w=400&q=50" alt="HTML and CSS Fundamentals">
+          <div class="course-firstrow-one-content">
+            <p class="course-firstrow-one-title">HTML and CSS Fundamentals</p>
+            <p class="course-firstrow-one-videos">14 videos - 3 hours</p>
+            <i class="fa-solid fa-paper-plane"></i>
+          </div>
+        </a>
+        <a class="course-firstrow-two" href="./course-detail.html?course_id=2" target="_blank" data-category="App">
+          <div class="course-firstrow-two">
+            <img class="course-firstrow-two-picture " src="https://images.ctfassets.net/ooa29xqb8tix/5jIBVIWEq7QQq1Tm03ViNR/b34fad96046114968b74016a678ac841/ios17-2.png?w=400&q=50" alt="Responsive Web Design with CSS Grid and Flexbox">
+            <div class="course-firstrow-two-content">
+              <p class="course-firstrow-two-title">Responsive Web Design with CSS Grid and Flexbox</p>
+              <p class="course-firstrow-two-videos">21 videos - 6 hours</p>
+              <i class="fa-solid fa-paper-plane"></i>
+            </div>
+          </div>
+        </a>
+        <a class="course-firstrow-three" href="./course-detail.html?course_id=3" target="_blank" data-category="App">
+          <div class="course-firstrow-three">
+            <img class="course-firstrow-three-picture" src="https://images.ctfassets.net/ooa29xqb8tix/2WtViyFr9wN48YpPGpGcHP/febdec4546b3056cbaf8fb11548beb02/midjourney-apps.png?w=400&q=50" alt="Front-End Development Bootcamp">
+            <div class="course-firstrow-three-content">
+              <p class="course-firstrow-three-title">Front-End Development Bootcamp</p>
+              <p class="course-firstrow-three-videos">16 videos - 4 hours</p>
+              <i class="fa-solid fa-paper-plane"></i>
+            </div>
+          </div>
+        </a>
+        <a class="course-secondrow-one" href="./course-detail.html?course_id=4" target="_blank" data-category="web">
+          <div class="course-secondrow-one">
+            <img class="course-secondrow-one-picture" src="https://images.ctfassets.net/ooa29xqb8tix/3oT3chzpuNFQ1mUfUHmx8C/2248c7f0e6c205c952b9f09718e56d1e/mengto_isometric_retrowave_cyberpunk_interior_neon_futuristic_v__1.png?w=400&q=50" alt="Modern Web Development with React.js">
+            <div class="course-secondrow-one-content">
+              <p class="course-secondrow-one-title">Modern Web Development with React.js</p>
+              <p class="course-secondrow-one-videos">33 videos - 7 hours</p>
+              <i class="fa-solid fa-paper-plane"></i>
+            </div>
+          </div>
+        </a>
+        <a class="course-secondrow-two" href="./course-detail.html?course_id=5" target="_blank" data-category="web">
+          <div class="course-secondrow-two">
+            <img class="course-secondrow-two-picture" src="https://images.ctfassets.net/ooa29xqb8tix/2pQLNnfeP26pOcFzllmcp2/fad5037842d1dd05523b989a21b728a3/mengto_professional_isometric_illustration_for_a_landing_page_w__1.png?w=400&q=50" alt="Vue.js Essentials: Building Interactive Web Apps">
+            <div class="course-secondrow-two-content">
+              <p class="course-secondrow-two-title">Vue.js Essentials: Building Interactive Web Apps</p>
+              <p class="course-secondrow-two-videos">15 videos - 4 hours</p>
+              <i class="fa-solid fa-paper-plane"></i>
+            </div>
+          </div>
+        </a>
+        <a class="course-secondrow-three" href="./course-detail.html?course_id=6" target="_blank" data-category="web">
+          <div class="course-secondrow-three">
+            <img class="course-secondrow-three-picture" src="https://images.ctfassets.net/ooa29xqb8tix/6FCmyggaMVYfEER3lylc7w/e4ee849e873d32ba6fb4f2c749ff1426/web-app.png?w=400&q=50" alt="SASS and SCSS: Mastering CSS Preprocessing">
+            <div class="course-secondrow-three-content">
+              <p class="course-secondrow-three-title">SASS and SCSS: Mastering CSS Preprocessing</p>
+              <p class="course-secondrow-three-videos">12 videos - 3 hours</p>
+              <i class="fa-solid fa-paper-plane"></i>
+            </div>
+          </div>
+        </a> 
+        <a class="course-thirdrow-one" href="./course-detail.html?course_id=7" target="_blank" data-category="3D">
+          <div class="course-thirdrow-one">
+            <img class="course-thirdrow-one-picture" src="https://images.ctfassets.net/ooa29xqb8tix/75irTnKFPIXtYaBinuiDAl/01f68a3d04fae66751595786e2154a7c/Prototyping_in_Figma_800x600.png?w=400&q=50" alt="Web Accessibility: Designing for All Users">
+            <div class="course-thirdrow-one-content">
+              <p class="course-thirdrow-one-title">Web Accessibility: Designing for All Users</p>
+              <p class="course-thirdrow-one-videos">11 videos - 2 hours</p>
+              <i class="fa-solid fa-paper-plane"></i>
+            </div>
+          </div>
+        </a>
+        <a class="course-thirdrow-two" href="./course-detail.html?course_id=8" target="_blank" data-category="3D">
+          <div class="course-thirdrow-two">
+            <img class="course-thirdrow-two-picture" src="https://images.ctfassets.net/ooa29xqb8tix/2u8a9JnxxavVp2pZyPKq3A/cf2152e1a363373c03fc22b5bff6f233/Learn_Sketch_800x600_cover_new.png?w=400&q=50" alt="Building Responsive Websites with Bootstrap">
+            <div class="course-thirdrow-two-content">
+              <p class="course-thirdrow-two-title">Building Responsive Websites with Bootstrap</p>
+              <p class="course-thirdrow-two-videos">10 videos - 3 hours</p>
+              <i class="fa-solid fa-paper-plane"></i>
+            </div>
+          </div>
+        </a>
+        <a class="course-thirdrow-three" href="./course-detail.html?course_id=9" target="_blank" data-category="3D">
+          <div class="course-thirdrow-three">
+            <img class="course-thirdrow-three-picture" src="https://images.ctfassets.net/ooa29xqb8tix/nuCW0L89lpC4zH99frxDG/a45daf2ace7675bd5c37827f5f4548aa/Frame_1590.png?w=400&q=50" alt="UI/UX Design Principles for Front-End Developers">
+            <div class="course-thirdrow-three-content">
+              <p class="course-thirdrow-three-title">UI/UX Design Principles for Front-End Developers</p>
+              <p class="course-thirdrow-three-videos">15 videos - 3 hours</p>
+              <i class="fa-solid fa-paper-plane"></i>
+            </div>
+          </div>
+        </a>
+      </div>
+
+
+
+
+
+
+        <!-- <div class="col-md-4">
           <img src="assets/images/course-item-Front-End-Development-Bootcamp.png" alt="Image 3" class="img-fluid select">
-        </div>
+        </div> -->
       </div>
     </div>
 
@@ -282,21 +385,21 @@
       <div class="row">
         <!--text-->
         <div class="col-md-4 text-center">
+          
           <h6>PREMIUM TUTORIALS</h6>
+          <br>
           <h2>Tutorials to guide <br/>you beyond</h2>
-          <h6>Once you’ve completed the courses,learn from our quick design and code tutorials to strengthen your knowledge</h6>
+          <br>
+          <h6>Once you’ve completed the courses,learn from our<br><br>quick design and code tutorials to strengthen your<br><br>knowledge</h6>
+          <br>
           <button id="moreTutorials" class="btn btn-primary" >More tutorials</button>
         </div>
         <!--img-->
-        <div class="col-md-8 text-center ">
-          <br><br><br>
+        <div class="col-md-6 text-right ">          
           <div class="row">
-            <div class="col">
-            <img src="default1.jpg" alt="Image 1">
-          </div>
-            <div class="col">
-            <img src="default2.jpg" alt="Image 2">
-          </div>
+
+            <img class="img-fluid zoom-in-image" src="/assets/images/img-1.jpg" alt="Zooming In Image">
+
           </div>
         </div>
       </div>
@@ -317,18 +420,23 @@
     <div class="container">
       <div class="row">
 
-        <div class="col-md-8 text-center">
-            <br>
-            <img src="wordsCloud.png" alt="Image">
-            <img src="wordsCloud.png" alt="Image">
+        <div class="col-md-6 text-center">
+          <div class="row">
+
+            <img class="img-fluid zoom-in-image" src="/assets/images/img-2.jpg" alt="Zooming In Image">
+
+          </div>
         </div>
 
-        <div class="col-md-4 text-center">
+        <div class="col-md-6 text-center">
+          <br>
           <h6>CREATE A PROFILE</h6>
+          <br><br>
           <h2>Get certificates</h2>
-          <h6>After passing a test, we’ll award you with an online certificate.<br> You can add them to your profile after completing the courses.
+          <br><br>
+          <h6>After passing a test, we’ll award you with an online certificate.<br><br> You can add them to your profile after completing the courses.
           </h6>
-
+          <br><br>
           <button id="certs" class="btn btn-primary">Create Account</button>
           <br><br>
         </div>
@@ -336,7 +444,7 @@
 
 
     </div>
-<!--*******************************-->
+    <!--*******************************-->
 
 
 
@@ -347,21 +455,30 @@
     <div class="container">
       <!-- four home course lists -->
       <div class="row">
+
         <div class="col-md-4 text-center">
-          <img src="wordsCloud.png" alt="Image" class="img-fluid mt-5 mb-5">
-        </div>
-        <div class="col-md-8 text-center">
 
           <div>
             <div class="home_small-frame_1">
+              <br>
               <h6>NEW RELEASE</h6>
+              <br>
               <h2>Available on iPhone and iPad <br></h2>
-              <h6>Our iOS app has been 100% developed with SwiftUI. <br>If you have an M1 Mac, you can even use it as a desktop app.</h6>
-
+              <br>
+              <h6>Our iOS app has been 100% developed with SwiftUI. <br><br>If you have an M1 Mac, you can even use it as a<br><br> desktop app.</h6>
+              <br>
               <button id="appStore" class="btn btn-primary">app store</button>
           </div>
         </div>
-      </div>
+        </div>
+
+
+        <div class="col-md-6 text-center">        
+          <img class="img-fluid zoom-in-image" src="/assets/images/img-3.jpg" alt="Zooming In Image">        
+        </div>
+
+
+
       </div>
     </div>
 
@@ -372,15 +489,19 @@
     <div class="container">
       <!-- four home course lists -->
       <div class="row">
+        <div class="col-md-6 text-center">
+          <img class="img-fluid zoom-in-image" src="/assets/images/img-1.jpg" alt="Zooming In Image"> 
+        </div>
+
         <div class="col-md-4 text-center">
+          <br><br>
           <h6>START WITH MORE</h6>
+          <br><br>
           <h2>Get discounts</h2>
-          <h6>We’ve partnered with the biggest design tools on the market to help you get started.</h6>
+          <br><br>
+          <h6>We’ve partnered with the biggest design tools on the<br><br> market to help you get started.</h6>
         </div>
-        <div class="col-md-8 text-center">
-          <img src="wordsCloud.png" alt="Image" class="img-fluid mt-5 mb-5">
-          <img src="wordsCloud.png" alt="Image" class="img-fluid mt-5 mb-5">
-        </div>
+
       </div>
     </div>
 
@@ -395,16 +516,18 @@
 
 
 
-    <br><br><br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br>
     <!--reuse plan selection-->
     <div class="container">
       <div>
           <div class="row text-center">
+            
             <h2>Pricing Plans</h2>
-            <p>Get access to all our premium courses, tutorials,<br> downloads, certificates and priority support.</p>
-            <h2>Select Your Plan</h2>
             <br>
-            <div class="col">
+            <p><br>Get access to all our premium courses, tutorials,<br> downloads, certificates and priority support.</p>
+            <h2><br>Select Your Plan</h2>
+            <br>
+            <div class="col"><br>
               <button id="monthlyBtn" class="btn btn-primary">Monthly</button>
               <button id="annualBtn" class="btn btn-secondary">Annual</button>
             </div>
@@ -415,14 +538,14 @@
           <div class="row text-center">
 
               <div class="col-md-4 subscription-plan border rounded border-white" id="basic">
-                BASIC<br><div id="price3">Free</div><br><br>Trial<br>Free courses<br>5 Premium videos<br>Notify me, favorite
+                BASIC<br><br><div id="price3">Free</div><br><br>Trial<br>Free courses<br>5 Premium videos<br>Notify me, favorite
               </div>
               <div class="col-md-4 subscription-plan border rounded border-white" id="pro">
-                PRO<br><div id="price1">$20</div><br>per month<br>All courses and videos<br>Sources files, epub<br>Certificates, tests<br>Premium tutorials<br>
+                PRO<br><br><div id="price1">$20</div><br>per month<br>All courses and videos<br>Sources files, epub<br>Certificates, tests<br>Premium tutorials<br>
                 UI, icons, illustrations<br>Commercial use<br><br>
               </div>
               <div class="col-md-4 subscription-plan border rounded border-white" id="team">
-                TEAM<br><div id="price2">$25</div><br>per member, per month, billed monthly<br>5 users<br>Manage subscriptions<br>Team progress
+                TEAM<br><br><div id="price2">$25</div><br>per member, per month, billed monthly<br>5 users<br>Manage subscriptions<br>Team progress
               </div>
 
           </div>
@@ -435,74 +558,65 @@
 
 
 
-    <br><br><br><br><br><br><br><br><br><br>
+    <br><br><br><br><br>
     <!--footer-->
     
 
 
 
-<!-- ********************************************************************* -->
-<!-- the block code for webpage footing navbar -->
-<div class="course-page-foot">
-  <div class="course-page-foot-navbar">
-    <a href="/" class="course-item">
-      <div class="course-home-icon">
-        <i class="fa-solid fa-house"></i>
+    <!-- =========================footer=================================== -->
+    <!-- the block code for webpage footing navbar -->
+    <div class="course-page-foot">
+      <div class="course-page-foot-navbar">
+          <a href="index.html">
+              <div class="course-home-icon">
+                  <i class="fa-solid fa-house"></i>
+              </div>
+              <div class="course-home-word">
+                  <p class="home">Home</p>
+              </div>
+          </a>
+          <a href="pages/course.html">
+              <div class="course-courses-icon">
+                  <i class="fa-solid fa-book"></i>
+              </div>
+              <div class="course-courses-word">
+                  <p class="courses">Courses</p>
+              </div>
+          </a>
+          <a href="pages/livestream-list.html">
+              <div class="course-livestream-icon">
+                  <i class="fa-solid fa-video"></i>
+              </div>
+              <div class="course-livestream-word">
+                  <p class="livestream">Livestream</p>
+              </div>
+          </a>
+          <a href="pages/price.html">
+              <div class="course-pay-icon">
+                  <i class="fa-brands fa-paypal"></i>
+              </div>
+              <div class="course-pay-word">
+                  <p class="pay">Pay</p>
+              </div>
+          </a>
+          <a href="pages/setting.html">
+              <div class="course-login-icon">
+                  <i class="fa-solid fa-circle-user"></i>
+              </div>
+              <div class="course-login-word">
+                  <p class="login">Login</p>
+              </div>
+          </a>
       </div>
-      <div class="course-home-word">
-        <p class="home">Home</p>
+      <div class="course-page-foot-message">
+          <p>Site made with React, Gatsby,
+              Netlify and Contentful. Learn how.</p>
+          <p>FrontendFocus © 2023</p>
+          <p>Terms of Service - Privacy Policy</p>
+          <p>Need help? Contact Us</p>
       </div>
-    </a>
-    <a href="pages/course.html" class="nav-item">
-      <div class="course-courses-icon">
-        <i class="fa-solid fa-book"></i>
-      </div>
-      <div class="course-courses-word">
-        <p class="courses">Courses</p>
-      </div>
-    </a>
-    <a href="pages/livestream-list.html" class="nav-item">
-      <div class="course-livestream-icon">
-        <i class="fa-solid fa-video"></i>
-      </div>
-      <div class="course-livestream-word">
-        <p class="livestream">Livestream</p>
-      </div>
-    </a>
-    <a href="pages/price.html" class="nav-item">
-        <div class="course-pay-icon">
-          <i class="fa-brands fa-paypal"></i>
-        </div>
-        <div class="course-pay-word">
-          <p class="pay">Price</p>
-        </div>
-      </a>
-      <a href="pages/updates.html" class="nav-item">
-        <div class="course-pay-icon">
-          <i class="fa-brands fa-paypal"></i>
-        </div>
-        <div class="course-pay-word">
-          <p class="pay">Updates</p>
-        </div>
-      </a>
-      <a href="pages/setting.html" class="nav-item">
-        <div class="course-login-icon">
-          <i class="fa-solid fa-circle-user"></i>
-        </div>
-        <div class="course-login-word">
-          <p class="login">Setting</p>
-        </div>
-      </a>
-  </div>
-  <div class="course-page-foot-message">
-    <p>Site made with React, Gatsby,
-      Netlify and Contentful. Learn how.</p>
-    <p>FrontendFocus © 2023</p>
-    <p>Terms of Service - Privacy Policy</p>
-    <p>Need help? Contact Us</p>
-  </div>
-</div>
-<!-- ********************************************************************* -->
+    </div>
 
 
   </body>
@@ -518,14 +632,18 @@
   <script>
     // titleHover()
     browseCourses()
+    goToSetting()
+    goToCourse()
     CreateAccount()
+    goToAppStore()
     priceSelection()
-    changeImagesSet1()
-    changeImagesSet2()
-    changeImagesSet3()
+   
+  
     
 
   </script>
+
+  
 
 
 <!--------------------------------webpage logo------------------------------- -->

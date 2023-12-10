@@ -2115,68 +2115,162 @@ i {
     justify-content: center;
   }
   
+/* index */
+/* **************************************************************************** */
 
   /*index page*/
- the css style for course introduction
- #indexBody {
-     background-image: url('../images/home_background.png'); /* Replace 'your-image.jpg' with the path to your image */
-     background-size: cover; /* Cover the entire viewport */
-     background-position: center; /* Center the background image */
-     background-repeat: no-repeat; /* Do not repeat the background image */
-     color: white; /* Set text color to white or a suitable contrast color */
- }
- #price1, #price2, #price3 {
-     color: darkred;
-     font-weight: bold;
- }
- .fall{
-     color: black;
-     font-weight: bold;
- }
- /**********************************************************************************/
- /*price */
- /*#priceBody {*/
- /*    background-image: url('/assets/images/pay_background.png');*/
- /*    background-size: cover; !* Cover the entire viewport *!*/
- /*    background-position: center; !* Center the background image *!*/
- /*    background-repeat: no-repeat; !* Do not repeat the background image *!*/
- /*    color: white; !* Set text color to white or a suitable contrast color *!*/
- /*}*/
+  the css style for course introduction
+  #indexBody {
+      background-image: url('../images/home_background.png'); /* Replace 'your-image.jpg' with the path to your image */
+      background-size: cover; /* Cover the entire viewport */
+      background-position: center; /* Center the background image */
+      background-repeat: no-repeat; /* Do not repeat the background image */
+      color: white; /* Set text color to white or a suitable contrast color */
+  }
+  #price1, #price2, #price3 {
+      color: rgb(237, 237, 244);
+      font-weight: bold;
+      font-size: larger;
+      text-decoration: underline;
+  }
+  .fall{
+      color: rgb(239, 231, 231);
+      font-weight: bold;
+      font-size: larger;
+      text-decoration: underline;
+  }
  
  
- /* Add some basic styling to the table for better presentation */
- table {
-     border-collapse: collapse;
+ /* use to make blinds animation */
+ 
+ 
+ /* Apply styles only to the body with the "index-page" class */
+ 
+ #indexBody body {
+     height: 100vh;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     background-image: radial-gradient(white, black);
+     color: #dddddd;
+ }
+ 
+ #indexBody ul {
+     width: 550px;
+     height: 500px;
+     overflow: hidden;
+     cursor: pointer;
+ }
+ 
+ #indexBody li {
+     float: left;
+     width: 110px;
+     height: 500px;
+     list-style: none;
+     transition: all 1s;
+     position: relative;
+ }
+ 
+ #indexBody li::after {
+     content: 'frontend';
+     position: absolute;
+     bottom: 0;
+     left: 0;
      width: 100%;
+     height: 30px;
+     line-height: 30px;
+     font-size: 16px;
+     text-align: center;
+     color: rgb(243, 230, 230);
+     background-color: rgba(48, 46, 46, .5);
  }
  
- th, td {
-     border: 1px solid #dddddd;
-     text-align: left;
-     padding: 8px;
+ #indexBody img {
+     height: 100%;
+     width: 100%;
+     object-fit: cover;
  }
  
- th {
-     background-color: #f2f2f2;
+ #indexBodye ul:hover li {
+     width: 25px;
  }
  
- 
-    /*index*/
-    /* set the style of the biggest frame in the homeList page */
- .home_middle_frame_1,
- .home_middle_frame_2,
- .home_middle_frame_3,
- .home_middle_frame_4 {
-    display: flex;
-    border: 0.1em solid rgba(173, 173, 187, 0.405);
-    /* white color with 50% opacity */
-    border-radius: 2.5%;
-    width: 70vw;
-    max-width: 1250px;
-    margin: auto;
-    padding: 1.5vw;
-    backdrop-filter: blur(2.5vw);
-    /* creates the fog-like effect */
+ #indexBody ul li:hover {
+     width: 450px;
  }
  
  
+ 
+ 
+ /* end of blinds */
+ 
+ 
+ /*index font color */
+ #indexBody .container  {
+     color: white;
+ }
+ 
+ 
+ /*animation  */
+ 
+ .zoom-in-image {
+     width: 100%;
+     transition: transform 0.3s ease-in-out;
+     border-radius: 20px; 
+     overflow: hidden; 
+ }
+ 
+ .zoom-in-image:hover {
+     transform: scale(1.1);
+ }
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+  /**********************************************************************************/
+  
+  
+ 
+ /**********************************************************************************/
+ 
+ /*price font color */
+ #priceBody .container  {
+     color: white;
+ }
+  
+  /* Add some basic styling to the table for better presentation */
+  /*  */
+  #priceBody table {
+     width: 80%;
+     margin: auto;
+     text-align: center;
+     background: rgba(255, 255, 255, 0.8); /* Adjust the alpha (fourth) value for the frosted effect */
+     border-radius: 10px; /* Adjust border-radius as needed */
+     overflow: hidden;
+     border-collapse: collapse;
+     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+ }
+ 
+ #priceBody th, td {
+     padding: 15px;
+ }
+ 
+ #priceBody thead {
+     background-color: #f8f9fa; /* Set the background color for the header */
+ }
+ 
+ 
+  /* */
+  
+ /* #priceBody .border-white  {
+ background-color: "";
+ } */
+  
+  

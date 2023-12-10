@@ -50,6 +50,47 @@ function browseCourses() {
     });
 }
 
+
+//  index.onclic go to setting
+function goToSetting() {
+    $(document).ready(function () {
+        // When the button with id "getProAccess" is clicked
+        $("#getProAccess").click(function () {
+            // Redirect to courses page
+            window.location.href = '../pages/setting.html';
+        });
+    });
+}
+
+
+//  index.onclic go to couses
+function goToCourse() {
+    $(document).ready(function () {
+        // When the button with id "redirectButton" is clicked
+        $("#moreTutorials").click(function () {
+            // Redirect to courses page
+            window.location.href = '../pages/course-detail.html';
+        });
+    });
+}
+
+
+
+//  index.onclic go to appstore
+function goToAppStore() {
+    $(document).ready(function () {
+        // When the button with id "appStore" is clicked
+        $("#appStore").click(function () {
+            // Redirect to courses page
+            window.location.href = 'https://www.apple.com/ie/app-store/';
+        });
+    });
+}
+
+
+
+
+
 // index.createAccount
 function CreateAccount() {
     $(document).ready(function () {
@@ -159,19 +200,24 @@ function generateContainer() {
 // }
 
 
-function changeImagesSet1() {
-    var images = [
-      "./assets/images/course-item-Modern-Web-Development-with-React.js.png",
-      "assets/images/new-image-2.png",
-      "assets/images/new-image-3.png"
-    ];
-  
-    var imageContainers = document.getElementById("image-container-1").getElementsByClassName("img-fluid");
-  
-    for (var i = 0; i < imageContainers.length; i++) {
-      imageContainers[i].src = images[i];
-    }
+
+function filterCourses(category) {
+    // Get all course elements
+    var courses = document.querySelectorAll('#index-courses-list a');
+
+    // Loop through each course and toggle visibility based on the selected category
+    courses.forEach(function(course) {
+        var courseCategory = course.getAttribute('data-category');
+
+        if (category === 'all' || category === courseCategory) {
+            course.style.display = 'inline-block'; // Show the course
+        } else {
+            course.style.display = 'none'; // Hide the course
+        }
+    });
 }
+
+
 
 
 
